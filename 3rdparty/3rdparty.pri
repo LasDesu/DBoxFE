@@ -1,5 +1,5 @@
 #/*
-#*   Copyright (C) 2008-2009 by Alexander Saal <alex.saal@gmx.de>
+#*   Copyright (C) 2004 - 2009 by Alexander Saal <alex.saal@gmx.de>
 #*
 #*   This program is free software; you can redistribute it and/or modify
 #*   it under the terms of the GNU General Public License as published by
@@ -14,6 +14,11 @@
 #*   You should have received a copy of the GNU General Public License
 #*   along with this program; if not, write to the Free Software Foundation,
 #*   Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#*
+#*   --------------------------------------------------------------------------
+#*   The files in this project include file comes from the follow project:
+#*   OSDaB Project (http://osdab.42cows.org)
+#*   --------------------------------------------------------------------------
 #*/
 
 DEPENDPATH += $$PWD
@@ -48,8 +53,8 @@ HEADERS += $$PWD/zip_p.h
 unix {
   DEPENDPATH += /usr/include/libxml2
   INCLUDEPATH += /usr/include/libxml2
-  
-  LIBS += -lxml2 -lz 
+
+  LIBS += -lxml2 -lz
 }
 
 win32 {

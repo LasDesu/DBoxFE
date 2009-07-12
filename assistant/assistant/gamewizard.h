@@ -1,27 +1,27 @@
-/***************************************************************************
- *   Copyright (C) 2008 by Alexander Saal                                  *
- *   alex.saal@gmx.de                                                      *
- *                                                                         *
- *   File: ${filename}.${extension}                                        *
- *   Desc: ${description}                                                  *
- *                                                                         *
- *   This file is part of DBoxFE - DOSBox Front End                        *
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- *   This program is distributed in the hope that it will be useful,       *
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
- *   GNU General Public License for more details.                          *
- *                                                                         *
- *   You should have received a copy of the GNU General Public License     *
- *   along with this program; if not, write to the                         *
- *   Free Software Foundation, Inc.,                                       *
- *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
- ***************************************************************************/
+/****************************************************************************
+ *   Copyright (C) 2004 - 2008 by Alexander Saal                            *
+ *   alex.saal@gmx.de                                                       *
+ *                                                                          *
+ *   File: {filename}.{prefix}                                              *
+ *   Desc: ${description}                                                   *
+ *                                                                          *
+ *   This file is part of DBoxFE - DOSBox Front End                         *
+ *                                                                          *
+ *   This program is free software; you can redistribute it and/or modify   *
+ *   it under the terms of the GNU General Public License as published by   *
+ *   the Free Software Foundation; either version 3 of the License, or      *
+ *   (at your option) any later version.                                    *
+ *                                                                          *
+ *   This program is distributed in the hope that it will be useful,        *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of         *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          *
+ *   GNU General Public License for more details.                           *
+ *                                                                          *
+ *   You should have received a copy of the GNU General Public License      *
+ *   along with this program; if not, write to the                          *
+ *   Free Software Foundation, Inc.,                                        *
+ *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.              *
+ ****************************************************************************/
 
 #ifndef GAMEWIZARD_H
 #define GAMEWIZARD_H
@@ -48,13 +48,13 @@ namespace asaal {
 
   /**
    * \brief GameWizard is the main class of the DBoxFE - Assistant
-   * 
+   *
    * @author Alexander Saal <laex.saal@gmx.de>
    * @sa http://dboxfe.belios.de/index
    * @date 2008/09/11
    * @version 0.2.5
    * @since 0.2.5
-   */ 
+   */
   class GameWizard : public QWizard {
       Q_OBJECT
 
@@ -62,7 +62,7 @@ namespace asaal {
 
       /**
        * Enumeration for @see GameWizard
-       */ 
+       */
       enum {
         /**
         * Welcome page
@@ -75,7 +75,7 @@ namespace asaal {
 
         /**
         * Installation page
-         */ 
+         */
         PAGE_INSTALL,
         /**
         * Installation process page
@@ -122,9 +122,9 @@ namespace asaal {
 
       /**
        * \brief Get the ConfigBase instance
-       * 
+       *
        * @return The new instance of ConfigBase
-       */ 
+       */
       inline static ConfigBase *configBaseInstance() {
 
         return configBase;
@@ -132,17 +132,17 @@ namespace asaal {
 
       /**
        * \brief Hides the modal dialog and sets the result code to Accepted. This function is reimplemented from QWizard
-       */ 
+       */
       void accept();
 
     private:
 
       /**
        * \brief Create game profile
-       * 
+       *
        * @param profile The profile name (complete path with filename)
        * @return True was profile created, othwerwise false
-       */ 
+       */
       bool createGameProfile( const QString &profile );
 
       WelcomePage *wp;
@@ -150,7 +150,7 @@ namespace asaal {
       InstallPage *ip;
       InstallProcessPage *ipp;
       GraphicPage *gp;
-      SettingPage *settp;      
+      SettingPage *settp;
       SoundPage *sp;
       MiscPage *mp;
       FinishPage *fp;
