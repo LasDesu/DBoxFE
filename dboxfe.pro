@@ -19,13 +19,13 @@
 TEMPLATE = subdirs
 
 sub_dboxfe.subdir = dboxfe
-sub_dboxfe.depends = 
+sub_dboxfe.depends =
 SUBDIRS += sub_dboxfe
 
 sub_tray.subdir = tray
-sub_tray.depends = 
+sub_tray.depends = sub_dboxfe
 SUBDIRS += sub_tray
 
 sub_assistant.subdir = assistant
-sub_assistant.depends = 
+sub_assistant.depends = sub_dboxfe
 SUBDIRS += sub_assistant

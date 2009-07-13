@@ -25,7 +25,7 @@
    <string>About DBoxFE</string>
   </property>
   <property name="windowIcon" >
-   <iconset resource="../../resource/dboxfe.qrc" >
+   <iconset resource="../../../resource/dboxfe.qrc" >
     <normaloff>:/pics/images/default.png</normaloff>:/pics/images/default.png</iconset>
   </property>
   <layout class="QGridLayout" name="gridLayout_2" >
@@ -81,7 +81,7 @@
             <enum>QFrame::Sunken</enum>
            </property>
            <property name="pixmap" >
-            <pixmap resource="../../resource/dboxfe.qrc" >:/pics/images/default.png</pixmap>
+            <pixmap resource="../../../resource/dboxfe.qrc" >:/pics/images/default.png</pixmap>
            </property>
           </widget>
          </item>
@@ -425,11 +425,11 @@ p, li { white-space: pre-wrap; }
   </layout>
  </widget>
  <resources>
-  <include location="../../resource/dboxfe.qrc" />
-  <include location="../../resource/dboxfe.qrc" />
-  <include location="../../resource/dboxfe.qrc" />
-  <include location="../../resource/dboxfe.qrc" />
-  <include location="../../resource/dboxfe.qrc" />
+  <include location="../../../resource/dboxfe.qrc" />
+  <include location="../../../resource/dboxfe.qrc" />
+  <include location="../../../resource/dboxfe.qrc" />
+  <include location="../../../resource/dboxfe.qrc" />
+  <include location="../../../resource/dboxfe.qrc" />
  </resources>
  <connections>
   <connection>
