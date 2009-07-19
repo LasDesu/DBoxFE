@@ -229,8 +229,8 @@ namespace asaal {
     }
 
     QString dosboxBinary = configBase->xmlPreferences( configBase->settingFile() ).getString( "binary", "DOSBox" );
-
     QString dosboxVersion = configBase->xmlPreferences( configBase->settingFile() ).getString( "version", "DOSBox" );
+    bool winHide = configBase->xmlPreferences( configBase->settingFile() ).getBool( "winHide", "DBoxFE" );
 
     if ( dosboxBinary.isNull() || dosboxBinary.isEmpty() ) {
 
@@ -238,7 +238,7 @@ namespace asaal {
       return;
     }
 
-    if ( dosboxVersion != "0.72" ) {
+    if ( dosboxVersion < "0.72" ) {
 
       QMessageBox::information( this, tr( "DBoxFE" ), tr( "Wrong dosbox version. Only dosbox 0.72 or higher is supported." ) );
       return;
@@ -256,9 +256,12 @@ namespace asaal {
 
     processStart( dosboxBinary, "-conf", """" + profile + """" );
 
-    profile = QString( "" );
-    dosboxBinary = QString( "" );
-    dosboxVersion = QString( "" );
+    profile = "";
+    dosboxBinary = "";
+    dosboxVersion = "";
+
+    if( winHide )
+      setVisible( false );
   }
 
   /*
@@ -467,7 +470,7 @@ namespace asaal {
 
     if ( winHide ) {
 
-      hide();
+      setVisible( false );
     }
 
     processStart( dbfeAssistant, "", "" );
@@ -533,7 +536,7 @@ namespace asaal {
    */
   void DBoxFE::processFinish( int exitCode, QProcess::ExitStatus exitStatus ) {
 
-    show();
+    setVisible( true );
 
 #ifdef Q_OS_WIN32
 

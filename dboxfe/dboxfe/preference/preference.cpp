@@ -60,9 +60,6 @@ namespace asaal {
     event->accept();
   }
 
-  /*
-   * Save DBoxFE configuration
-   */
   void Preference::save() {
 
     if ( lineEditDosboxBinary->text().isNull() || lineEditDosboxBinary->text().isEmpty() ) {
@@ -72,9 +69,12 @@ namespace asaal {
     }
 
     dboxfeConfig.clear();
+    // Read settings
+    dboxfeConfig = DBoxFE::configBaseInstance()->readSettings();
 
     dboxfeConfig.dosboxBinary = lineEditDosboxBinary->text();
-    dboxfeConfig.dosboxVersion = dosboxVersion.isNull() || dosboxVersion.isEmpty() ? "0.72" : dosboxVersion;
+    if( dboxfeConfig.dosboxVersion.isEmpty() || dboxfeConfig.dosboxVersion.isNull() )
+      dboxfeConfig.dosboxVersion = dosboxVersion.isNull() || dosboxVersion.isEmpty() ? "0.72" : dosboxVersion;
     dboxfeConfig.profiles = configBase->readProfiles();
     dboxfeConfig.winHide = checkBoxWindowsHide->isChecked();
     dboxfeConfig.keyMapper = checkBoxStartKeyMapper->isChecked();
@@ -87,9 +87,6 @@ namespace asaal {
     QDialog::accept();
   }
 
-  /*
-   * Choose dosbox binary and check this version
-   */
   void Preference::chooseDosbox() {
 
     dosboxBinary = QFileDialog::getOpenFileName( this, tr( "Open dosbox binary" ), QDir::rootPath(), tr( "DOSBox (dosbox dosox.exe)" ) );

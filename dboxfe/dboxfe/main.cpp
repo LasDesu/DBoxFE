@@ -35,17 +35,31 @@
 
 using namespace asaal;
 
+void initialize( Splash *splash );
+void initialTemplates( Splash *splash, DBoxFE_Configuration dboxfeConfig, QString profDir, QString file );
+
 int main( int argc, char *argv[] ) {
 
   QApplication app( argc, argv );
 
   DBoxFE *dboxfe = new DBoxFE();
+  Splash *splash = new Splash( QPixmap( ":/pics/images/logo.png" ) );
 
-  QString m_file, m_profile_dir, m_tmpl_dir, lng;
-
-  Splash *splash;
-  splash = new Splash( QPixmap( ":/pics/images/logo.png" ) );
   app.processEvents();
+
+  initialize( splash );
+
+  dboxfe->show();
+
+  if ( splash )
+    delete splash;
+
+  app.connect( &app, SIGNAL( lastWindowClosed() ), &app, SLOT( quit() ) );
+  return app.exec();
+}
+
+void initialize( Splash *splash ) {
+  QString m_file, m_profile_dir, lng;
 
   if ( splash )
     splash->show();
@@ -54,11 +68,8 @@ int main( int argc, char *argv[] ) {
     splash->showMessage( QApplication::translate( "DBoxFE", "Create/Search application Directory ..." ) );
 
   m_file = QDir::homePath();
-
   m_file.append( "/.dboxfe" );
-
   QDir appDir( m_file );
-
   if ( !appDir.exists( m_file ) ) {
     appDir.mkdir( m_file );
   }
@@ -67,11 +78,8 @@ int main( int argc, char *argv[] ) {
     splash->showMessage( QApplication::translate( "DBoxFE", "Create profile directory " ) + m_file + "..." );
 
   m_profile_dir = QDir::homePath();
-
   m_profile_dir.append( "/.dboxfe/profile" );
-
   QDir proDir( m_profile_dir );
-
   if ( !proDir.exists( m_profile_dir ) ) {
     proDir.mkdir( m_profile_dir );
   }
@@ -100,11 +108,27 @@ int main( int argc, char *argv[] ) {
   DBoxFE::configBaseInstance()->writeSettings( dboxfeConfig );
 
 #ifdef Q_OS_UNIX
+  initialTemplates( splash, dboxfeConfig, m_profile_dir, m_file );
+#endif
 
   if ( splash )
-    splash->showMessage( QApplication::translate( "DBoxFE", "Create template directory " ) + m_profile_dir + "..." );
+    splash->showMessage( QApplication::translate( "DBoxFE", "Loading Profiles ..." ) );
 
-  m_tmpl_dir = QDir::homePath();
+  dboxfe->initialProfiles();
+
+  if ( splash )
+    splash->showMessage( QApplication::translate( "DBoxFE", "Starting GUI ..." ) );
+}
+
+/**
+ * Initial internal templates
+ */
+void initialTemplates( Splash *splash, DBoxFE_Configuration dboxfeConfig, QString profDir, QString file ) {
+
+  if ( splash )
+    splash->showMessage( QApplication::translate( "DBoxFE", "Create template directory " ) + profDir + "..." );
+
+  QString m_tmpl_dir = QDir::homePath();
   m_tmpl_dir.append( "/.dboxfe/templates" );
 
   QDir tmplDir( m_tmpl_dir );
@@ -166,7 +190,7 @@ int main( int argc, char *argv[] ) {
 
             QString profEntry = in.readAll();
 
-            QFile profOut( m_file + "/" + qresource.toElement().text() );
+            QFile profOut( file + "/" + qresource.toElement().text() );
 
             if ( profOut.exists() ) {
 
@@ -223,23 +247,4 @@ int main( int argc, char *argv[] ) {
 
   if ( splash )
     splash->showMessage( QApplication::translate( "DBoxFE", "Closing resource stream ..." ) );
-
-#endif
-
-  if ( splash )
-    splash->showMessage( QApplication::translate( "DBoxFE", "Loading Profiles ..." ) );
-
-  dboxfe->initialProfiles();
-
-  if ( splash )
-    splash->showMessage( QApplication::translate( "DBoxFE", "Starting GUI ..." ) );
-
-  dboxfe->show();
-
-  if ( splash )
-    delete splash;
-
-  app.connect( &app, SIGNAL( lastWindowClosed() ), &app, SLOT( quit() ) );
-
-  return app.exec();
 }
