@@ -107,9 +107,10 @@ void initialize( Splash *splash ) {
   }
   DBoxFE::configBaseInstance()->writeSettings( dboxfeConfig );
 
-#ifdef Q_OS_UNIX
+//#ifdef Q_OS_UNIX
+//  initialTemplates( splash, dboxfeConfig, m_profile_dir, m_file );
+//#endif
   initialTemplates( splash, dboxfeConfig, m_profile_dir, m_file );
-#endif
 
   if ( splash )
     splash->showMessage( QApplication::translate( "DBoxFE", "Loading Profiles ..." ) );
@@ -132,7 +133,6 @@ void initialTemplates( Splash *splash, DBoxFE_Configuration dboxfeConfig, QStrin
   m_tmpl_dir.append( "/.dboxfe/templates" );
 
   QDir tmplDir( m_tmpl_dir );
-
   if ( !tmplDir.exists( m_tmpl_dir ) ) {
     tmplDir.mkdir( m_tmpl_dir );
   }

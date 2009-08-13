@@ -89,7 +89,7 @@ namespace asaal {
 
   void Preference::chooseDosbox() {
 
-    dosboxBinary = QFileDialog::getOpenFileName( this, tr( "Open dosbox binary" ), QDir::rootPath(), tr( "DOSBox (dosbox dosox.exe)" ) );
+    dosboxBinary = QFileDialog::getOpenFileName( this, tr( "Open dosbox binary" ), QDir::rootPath(), tr( "DOSBox (dosbox dosbox.exe)" ) );
 
     if ( dosboxBinary.isNull() || dosboxBinary.isEmpty() ) {
 

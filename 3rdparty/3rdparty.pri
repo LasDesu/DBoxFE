@@ -16,7 +16,7 @@
 #*   Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #*
 #*   --------------------------------------------------------------------------
-#*   The files in this project include file comes from the follow project:
+#*   The files in this project include file comes from the following project:
 #*   OSDaB Project (http://osdab.42cows.org)
 #*   --------------------------------------------------------------------------
 #*/
