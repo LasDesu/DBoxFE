@@ -1,5 +1,5 @@
 /****************************************************************************
- *   Copyright (C) 2004 - 2008 by Alexander Saal                            *
+ *   Copyright (C) 2004 - 2009 by Alexander Saal                            *
  *   alex.saal@gmx.de                                                       *
  *                                                                          *
  *   File: {filename}.{prefix}                                              *
@@ -725,10 +725,8 @@ namespace asaal {
     profileConfiguration.gus.insert( "gus", checkBoxGUS->isChecked() );
     profileConfiguration.gus.insert( "gusrate", comboBoxGUSRate->currentText() );
     profileConfiguration.gus.insert( "gusbase", comboBoxGUSBase->currentText() );
-    profileConfiguration.gus.insert( "irq1", comboBoxGUSIrq_1->currentText() );
-    profileConfiguration.gus.insert( "irq2", comboBoxGUSIrq_2->currentText() );
-    profileConfiguration.gus.insert( "dma1", comboBoxGUSDMA_1->currentText() );
-    profileConfiguration.gus.insert( "dma2", comboBoxGUSDMA_2->currentText() );
+    profileConfiguration.gus.insert( "gusirq", comboBoxGUSIrq_1->currentText() );
+    profileConfiguration.gus.insert( "gusdma", comboBoxGUSDMA_1->currentText() );
     profileConfiguration.gus.insert( "ultradir", lineEditGUSUltraDir->text() );
 
     profileConfiguration.speaker.insert( "pcspeaker", comboBoxSpeaker->currentText() );
@@ -861,7 +859,7 @@ namespace asaal {
     profileConfiguration.dosbox.insert( "language", lineEditLanguage->text() );
     profileConfiguration.dosbox.insert( "machine", comboBoxMachine->currentText() );
     profileConfiguration.dosbox.insert( "captures", comboBoxCaptures->currentText() );
-    profileConfiguration.dosbox.insert( "memsize", comboBoxMemsize->currentText() );
+    profileConfiguration.dosbox.insert( "memsize", spinBoxMemsize->value() );
 
     profileConfiguration.dos.insert( "xms", checkBoxXMS->isChecked() );
     profileConfiguration.dos.insert( "ems", checkBoxEMS->isChecked() );
@@ -1000,14 +998,10 @@ namespace asaal {
     comboBoxGUSRate->setCurrentIndex( comboBoxIndex );
     comboBoxIndex = comboBoxGUSBase->findText( profileConfiguration.gus.value( "gusbase" ).toString(), Qt::MatchExactly );
     comboBoxGUSBase->setCurrentIndex( comboBoxIndex );
-    comboBoxIndex = comboBoxGUSIrq_1->findText( profileConfiguration.gus.value( "irq1" ).toString(), Qt::MatchExactly );
+    comboBoxIndex = comboBoxGUSIrq_1->findText( profileConfiguration.gus.value( "gusirq" ).toString(), Qt::MatchExactly );
     comboBoxGUSIrq_1->setCurrentIndex( comboBoxIndex );
-    comboBoxIndex = comboBoxGUSIrq_2->findText( profileConfiguration.gus.value( "irq2" ).toString(), Qt::MatchExactly );
-    comboBoxGUSIrq_2->setCurrentIndex( comboBoxIndex );
-    comboBoxIndex = comboBoxGUSDMA_1->findText( profileConfiguration.gus.value( "dma1" ).toString(), Qt::MatchExactly );
+    comboBoxIndex = comboBoxGUSDMA_1->findText( profileConfiguration.gus.value( "gusdma" ).toString(), Qt::MatchExactly );
     comboBoxGUSDMA_1->setCurrentIndex( comboBoxIndex );
-    comboBoxIndex = comboBoxGUSDMA_2->findText( profileConfiguration.gus.value( "dma2" ).toString(), Qt::MatchExactly );
-    comboBoxGUSDMA_2->setCurrentIndex( comboBoxIndex );
     lineEditGUSUltraDir->setText( profileConfiguration.gus.value( "ultradir" ).toString() );
 
     comboBoxIndex = comboBoxSpeaker->findText( profileConfiguration.speaker.value( "pcspeaker" ).toString(), Qt::MatchExactly );
@@ -1071,8 +1065,7 @@ namespace asaal {
     comboBoxMachine->setCurrentIndex( comboBoxIndex );
     comboBoxIndex = comboBoxCaptures->findText( profileConfiguration.dosbox.value( "captures" ).toString(), Qt::MatchExactly );
     comboBoxCaptures->setCurrentIndex( comboBoxIndex );
-    comboBoxIndex = comboBoxMemsize->findText( profileConfiguration.dosbox.value( "memsize" ).toString(), Qt::MatchExactly );
-    comboBoxMemsize->setCurrentIndex( comboBoxIndex );
+    spinBoxMemsize->setValue( profileConfiguration.dosbox.value( "memsize" ).toInt() );
 
     checkBoxXMS->setChecked( profileConfiguration.dos.value( "xms" ).toBool() );
     checkBoxEMS->setChecked( profileConfiguration.dos.value( "ems" ).toBool() );
