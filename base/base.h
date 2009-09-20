@@ -224,10 +224,10 @@ namespace asaal {
        * \brief Deletes all the objects in the cache.
        */
       void clear() {
-        moundOption = QString( "" );
-        moundDirectory = QString( "" );
-        gameExecutable = QString( "" );
-        dosboxExit = QString( "" );
+        moundOption = "";
+        moundDirectory = "";
+        gameExecutable = "";
+        dosboxExit = "";
       }
   };
 

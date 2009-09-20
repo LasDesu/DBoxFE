@@ -105,6 +105,7 @@ namespace asaal {
     m_Configuration.cpu.insert( "cycles", readConf->value( "cycles" ) );
     m_Configuration.cpu.insert( "cycleup", readConf->value( "cycleup" ) );
     m_Configuration.cpu.insert( "cycledown", readConf->value( "cycledown" ) );
+    m_Configuration.cpu.insert( "cputype", readConf->value( "cputype" ) );
     readConf->endGroup();
 
     // Mixer settings
@@ -129,9 +130,10 @@ namespace asaal {
     m_Configuration.sblaster.insert( "irq", readConf->value( "irq" ) );
     m_Configuration.sblaster.insert( "dma", readConf->value( "dma" ) );
     m_Configuration.sblaster.insert( "hdma", readConf->value( "hdma" ) );
-    m_Configuration.sblaster.insert( "oplrate", readConf->value( "oplrate" ) );
+    m_Configuration.sblaster.insert( "sbmixer", readConf->value( "sbmixer" ) );
     m_Configuration.sblaster.insert( "oplmode", readConf->value( "oplmode" ) );
-    m_Configuration.sblaster.insert( "mixer", readConf->value( "mixer" ) );
+    m_Configuration.sblaster.insert( "oplemu", readConf->value( "oplemu" ) );
+    m_Configuration.sblaster.insert( "oplrate", readConf->value( "oplrate" ) );
     readConf->endGroup();
 
     // GUS settings
@@ -139,10 +141,8 @@ namespace asaal {
     m_Configuration.gus.insert( "gus", readConf->value( "gus" ) );
     m_Configuration.gus.insert( "gusrate", readConf->value( "gusrate" ) );
     m_Configuration.gus.insert( "gusbase", readConf->value( "gusbase" ) );
-    m_Configuration.gus.insert( "irq1", readConf->value( "irq1" ) );
-    m_Configuration.gus.insert( "irq2", readConf->value( "irq2" ) );
-    m_Configuration.gus.insert( "dma1", readConf->value( "dma1" ) );
-    m_Configuration.gus.insert( "dma2", readConf->value( "dma2" ) );
+    m_Configuration.gus.insert( "gusirq", readConf->value( "gusirq" ) );
+    m_Configuration.gus.insert( "gusdma", readConf->value( "gusdma" ) );
     m_Configuration.gus.insert( "ultradir", readConf->value( "ultradir" ) );
     readConf->endGroup();
 
@@ -201,12 +201,11 @@ namespace asaal {
       qApp->processEvents();
 
       line = in.readLine();
-
       if ( line == "[autoexec]" ) {
+
         while ( !in.atEnd() ) {
 
           qApp->processEvents();
-
           line = in.readLine();
 
           // TODO Read Autoexec
@@ -235,8 +234,8 @@ namespace asaal {
 
     configFile.close();
 
-    readConf = 0;
     delete readConf;
+    readConf = 0;
 
     return m_Configuration;
   }
@@ -805,6 +804,7 @@ namespace asaal {
     configFile.close();
 
     delete writeConf;
+    writeConf = 0;
   }
 
   QMap< QString, QString> ConfigBase::exportDatas( const QString &directory ) {

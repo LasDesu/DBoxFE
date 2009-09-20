@@ -706,6 +706,7 @@ namespace asaal {
     profileConfiguration.cpu.insert( "cycleup", comboBoxCPUCycleUp->currentText() );
     profileConfiguration.cpu.insert( "cycles", comboBoxCPUCycles->currentText() );
     profileConfiguration.cpu.insert( "cycledown", comboBoxCPUCycleDown->currentText() );
+    profileConfiguration.cpu.insert( "cputype", comboBoxCPUType->currentText() );
 
     // Sound page
     profileConfiguration.mixer.insert( "rate", comboBoxMixerRate->currentText() );
@@ -717,10 +718,11 @@ namespace asaal {
     profileConfiguration.sblaster.insert( "sbbase", comboBoxSBBase->currentText() );
     profileConfiguration.sblaster.insert( "irq", comboBoxSBIRQ->currentText() );
     profileConfiguration.sblaster.insert( "dma", comboBoxSBDMA->currentText() );
-    profileConfiguration.sblaster.insert( "oplmode", comboBoxSBOplMode->currentText() );
     profileConfiguration.sblaster.insert( "hdma", comboBoxSBHDMA->currentText() );
+    profileConfiguration.sblaster.insert( "sbmixer", checkBoxSBMixer->isChecked() );
+    profileConfiguration.sblaster.insert( "oplmode", comboBoxSBOplMode->currentText() );
+    profileConfiguration.sblaster.insert( "oplemu", comboBoxSBOPLEmu->currentText() );
     profileConfiguration.sblaster.insert( "oplrate", comboBoxSBOPLRate->currentText() );
-    profileConfiguration.sblaster.insert( "mixer", checkBoxSBMixer->isChecked() );
 
     profileConfiguration.gus.insert( "gus", checkBoxGUS->isChecked() );
     profileConfiguration.gus.insert( "gusrate", comboBoxGUSRate->currentText() );
@@ -883,7 +885,7 @@ namespace asaal {
 
   void ProfileSettings::setDefaultConfiguration() {
 
-    int messageResult = QMessageBox::question( this, tr( "DBoxFE" ), tr( "Are you sure that you would like to use\nthe default preferences for this game\nprofile?" ), QMessageBox::Yes, QMessageBox::No );
+    int messageResult = QMessageBox::question( this, tr( "DBoxFE" ), tr( "Are you sure that you would like to use\nthe default preferences for this game?" ), QMessageBox::Yes, QMessageBox::No );
 
     switch ( messageResult ) {
 
@@ -968,6 +970,9 @@ namespace asaal {
     comboBoxCPUCycles->setCurrentIndex( comboBoxIndex );
     comboBoxIndex = comboBoxCPUCycleDown->findText( profileConfiguration.cpu.value( "cycledown" ).toString(), Qt::MatchExactly );
     comboBoxCPUCycleDown->setCurrentIndex( comboBoxIndex );
+    comboBoxIndex = comboBoxCPUType->findText( profileConfiguration.cpu.value( "cputype" ).toString(), Qt::MatchExactly );
+    comboBoxCPUType->setCurrentIndex( comboBoxIndex );
+
 
     // Sound page
     comboBoxIndex = comboBoxMixerRate->findText( profileConfiguration.mixer.value( "rate" ).toString(), Qt::MatchExactly );
@@ -991,7 +996,9 @@ namespace asaal {
     comboBoxSBHDMA->setCurrentIndex( comboBoxIndex );
     comboBoxIndex = comboBoxSBOPLRate->findText( profileConfiguration.sblaster.value( "oplrate" ).toString(), Qt::MatchExactly );
     comboBoxSBOPLRate->setCurrentIndex( comboBoxIndex );
-    checkBoxSBMixer->setChecked( profileConfiguration.sblaster.value( "mixer" ).toBool() );
+    comboBoxIndex = comboBoxSBOPLEmu->findText( profileConfiguration.sblaster.value( "oplemu" ).toString(), Qt::MatchExactly );
+    comboBoxSBOPLEmu->setCurrentIndex( comboBoxIndex );
+    checkBoxSBMixer->setChecked( profileConfiguration.sblaster.value( "sbmixer" ).toBool() );
 
     checkBoxGUS->setChecked( profileConfiguration.gus.value( "gus" ).toBool() );
     comboBoxIndex = comboBoxGUSRate->findText( profileConfiguration.gus.value( "gusrate" ).toString(), Qt::MatchExactly );
