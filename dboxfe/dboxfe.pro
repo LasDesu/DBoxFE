@@ -66,5 +66,5 @@ win32 {
 mac {
   QMAKE_MAC_SDK = /Developer/SDKs/MacOSX10.5.sdk
   QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.5
-  CONFIG += x86 ppc
+  CONFIG += x86
 }

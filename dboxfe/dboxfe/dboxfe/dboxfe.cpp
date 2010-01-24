@@ -1,8 +1,8 @@
 /****************************************************************************
- *   Copyright (C) 2004 - 2008 by Alexander Saal                            *
+ *   Copyright (C) 2004 - 2010 by Alexander Saal                            *
  *   alex.saal@gmx.de                                                       *
  *                                                                          *
- *   File: {filename}.{prefix}                                              *
+ *   File: ${filename}.{prefix}                                             *
  *   Desc: ${description}                                                   *
  *                                                                          *
  *   This file is part of DBoxFE - DOSBox Front End                         *
