@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UiGenreBase</class>
+ <widget class="QWidget" name="UiGenreBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>180</width>
+    <height>315</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>180</width>
+    <height>315</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>180</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QAbstractScrollArea {
+
+  background-color:transparent;
+}
+
+QTreeWidget {
+  padding-top: 2px;
+  padding-left: 2px;
+  border: 1px solid #8f8f91;
+  border-radius: 6px;
+}</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>0</y>
+     <width>38</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>44</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Genre</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTreeWidget" name="m_treeWidgetGenre">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>44</y>
+     <width>175</width>
+     <height>227</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="autoScroll">
+    <bool>true</bool>
+   </property>
+   <property name="showDropIndicator" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="verticalScrollMode">
+    <enum>QAbstractItemView::ScrollPerItem</enum>
+   </property>
+   <property name="headerHidden">
+    <bool>true</bool>
+   </property>
+   <column>
+    <property name="text">
+     <string>Genre</string>
+    </property>
+   </column>
+   <item>
+    <property name="text">
+     <string>All</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../../resource/dboxfe.qrc">
+      <normaloff>:/images/search</normaloff>:/images/search</iconset>
+    </property>
+    <item>
+     <property name="text">
+      <string>0-9</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A-Z</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>Favorites</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../../resource/dboxfe.qrc">
+      <normaloff>:/images/favorite</normaloff>:/images/favorite</iconset>
+    </property>
+    <item>
+     <property name="text">
+      <string>0-9</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A-Z</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>Genre</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../../resource/dboxfe.qrc">
+      <normaloff>:/images/notice</normaloff>:/images/notice</iconset>
+    </property>
+    <item>
+     <property name="text">
+      <string>Action</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Adventure</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Racing</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RPG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Shooter</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Simulation</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sports</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Strategy</string>
+     </property>
+    </item>
+   </item>
+  </widget>
+  <widget class="QWidget" name="m_widgetToolButton" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>271</y>
+     <width>112</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>44</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayoutToolButton">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutToolButton">
+      <item>
+       <widget class="QToolButton" name="m_toolBtnAddGenre">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../resource/dboxfe.qrc">
+          <normaloff>:/images/insert</normaloff>:/images/insert</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="m_toolBtnRemoveGenre">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../resource/dboxfe.qrc">
+          <normaloff>:/images/remove</normaloff>:/images/remove</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacerToolButton">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../resource/dboxfe.qrc"/>
+ </resources>
+ <connections/>
+</ui>

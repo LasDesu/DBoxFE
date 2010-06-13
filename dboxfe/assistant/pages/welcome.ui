@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UiWelcomePage</class>
+ <widget class="QWizardPage" name="UiWelcomePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>616</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WizardPage</string>
+  </property>
+  <property name="title">
+   <string>Introduction</string>
+  </property>
+  <property name="subTitle">
+   <string>This wizard help you to create new game profile or install a game into dosbox. Please choose your option and click 'Next' for next step or 'Cancal' to close this wizard.</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayoutWelcomePage">
+   <item>
+    <widget class="QRadioButton" name="m_rbtnNewGameProfile">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>New profile</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QRadioButton" name="m_rbtnInstallGame">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Install game</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacerWelcomePage">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>300</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

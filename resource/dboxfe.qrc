@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/images" >
+    <file alias="db_insert">images/db_insert.png</file>    <file alias="db_remove">images/db_remove.png</file>    <file alias="db_update">images/db_update.png</file>    <file alias="db">images/db.png</file>    <file alias="edit">images/edit.png</file>    <file alias="execute">images/execute.png</file>    <file alias="favorite">images/favorite.png</file>    <file alias="gohome">images/gohome.png</file>    <file alias="help">images/help.png</file>    <file alias="insert">images/insert.png</file>    <file alias="notice">images/notice.png</file>    <file alias="preferences">images/preferences.png</file>    <file alias="reload">images/reload.png</file>    <file alias="remove">images/remove.png</file>    <file alias="save">images/save.png</file>    <file alias="saveas">images/saveas.png</file>    <file alias="search">images/search.png</file>    <file alias="software_update">images/software_update.png</file>    <file alias="web">images/web.png</file>
+    <file alias="dos">images/dos.png</file>    <file alias="internt">images/internet.png</file>    <file alias="misc">images/misc.png</file>    <file alias="sdl_render_cpu">images/sdl_render_cpu.png</file>    <file alias="sound">images/sound.png</file>
+  </qresource>
+  <qresource prefix="/misc" >
+    <file alias="dfend_reloaded_profiles">templates.xml</file>
+    <file alias="default_config">dosbox.conf</file>
+  </qresource>
+</RCC>

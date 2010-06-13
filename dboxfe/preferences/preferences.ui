@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UiPreferenceBase</class>
+ <widget class="QDialog" name="UiPreferenceBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>430</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#UiPreferenceBase,
+#mStackedWidgetSettings {
+  background-color: #ededed;
+}
+
+QGroupBox,
+QGroupBox:title {
+  background-color: transparent;
+}
+
+QWidget#mWidgetToolBar {
+  background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #a8a8a8, stop:1 #cbcbcb);
+  border-bottom: 1px solid black;
+}
+
+#mToolButtonGlobal,
+#mToolButtonUpdate {
+  border: 0px solid transparent;
+  background-color: transparent;
+}
+
+QToolButton:checked,
+#mToolButtonGlobal:checked,
+#mToolButtonUpdate:checked {
+  font-weight: bold;
+  color: white;
+}
+
+QToolButton:!checked {
+  font-weight: normal;
+  color: black;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayoutSettings">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="mWidgetToolBar" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>75</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <property name="spacing">
+       <number>18</number>
+      </property>
+      <property name="leftMargin">
+       <number>8</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QToolButton" name="mToolButtonGlobal">
+        <property name="text">
+         <string>Global</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../resource/dboxfe.qrc">
+          <normaloff>:/images/preferences</normaloff>:/images/preferences</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="mToolButtonUpdate">
+        <property name="text">
+         <string>Update</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../resource/dboxfe.qrc">
+          <normaloff>:/images/db_update</normaloff>:/images/db_update</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacerToolBar">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>52</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="mStackedWidgetSettings">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="pageGlobal">
+      <layout class="QVBoxLayout" name="verticalLayoutGlobalSettings">
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="groupBoxGlobalDBoxFE">
+         <property name="title">
+          <string>DBoxFE</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayoutGroupBoxDBoxFE">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayoutGlobalDBoxFE">
+            <item>
+             <widget class="QLabel" name="labelProfileDirectory">
+              <property name="text">
+               <string>Profile directory</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayoutGlobalDBoxFE">
+              <item>
+               <widget class="QLineEdit" name="mLineEditProfileDirectory"/>
+              </item>
+              <item>
+               <widget class="QToolButton" name="mToolButtonProfileDirectory">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="mCheckBoxHideWindow">
+            <property name="text">
+             <string>Hide window if dosbox starts</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBoxGlobalDosbox">
+         <property name="title">
+          <string>DOSBox</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayoutGroupboxDosbox">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayoutDosboxBinary">
+            <item>
+             <widget class="QLabel" name="labelDosboxBinary">
+              <property name="text">
+               <string>Binary</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayoutDosboxBinary">
+              <item>
+               <widget class="QLineEdit" name="mLineEditDosboxBinary"/>
+              </item>
+              <item>
+               <widget class="QToolButton" name="mToolButtonDosboxBinary">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QLabel" name="mLabelDosboxVersion">
+              <property name="text">
+               <string>--</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="mCheckBoxStartKeyMapper">
+            <property name="text">
+             <string>Start key mapper</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacerGlobalSettings">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>12</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pageUpdate">
+      <layout class="QVBoxLayout" name="verticalLayout_11">
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="groupBoxUpdateDosbox">
+         <property name="title">
+          <string>DOSBox</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayoutUpdateDosbox">
+            <item>
+             <widget class="QLabel" name="labelUpdateDosboxDatabase">
+              <property name="text">
+               <string>Look up for database update for</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="mSpinBoxUpdateDosboxDatabase">
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="readOnly">
+               <bool>false</bool>
+              </property>
+              <property name="suffix">
+               <string> day</string>
+              </property>
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>365</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBoxUpdateDFend">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string>DFend (Reloaded)</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayoutUpdateDFendTemplate">
+            <item>
+             <widget class="QLabel" name="labelUpdateDFendTemplate">
+              <property name="text">
+               <string>Look up for template update at</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="mSpinBoxUpdateDFendTemplate">
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="readOnly">
+               <bool>false</bool>
+              </property>
+              <property name="suffix">
+               <string> day</string>
+              </property>
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>365</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacerUpdateSettings">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>167</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutSettingButtons">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <property name="leftMargin">
+      <number>12</number>
+     </property>
+     <property name="rightMargin">
+      <number>12</number>
+     </property>
+     <property name="bottomMargin">
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="mButtonReset">
+       <property name="minimumSize">
+        <size>
+         <width>114</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>&amp;Reset</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mButtonCancel">
+       <property name="minimumSize">
+        <size>
+         <width>114</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>&amp;Cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mButtonOk">
+       <property name="minimumSize">
+        <size>
+         <width>114</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>&amp;Ok</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../resource/dboxfe.qrc"/>
+ </resources>
+ <connections/>
+</ui>
