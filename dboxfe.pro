@@ -35,7 +35,7 @@ QT += network sql xml
 # Config settings
 CONFIG(debug, debug|release) {
 
-  TARGET = dboxfed
+  TARGET = DBoxFEd
   RCC_DIR = build/dboxfed/rcc
   MOC_DIR += build/dboxfed/moc
   OBJECTS_DIR += build/dboxfed/obj
@@ -45,7 +45,7 @@ CONFIG(debug, debug|release) {
 
 } else {
 
-  TARGET = dboxfe
+  TARGET = DBoxFE
   RCC_DIR = build/dboxfe/rcc
   MOC_DIR += build/dboxfe/moc
   OBJECTS_DIR += build/dboxfe/obj

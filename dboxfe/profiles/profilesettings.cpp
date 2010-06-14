@@ -31,6 +31,14 @@ ProfileSettings::ProfileSettings( QWidget *parent )
   : QWidget(parent) {
 
   setupUi(this);
+
+  connect(mToolBtnAutoexec, SIGNAL(clicked()), this, SLOT(slotSwitchSettings()));
+  connect(mToolBtnDos, SIGNAL(clicked()), this, SLOT(slotSwitchSettings()));
+  connect(mToolBtnGraphic, SIGNAL(clicked()), this, SLOT(slotSwitchSettings()));
+  connect(mToolBtnInternet, SIGNAL(clicked()), this, SLOT(slotSwitchSettings()));
+  connect(mToolBtnSound, SIGNAL(clicked()), this, SLOT(slotSwitchSettings()));
+
+  mStackedWidgetProfileSettings->setCurrentIndex(0);
 }
 
 void ProfileSettings::setProfile( const QString &profileName, const QString &profileFile ) {
@@ -58,6 +66,28 @@ void ProfileSettings::slotSave() {
 void ProfileSettings::slotAbort() {
 }
 
+void ProfileSettings::slotSwitchSettings() {
+
+  QToolButton *button = qobject_cast<QToolButton *>(sender());
+  if( button ) {
+    if( button == mToolBtnGraphic ) {
+      mStackedWidgetProfileSettings->setCurrentIndex(0);
+    }
+    else if( button == mToolBtnSound ) {
+      mStackedWidgetProfileSettings->setCurrentIndex(1);
+    }
+    else if( button == mToolBtnInternet ) {
+      mStackedWidgetProfileSettings->setCurrentIndex(2);
+    }
+    else if( button == mToolBtnDos ) {
+      mStackedWidgetProfileSettings->setCurrentIndex(3);
+    }
+    else if( button == mToolBtnAutoexec ) {
+      mStackedWidgetProfileSettings->setCurrentIndex(4);
+    }
+  }
+}
+
 void ProfileSettings::initializeSettings() {
 
   DOSBoxConfiguration *dosboxConfig = 0;
@@ -72,9 +102,34 @@ void ProfileSettings::initializeSettings() {
 
   if( !dosboxConfig ) {
     // Now we set the configuration
+    initializeGraphic(dosboxConfig);
+    initializeSound(dosboxConfig);
+    initializeInternet(dosboxConfig);
+    initializeDos(dosboxConfig);
+    initializeAutoexec(dosboxConfig);
   }
 
   if( dosboxConfig )
     delete dosboxConfig;
   dosboxConfig = 0;
+}
+
+void ProfileSettings::initializeGraphic( const DOSBoxConfiguration *config ) {
+
+  // SDL
+//  config->sdl;
+//  config->render;
+//  config->cpu;
+}
+
+void ProfileSettings::initializeSound( const DOSBoxConfiguration *config ) {
+}
+
+void ProfileSettings::initializeInternet( const DOSBoxConfiguration *config ) {
+}
+
+void ProfileSettings::initializeDos( const DOSBoxConfiguration *config ) {
+}
+
+void ProfileSettings::initializeAutoexec( const DOSBoxConfiguration *config ) {
 }

@@ -26,6 +26,7 @@
 #define PROFILESETTINGS_H
 
 #include "ui_profilesettings.h"
+#include "global.h"
 
 #include <QWidget>
 
@@ -47,12 +48,18 @@ namespace asaal {
       void slotReset();
       void slotSave();
       void slotAbort();
+      void slotSwitchSettings();
 
     private:
       QString mProfileName;
       QString mProfileFile;
 
       void initializeSettings();
+      void initializeGraphic( const DOSBoxConfiguration *config );
+      void initializeSound( const DOSBoxConfiguration *config );
+      void initializeInternet( const DOSBoxConfiguration *config );
+      void initializeDos( const DOSBoxConfiguration *config );
+      void initializeAutoexec( const DOSBoxConfiguration *config );
   };
 }
 

@@ -19,8 +19,13 @@
   background-color: #ededed;
 }
 
-QGroupBox,
 QGroupBox:title {
+  background-color: transparent;
+  padding-top: 1px;
+  padding-left: 6px;
+}
+
+QGroupBox {
   background-color: transparent;
 }
 
@@ -29,20 +34,20 @@ QWidget#mWidgetToolBar {
   border-bottom: 1px solid black;
 }
 
-#m_toolBtnAutoexec,
-#m_toolBtnDos,
-#m_toolBtnGraphic,
-#m_toolBtnInternet,
-#m_toolBtnSound {
+#mToolBtnAutoexec,
+#mToolBtnDos,
+#mToolBtnGraphic,
+#mToolBtnInternet,
+#mToolBtnSound {
   border: 0px solid transparent;
   background-color: transparent;
 }
 
-#m_toolBtnAutoexec:checked,
-#m_toolBtnDos:checked,
-#m_toolBtnGraphic:checked,
-#m_toolBtnInternet:checked,
-#m_toolBtnSound:checked {
+#mToolBtnAutoexec:checked,
+#mToolBtnDos:checked,
+#mToolBtnGraphic:checked,
+#mToolBtnInternet:checked,
+#mToolBtnSound:checked {
   color: white;
   font-weight: bold;
 }
@@ -91,7 +96,7 @@ QToolButton:!checked {
        <number>0</number>
       </property>
       <item>
-       <widget class="QToolButton" name="m_toolBtnGraphic">
+       <widget class="QToolButton" name="mToolBtnGraphic">
         <property name="font">
          <font>
           <stylestrategy>PreferAntialias</stylestrategy>
@@ -128,7 +133,7 @@ QToolButton:!checked {
        </widget>
       </item>
       <item>
-       <widget class="QToolButton" name="m_toolBtnSound">
+       <widget class="QToolButton" name="mToolBtnSound">
         <property name="font">
          <font>
           <stylestrategy>PreferAntialias</stylestrategy>
@@ -162,7 +167,7 @@ QToolButton:!checked {
        </widget>
       </item>
       <item>
-       <widget class="QToolButton" name="m_toolBtnInternet">
+       <widget class="QToolButton" name="mToolBtnInternet">
         <property name="font">
          <font>
           <stylestrategy>PreferAntialias</stylestrategy>
@@ -196,7 +201,7 @@ QToolButton:!checked {
        </widget>
       </item>
       <item>
-       <widget class="QToolButton" name="m_toolBtnDos">
+       <widget class="QToolButton" name="mToolBtnDos">
         <property name="font">
          <font>
           <stylestrategy>PreferAntialias</stylestrategy>
@@ -230,7 +235,7 @@ QToolButton:!checked {
        </widget>
       </item>
       <item>
-       <widget class="QToolButton" name="m_toolBtnAutoexec">
+       <widget class="QToolButton" name="mToolBtnAutoexec">
         <property name="enabled">
          <bool>true</bool>
         </property>
@@ -4162,7 +4167,7 @@ ch (CH Flightstick).</string>
   <tabstop>mCheckBoxAspect</tabstop>
   <tabstop>mSpinBoxFrameSkip</tabstop>
   <tabstop>mComboBoxScaler</tabstop>
-  <tabstop>m_toolBtnSound</tabstop>
+  <tabstop>mToolBtnSound</tabstop>
   <tabstop>mCheckBoxMixerNoSound</tabstop>
   <tabstop>mComboBoxMixerRate</tabstop>
   <tabstop>mComboBoxMixerBlockSize</tabstop>
@@ -4192,14 +4197,14 @@ ch (CH Flightstick).</string>
   <tabstop>comboBox_26</tabstop>
   <tabstop>comboBox_27</tabstop>
   <tabstop>checkBox_11</tabstop>
-  <tabstop>m_toolBtnInternet</tabstop>
+  <tabstop>mToolBtnInternet</tabstop>
   <tabstop>comboBox_28</tabstop>
   <tabstop>comboBox_29</tabstop>
   <tabstop>treeWidget</tabstop>
   <tabstop>toolButton_4</tabstop>
   <tabstop>toolButton_5</tabstop>
   <tabstop>checkBox_12</tabstop>
-  <tabstop>m_toolBtnDos</tabstop>
+  <tabstop>mToolBtnDos</tabstop>
   <tabstop>lineEdit_4</tabstop>
   <tabstop>toolButton_6</tabstop>
   <tabstop>comboBox_32</tabstop>
@@ -4215,9 +4220,9 @@ ch (CH Flightstick).</string>
   <tabstop>checkBox_18</tabstop>
   <tabstop>checkBox_19</tabstop>
   <tabstop>comboBox_31</tabstop>
-  <tabstop>m_toolBtnAutoexec</tabstop>
+  <tabstop>mToolBtnAutoexec</tabstop>
   <tabstop>m_btnDefault</tabstop>
-  <tabstop>m_toolBtnGraphic</tabstop>
+  <tabstop>mToolBtnGraphic</tabstop>
   <tabstop>mCheckBoxFullScreen</tabstop>
  </tabstops>
  <resources>

@@ -23,6 +23,7 @@
  */
 
 #include "dboxfe.h"
+#include "profilesettings.h"
 
 #include <QEvent>
 
@@ -56,15 +57,18 @@ void DBoxFE::slotShowProfiles() {
 
 void DBoxFE::slotPreferences() {
 
-  if( !mPreference )
-    mPreference = new Preferences(this);
+//  if( !mPreference )
+//    mPreference = new Preferences(this);
+//
+//#if defined(Q_WS_MAC) || defined(Q_WS_MACX) || defined(Q_WS_MAC64)
+//  mPreference->setWindowFlags(Qt::Sheet);
+//  mPreference->open();
+//#else
+//  mPreference->exec();
+//#endif
 
-#if defined(Q_WS_MAC) || defined(Q_WS_MACX) || defined(Q_WS_MAC64)
-  mPreference->setWindowFlags(Qt::Sheet);
-  mPreference->open();
-#else
-  mPreference->exec();
-#endif
+  ProfileSettings *settings = new ProfileSettings();
+  settings->setVisible(true);
 }
 
 void DBoxFE::slotDOSBoxGames() {
