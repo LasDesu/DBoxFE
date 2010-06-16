@@ -54,10 +54,10 @@ CONFIG(debug, debug|release) {
   DEFINES -= DEBUG
 
   mac {
-    QMAKE_POST_LINK = strip -s build/bin/dboxfe.app/Contents/MacOS/dboxfe
+    QMAKE_POST_LINK = strip -s build/bin/dboxfe.app/Contents/MacOS/DBoxFE
   }
   unix:!mac {
-    QMAKE_POST_LINK = strip -s build/bin/dboxfe
+    QMAKE_POST_LINK = strip -s build/bin/DBoxFE
   }
 }
 

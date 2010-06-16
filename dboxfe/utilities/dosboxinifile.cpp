@@ -147,8 +147,16 @@ void DOSBoxIniFile::write( const DOSBoxConfiguration *config ) {
   settings.beginGroup("cpu");
   {
     settings.setValue("core", config->cpu->mCore);
-    settings.setValue("cputype", config->cpu->mCpuType);
-    settings.setValue("cycles", config->cpu->mCycles);
+    settings.setValue("cputype", config->cpu->mType);
+
+    QString cycleType = config->cpu->mCycles;
+    QString cycles = "";
+    if( cycleType.contains("fixed") )
+      cycles = QString::number(config->cpu->mCycle);
+    cycleType = cycleType.append( " " + cycles);
+    cycleType = cycleType.trimmed();
+    settings.setValue("cycles", cycleType);
+
     settings.setValue("cycleup", config->cpu->mCycleUp);
     settings.setValue("cycledown", config->cpu->mCycleDown);
   }
@@ -345,8 +353,9 @@ CpuSection *DOSBoxIniFile::cpuSection( QSettings &settings, bool defaultSettings
   if( defaultSettings ) {
 
     cpu->mCore = "auto";
-    cpu->mCpuType = "auto";
+    cpu->mType = "auto";
     cpu->mCycles = "auto";
+    cpu->mCycle = 0;
     cpu->mCycleUp = 500;
     cpu->mCycleDown = 20;
 
@@ -355,8 +364,22 @@ CpuSection *DOSBoxIniFile::cpuSection( QSettings &settings, bool defaultSettings
 
     settings.beginGroup("cpu");
     cpu->mCore = settings.value("core", QVariant("auto")).toString();
-    cpu->mCpuType = settings.value("cputype", QVariant("auto")).toString();
-    cpu->mCycles = settings.value("cycles", QVariant("auto")).toString();
+    cpu->mType = settings.value("cputype", QVariant("auto")).toString();
+    
+    QString cycleType = settings.value("cycles", QVariant("auto")).toString();
+    QStringList cycleTypes = cycleType.split(" ");
+    if( cycleTypes.count() == 2 ) {
+
+      cpu->mCycles = cycleTypes.at(0);
+      cpu->mCycle = cycleTypes.at(1).toInt();
+    }
+    else {
+      cpu->mCycles = settings.value("cycles", QVariant("auto")).toString();
+      cpu->mCycle = 0;
+    }
+    cycleType.clear();
+    cycleTypes.clear();
+
     cpu->mCycleUp = settings.value("cycleup", QVariant(500)).toInt();
     cpu->mCycleDown = settings.value("cycledown", QVariant(20)).toInt();
     settings.endGroup();

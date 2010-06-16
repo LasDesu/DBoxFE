@@ -116,10 +116,56 @@ void ProfileSettings::initializeSettings() {
 
 void ProfileSettings::initializeGraphic( const DOSBoxConfiguration *config ) {
 
-  // SDL
-//  config->sdl;
-//  config->render;
-//  config->cpu;
+  int comboIndex = 0;
+  SdlSection *sdlSection = config->sdl;
+  {
+    mCheckBoxAutolock->setChecked(sdlSection->mAutolock);
+    mHorizontalSliderSensitivity->setValue(sdlSection->mSensitivity);
+    mCheckBoxWaitOnError->setChecked(sdlSection->mWaitOnError);
+    mCheckBoxFullScreen->setChecked(sdlSection->mFullScreen);
+    mCheckBoxFullDouble->setChecked(sdlSection->mFullDouble);
+    mLineEditMapperFile->setText(sdlSection->mMapperFile);
+    mCheckBoxUseScanCodes->setChecked(sdlSection->mUseScanCodes);
+
+    comboIndex = mComboBoxWindowSize->findText(sdlSection->mFullResolution);
+    mComboBoxWindowSize->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxWindowWidthHeight->findText(sdlSection->mWindowResolution);
+    mComboBoxWindowWidthHeight->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxOutput->findText(sdlSection->mOutput);
+    mComboBoxOutput->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxPriority->findText(sdlSection->mPriority);
+    mComboBoxPriority->setCurrentIndex(comboIndex);
+  }
+
+  RenderSection *render = config->render;
+  {
+    mCheckBoxAspect->setChecked(render->mAspect);
+    mSpinBoxFrameSkip->setValue(render->mFrameSkip);
+
+    comboIndex = mComboBoxScaler->findText(render->mScaler);
+    mComboBoxScaler->setCurrentIndex(comboIndex);
+  }
+
+  // CPU
+  CpuSection *cpu = config->cpu;
+  {
+    comboIndex = mComboBoxCore->findText(cpu->mCore);
+    mComboBoxCore->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxCycles->findText(cpu->mCycles);
+    mComboBoxCycles->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxType->findText(cpu->mType);
+    mComboBoxType->setCurrentIndex(comboIndex);
+
+    mSpinBoxCycles->setValue(cpu->mCycle);
+    mSpinBoxCycleDown->setValue(cpu->mCycleDown);
+    mSpinBoxCycleUp->setValue(cpu->mCycleUp);
+  }
+
 }
 
 void ProfileSettings::initializeSound( const DOSBoxConfiguration *config ) {

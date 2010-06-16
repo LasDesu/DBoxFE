@@ -108,8 +108,9 @@ namespace asaal {
   struct CpuSection {
 
     QString mCore;
-    QString mCpuType;
+    QString mType;
     QString mCycles;
+    int mCycle;
     int mCycleUp;
     int mCycleDown;
   };

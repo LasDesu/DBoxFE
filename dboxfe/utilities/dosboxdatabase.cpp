@@ -160,6 +160,9 @@ bool DOSBoxDatabase::closeConnection() {
 void DOSBoxDatabase::insertGame( const DOSBoxGame *dosboxGame ) {
 
   if( dosboxGame ) {
+    if( m_connectionIsOpen ) {
+
+    }
   }
 }
 

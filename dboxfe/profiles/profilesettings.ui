@@ -1035,12 +1035,12 @@ QToolButton:!checked {
                <string>Cycle up</string>
               </property>
               <property name="buddy">
-               <cstring>mSpinBoxCyleUp</cstring>
+               <cstring>mSpinBoxCycleUp</cstring>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QSpinBox" name="mSpinBoxCyleUp">
+             <widget class="QSpinBox" name="mSpinBoxCycleUp">
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
               </property>
@@ -4162,7 +4162,7 @@ ch (CH Flightstick).</string>
   <tabstop>mComboBoxType</tabstop>
   <tabstop>mComboBoxCycles</tabstop>
   <tabstop>mSpinBoxCycles</tabstop>
-  <tabstop>mSpinBoxCyleUp</tabstop>
+  <tabstop>mSpinBoxCycleUp</tabstop>
   <tabstop>mSpinBoxCycleDown</tabstop>
   <tabstop>mCheckBoxAspect</tabstop>
   <tabstop>mSpinBoxFrameSkip</tabstop>
