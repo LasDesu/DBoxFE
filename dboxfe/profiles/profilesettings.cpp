@@ -100,8 +100,8 @@ void ProfileSettings::initializeSettings() {
     dosboxConfig = DOSBoxIniFile::read(mProfileFile);
   }
 
-  if( !dosboxConfig ) {
-    // Now we set the configuration
+  if( dosboxConfig ) {
+
     initializeGraphic(dosboxConfig);
     initializeSound(dosboxConfig);
     initializeInternet(dosboxConfig);
@@ -169,13 +169,21 @@ void ProfileSettings::initializeGraphic( const DOSBoxConfiguration *config ) {
 }
 
 void ProfileSettings::initializeSound( const DOSBoxConfiguration *config ) {
+
+  Q_UNUSED(config)
 }
 
 void ProfileSettings::initializeInternet( const DOSBoxConfiguration *config ) {
+
+  Q_UNUSED(config)
 }
 
 void ProfileSettings::initializeDos( const DOSBoxConfiguration *config ) {
+
+  Q_UNUSED(config)
 }
 
 void ProfileSettings::initializeAutoexec( const DOSBoxConfiguration *config ) {
+
+  Q_UNUSED(config)
 }

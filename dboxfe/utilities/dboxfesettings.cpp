@@ -139,5 +139,6 @@ void writeProfiles( const DBoxFEConfiguration *configuration ) {
 
 QList<DBoxFEProfile*> readProfiles( const QString &profilePath ) {
 
+  Q_UNUSED(profilePath)
   return QList<DBoxFEProfile*>();
 }
