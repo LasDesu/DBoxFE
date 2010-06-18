@@ -53,13 +53,23 @@ namespace asaal {
     private:
       QString mProfileName;
       QString mProfileFile;
+      DOSBoxConfiguration *mDosBoxConfig;
 
       void initializeSettings();
+
       void initializeGraphic( const DOSBoxConfiguration *config );
       void initializeSound( const DOSBoxConfiguration *config );
       void initializeInternet( const DOSBoxConfiguration *config );
       void initializeDos( const DOSBoxConfiguration *config );
       void initializeAutoexec( const DOSBoxConfiguration *config );
+
+      void setGraphic( DOSBoxConfiguration *config );
+      void setSound( DOSBoxConfiguration *config );
+      void setInternet( DOSBoxConfiguration *config );
+      void setDos( DOSBoxConfiguration *config );
+      void setAutoexec( DOSBoxConfiguration *config );
+    
+    
       void releaseConfiguration( DOSBoxConfiguration *config );
   };
 }

@@ -193,7 +193,7 @@ namespace asaal {
   };
 
   struct DOSBoxConfiguration {
-
+      
     SdlSection *sdl;
     DosboxSection *dosbox;
     RenderSection *render;

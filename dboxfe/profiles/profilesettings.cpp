@@ -28,7 +28,8 @@
 using namespace asaal;
 
 ProfileSettings::ProfileSettings( QWidget *parent )
-  : QWidget(parent) {
+  : QWidget(parent), 
+    mDosBoxConfig(0) {
 
   setupUi(this);
 
@@ -49,6 +50,7 @@ void ProfileSettings::setProfile( const QString &profileName, const QString &pro
   mProfileFile.clear();
   mProfileFile = profileFile;
 
+  releaseConfiguration(mDosBoxConfig);
   initializeSettings();
 
   QString mWindowTitle = windowTitle();
@@ -58,12 +60,31 @@ void ProfileSettings::setProfile( const QString &profileName, const QString &pro
 }
 
 void ProfileSettings::slotReset() {
+
 }
 
 void ProfileSettings::slotSave() {
+
+  if( mProfileFile.isEmpty() || mProfileFile.isNull() )
+    return;
+
+  DOSBoxConfiguration *dosboxConfig = new DOSBoxConfiguration;
+
+  setGraphic(dosboxConfig);
+  setSound(dosboxConfig);
+  setInternet(dosboxConfig);
+  setDos(dosboxConfig);
+  setAutoexec(dosboxConfig);
+
+  DOSBoxIniFile::write(mProfileFile, dosboxConfig);
+
+  releaseConfiguration(dosboxConfig);
 }
 
 void ProfileSettings::slotAbort() {
+
+  releaseConfiguration(mDosBoxConfig);
+  close();
 }
 
 void ProfileSettings::slotSwitchSettings() {
@@ -87,29 +108,28 @@ void ProfileSettings::slotSwitchSettings() {
     }
   }
 }
-
+/*******************************************************************************************
+ * Read configuration
+ *******************************************************************************************/
 void ProfileSettings::initializeSettings() {
 
-  DOSBoxConfiguration *dosboxConfig = 0;
   if( mProfileFile.isEmpty() ) {
 
-    dosboxConfig = DOSBoxIniFile::defaultConfiguration();
+    mDosBoxConfig = DOSBoxIniFile::defaultConfiguration();
   }
   else {
 
-    dosboxConfig = DOSBoxIniFile::read(mProfileFile);
+    mDosBoxConfig = DOSBoxIniFile::read(mProfileFile);
   }
 
-  if( dosboxConfig ) {
+  if( mDosBoxConfig ) {
 
-    initializeGraphic(dosboxConfig);
-    initializeSound(dosboxConfig);
-    initializeInternet(dosboxConfig);
-    initializeDos(dosboxConfig);
-    initializeAutoexec(dosboxConfig);
+    initializeGraphic(mDosBoxConfig);
+    initializeSound(mDosBoxConfig);
+    initializeInternet(mDosBoxConfig);
+    initializeDos(mDosBoxConfig);
+    initializeAutoexec(mDosBoxConfig);
   }
-
-  releaseConfiguration(dosboxConfig);
 }
 
 void ProfileSettings::initializeGraphic( const DOSBoxConfiguration *config ) {
@@ -147,7 +167,6 @@ void ProfileSettings::initializeGraphic( const DOSBoxConfiguration *config ) {
     mComboBoxScaler->setCurrentIndex(comboIndex);
   }
 
-  // CPU
   CpuSection *cpu = config->cpu;
   {
     comboIndex = mComboBoxCore->findText(cpu->mCore);
@@ -163,7 +182,6 @@ void ProfileSettings::initializeGraphic( const DOSBoxConfiguration *config ) {
     mSpinBoxCycleDown->setValue(cpu->mCycleDown);
     mSpinBoxCycleUp->setValue(cpu->mCycleUp);
   }
-
 }
 
 void ProfileSettings::initializeSound( const DOSBoxConfiguration *config ) {
@@ -195,31 +213,71 @@ void ProfileSettings::initializeSound( const DOSBoxConfiguration *config ) {
 
   SBlasterSection *soundBlaster = config->soundBlaster;
   {
+    comboIndex = mComboBoxSBType->findText(soundBlaster->mSBType);
+    mComboBoxSBType->setCurrentIndex(comboIndex);
 
-    /*
-     QString sbType = soundBlaster->mSBType;
-     int sbBase = soundBlaster->mSBBase;
-     int irq = soundBlaster->mIrq;
-     int dma = soundBlaster->mDma;
-     int hdma = soundBlaster->mHdma;
-     bool sbMixer = soundBlaster->mSBMixer;
-     QString soundBlaster->mOplMode;
-     QString soundBlaster->mOplEmu;
-     int oplRate = soundBlaster->mOplRate;
-     */
+    comboIndex = mComboBoxSBBase->findText(QString("%1").arg(soundBlaster->mSBBase));
+    mComboBoxSBBase->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxSBIrq->findText(QString("%1").arg(soundBlaster->mIrq));
+    mComboBoxSBIrq->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxSBDMA->findText(QString("%1").arg(soundBlaster->mDma));
+    mComboBoxSBDMA->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxSBHDMA->findText(QString("%1").arg(soundBlaster->mHdma));
+    mComboBoxSBHDMA->setCurrentIndex(comboIndex);
+
+    mCheckBoxSBMixer->setChecked(soundBlaster->mSBMixer);
+
+    comboIndex = mComboBoxSBOplMode->findText(soundBlaster->mOplMode);
+    mComboBoxSBOplMode->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxSBOplEmu->findText(soundBlaster->mOplEmu);
+    mComboBoxSBOplEmu->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxSBOplRate->findText(QString("%1").arg(soundBlaster->mOplRate));
+    mComboBoxSBOplRate->setCurrentIndex(comboIndex);
   }
 
   GusSection *gus = config->gus;
   {
+    mCheckBoxGus->setChecked(gus->mGus);
+     
+    comboIndex = mComboBoxGusRate->findText(QString("%1").arg(gus->mGusRate));
+    mComboBoxGusRate->setCurrentIndex(comboIndex);
+     
+    comboIndex = mComboBoxGusBase->findText(QString("%1").arg(gus->mGusBase));
+    mComboBoxGusBase->setCurrentIndex(comboIndex);
+     
+    comboIndex = mComboBoxGusIRQ->findText(QString("%1").arg(gus->mGusIrq));
+    mComboBoxGusIRQ->setCurrentIndex(comboIndex);
+     
+    comboIndex = mComboBoxGusDMA->findText(QString("%1").arg(gus->mGusDma));
+    mComboBoxGusDMA->setCurrentIndex(comboIndex);
+
+    mLineEditGusUltraDir->setText(gus->mUltraDir);
   }
 
   SpeakerSection *speaker = config->speaker;
   {
+    mCheckBoxSpeaker->setChecked(speaker->mPcSpeaker);
+
+    comboIndex = mComboBoxSpeakerPCRate->findText(QString("%1").arg(speaker->mPcRate));
+    mComboBoxSpeakerPCRate->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxSpeakerTandy->findText(speaker->mTandy);
+    mComboBoxSpeakerTandy->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxSpeakerTandyRate->findText(QString("%1").arg(speaker->mTandyRate));
+    mComboBoxSpeakerTandyRate->setCurrentIndex(comboIndex);
+
+    mCheckBoxSpeakerDisney->setChecked(speaker->mDisney);
   }
 }
 
 void ProfileSettings::initializeInternet( const DOSBoxConfiguration *config ) {
-
+  
   Q_UNUSED(config)
 }
 
@@ -233,8 +291,52 @@ void ProfileSettings::initializeAutoexec( const DOSBoxConfiguration *config ) {
   Q_UNUSED(config)
 }
 
+/*******************************************************************************************
+ * Set configuration
+ *******************************************************************************************/
+void ProfileSettings::setGraphic( DOSBoxConfiguration *config ) {
+
+  config->sdl = new SdlSection;
+  config->render = new RenderSection;
+  config->cpu = new CpuSection;
+  
+}
+
+void ProfileSettings::setSound( DOSBoxConfiguration *config ) {
+  
+  config->mixer = new MixerSection;
+  config->mdi = new MdiSection;
+  config->soundBlaster = new SBlasterSection;
+  config->gus = new GusSection;
+  config->speaker = new SpeakerSection;
+}
+
+void ProfileSettings::setInternet( DOSBoxConfiguration *config ) {
+
+  config->serial = new SerialSection;
+  config->ipx = new IpxSection;
+}
+
+void ProfileSettings::setDos( DOSBoxConfiguration *config ) {
+  
+  config->dosbox = new DosboxSection;
+  config->joystick = new JoystickSection;
+  config->dos = new DosSection;
+}
+
+void ProfileSettings::setAutoexec( DOSBoxConfiguration *config ) {
+
+  config->autoexec.clear();
+}
+
+/*******************************************************************************************
+ * Release / Delete configuration object
+ *******************************************************************************************/
 void ProfileSettings::releaseConfiguration( DOSBoxConfiguration *config ) {
 
+  if( !config )
+    return;
+    
   if( config->sdl )
     delete config->sdl;
   

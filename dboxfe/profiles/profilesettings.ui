@@ -1815,6 +1815,824 @@ with Timidity should work fine.</string>
          </layout>
         </widget>
        </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QGroupBox" name="groupBoxSoundBlaster">
+         <property name="minimumSize">
+          <size>
+           <width>383</width>
+           <height>217</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Soundblaster</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayoutSoundBlaster">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayoutSBMixer">
+            <item>
+             <widget class="QLabel" name="mLabelSBMixer">
+              <property name="text">
+               <string>SB mixer</string>
+              </property>
+              <property name="buddy">
+               <cstring>mCheckBoxSBMixer</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="mCheckBoxSBMixer">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>26</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string>Allow the soundblaster mixer
+to modify the DOSBox mixer.</string>
+              </property>
+              <property name="statusTip">
+               <string>Allow the soundblaster mixer to modify the DOSBox mixer.</string>
+              </property>
+              <property name="whatsThis">
+               <string>Allow the soundblaster mixer to modify the DOSBox mixer.</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QVBoxLayout" name="verticalLayoutSBType">
+            <item>
+             <widget class="QLabel" name="mLabelSBType">
+              <property name="text">
+               <string>SB type</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxSBType</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxSBType">
+              <property name="toolTip">
+               <string>Type of sblaster to emulate.</string>
+              </property>
+              <property name="statusTip">
+               <string>Type of sblaster to emulate.</string>
+              </property>
+              <property name="whatsThis">
+               <string>Type of sblaster to emulate.</string>
+              </property>
+              <property name="currentIndex">
+               <number>4</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>sb1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>sb2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>sbpro1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>sbpro2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>sb16</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>none</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="2">
+           <layout class="QVBoxLayout" name="verticalLayoutSBBase">
+            <item>
+             <widget class="QLabel" name="mLabelSBBase">
+              <property name="text">
+               <string>SB Base</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxSBBase</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxSBBase">
+              <property name="toolTip">
+               <string>The IO address of the soundblaster.</string>
+              </property>
+              <property name="statusTip">
+               <string>The IO address of the soundblaster.</string>
+              </property>
+              <property name="whatsThis">
+               <string>The IO address of the soundblaster.</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>220</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>240</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>260</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>280</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2a0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2c0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2e0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>300</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QVBoxLayout" name="verticalLayoutSBIrq">
+            <item>
+             <widget class="QLabel" name="mLabelSBIrq">
+              <property name="text">
+               <string>IRQ</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxSBIrq</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxSBIrq">
+              <property name="toolTip">
+               <string>The IRQ number of the soundblaster.</string>
+              </property>
+              <property name="statusTip">
+               <string>The IRQ number of the soundblaster.</string>
+              </property>
+              <property name="whatsThis">
+               <string>The IRQ number of the soundblaster.</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>9</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>11</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>12</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="1">
+           <layout class="QVBoxLayout" name="verticalLayoutSBDMA">
+            <item>
+             <widget class="QLabel" name="mLabelSBDMA">
+              <property name="text">
+               <string>DMA</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxSBDMA</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxSBDMA">
+              <property name="toolTip">
+               <string>The High DMA number of the soundblaster.</string>
+              </property>
+              <property name="statusTip">
+               <string>The DMA number of the soundblaster.</string>
+              </property>
+              <property name="whatsThis">
+               <string>The DMA number of the soundblaster.</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="2">
+           <layout class="QVBoxLayout" name="verticalLayoutSBHDMA">
+            <item>
+             <widget class="QLabel" name="mLabelSBHDMA">
+              <property name="text">
+               <string>HDMA</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxSBHDMA</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxSBHDMA">
+              <property name="toolTip">
+               <string>The High DMA number of the soundblaster.</string>
+              </property>
+              <property name="statusTip">
+               <string>The High DMA number of the soundblaster.</string>
+              </property>
+              <property name="whatsThis">
+               <string>The High DMA number of the soundblaster.</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <layout class="QVBoxLayout" name="verticalLayoutSBOplMode">
+            <item>
+             <widget class="QLabel" name="mLabelSBOplMode">
+              <property name="text">
+               <string>OPL mode</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxSBOplMode</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxSBOplMode">
+              <property name="toolTip">
+               <string>Type of OPL emulation. On 'auto' the mode is determined
+by sblaster type. All OPL modes are Adlib-compatible,
+except for 'cms'.</string>
+              </property>
+              <property name="statusTip">
+               <string>Type of OPL emulation. On 'auto' the mode is determined by sblaster type. All OPL modes are Adlib-compatible,  except for 'cms'.</string>
+              </property>
+              <property name="whatsThis">
+               <string>Type of OPL emulation. On 'auto' the mode is determined
+by sblaster type. All OPL modes are Adlib-compatible,
+except for 'cms'.</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>auto</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>cms</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>opl2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>dualopl2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>opl3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>none</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="1">
+           <layout class="QVBoxLayout" name="verticalLayoutSBOplEmu">
+            <item>
+             <widget class="QLabel" name="mLabelSBOplEmu">
+              <property name="text">
+               <string>OPL emu</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxSBOplEmu</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxSBOplEmu">
+              <property name="toolTip">
+               <string>Provider for the OPL emulation. compat or old
+might provide better quality (see oplrate as well).</string>
+              </property>
+              <property name="statusTip">
+               <string>Provider for the OPL emulation. compat or old might provide better quality (see oplrate as well).</string>
+              </property>
+              <property name="whatsThis">
+               <string>Provider for the OPL emulation. compat or old
+might provide better quality (see oplrate as well).</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>default</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>compat</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>fast</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>old</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="2">
+           <layout class="QVBoxLayout" name="verticalLayoutSBOplRate">
+            <item>
+             <widget class="QLabel" name="mLabelSBOplRate">
+              <property name="text">
+               <string>OPL rate</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxSBOplRate</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxSBOplRate">
+              <property name="toolTip">
+               <string>Sample rate of OPL music emulation. Use 49716
+for highest quality (set the mixer rate accordingly).</string>
+              </property>
+              <property name="currentIndex">
+               <number>4</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>49716</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>48000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>44100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>32000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>22050</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>16000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>11025</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8000</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QGroupBox" name="groupBoxSpeaker">
+         <property name="minimumSize">
+          <size>
+           <width>262</width>
+           <height>216</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Speaker</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayoutSpeaker">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayoutSpeaker">
+            <item>
+             <widget class="QLabel" name="mLabelSpeaker">
+              <property name="text">
+               <string>Speaker</string>
+              </property>
+              <property name="buddy">
+               <cstring>mCheckBoxSpeaker</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="mCheckBoxSpeaker">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>26</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string>Enable PC-Speaker emulation.</string>
+              </property>
+              <property name="statusTip">
+               <string>Enable PC-Speaker emulation.</string>
+              </property>
+              <property name="whatsThis">
+               <string>Enable PC-Speaker emulation.</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QVBoxLayout" name="verticalLayoutSpeakerPCRate">
+            <item>
+             <widget class="QLabel" name="mLabelSpeakerPCRate">
+              <property name="text">
+               <string>PC rate</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxSpeakerPCRate</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxSpeakerPCRate">
+              <property name="toolTip">
+               <string>Sample rate of the PC-Speaker sound generation.</string>
+              </property>
+              <property name="statusTip">
+               <string>Sample rate of the PC-Speaker sound generation.</string>
+              </property>
+              <property name="whatsThis">
+               <string>Sample rate of the PC-Speaker sound generation.</string>
+              </property>
+              <property name="currentIndex">
+               <number>4</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>49716</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>48000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>44100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>32000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>22050</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>16000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>11025</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8000</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QVBoxLayout" name="verticalLayoutSpeakerTandy">
+            <item>
+             <widget class="QLabel" name="mLabelSpeakerTandy">
+              <property name="text">
+               <string>Tandy</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxSpeakerTandy</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxSpeakerTandy">
+              <property name="toolTip">
+               <string>Enable Tandy Sound System emulation. For 'auto',
+emulation is present only if machine is set to 'tandy'.</string>
+              </property>
+              <property name="statusTip">
+               <string>Enable Tandy Sound System emulation. For 'auto', emulation is present only if machine is set to 'tandy'.</string>
+              </property>
+              <property name="whatsThis">
+               <string>Enable Tandy Sound System emulation. For 'auto',
+emulation is present only if machine is set to 'tandy'.</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>auto</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>on</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>off</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="1">
+           <layout class="QVBoxLayout" name="verticalLayoutSpeakerTandyRate">
+            <item>
+             <widget class="QLabel" name="mLabelSpeakerTandyRate">
+              <property name="text">
+               <string>Tandy rate</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxSpeakerTandyRate</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxSpeakerTandyRate">
+              <property name="toolTip">
+               <string>Sample rate of the Tandy 3-Voice generation.</string>
+              </property>
+              <property name="statusTip">
+               <string>Sample rate of the Tandy 3-Voice generation.</string>
+              </property>
+              <property name="whatsThis">
+               <string>Sample rate of the Tandy 3-Voice generation.</string>
+              </property>
+              <property name="currentIndex">
+               <number>4</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>49716</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>48000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>44100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>32000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>22050</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>16000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>11025</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8000</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <layout class="QVBoxLayout" name="verticalLayoutSpeakerDisney">
+            <item>
+             <widget class="QLabel" name="mLabelSpeakerDisney">
+              <property name="text">
+               <string>Disney</string>
+              </property>
+              <property name="buddy">
+               <cstring>mCheckBoxSpeakerDisney</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="mCheckBoxSpeakerDisney">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>26</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string>Enable Disney Sound Source emulation. (Covox
+Voice Master and Speech Thing compatible).</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="3">
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>738</width>
+           <height>13</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
        <item row="0" column="2">
         <widget class="QGroupBox" name="groupBoxMidi">
          <property name="minimumSize">
@@ -1975,824 +2793,6 @@ This is usually the id of the device you want to use.</string>
           </item>
          </layout>
         </widget>
-       </item>
-       <item row="1" column="0" colspan="2">
-        <widget class="QGroupBox" name="groupBoxSoundBlaster">
-         <property name="minimumSize">
-          <size>
-           <width>383</width>
-           <height>217</height>
-          </size>
-         </property>
-         <property name="title">
-          <string>Soundblaster</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_5">
-          <item row="0" column="0">
-           <layout class="QVBoxLayout" name="verticalLayout_31">
-            <item>
-             <widget class="QLabel" name="label_29">
-              <property name="text">
-               <string>SB mixer</string>
-              </property>
-              <property name="buddy">
-               <cstring>checkBox_8</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="checkBox_8">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>26</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string>Allow the soundblaster mixer
-to modify the DOSBox mixer.</string>
-              </property>
-              <property name="statusTip">
-               <string>Allow the soundblaster mixer to modify the DOSBox mixer.</string>
-              </property>
-              <property name="whatsThis">
-               <string>Allow the soundblaster mixer to modify the DOSBox mixer.</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="checked">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="0" column="1">
-           <layout class="QVBoxLayout" name="verticalLayout_26">
-            <item>
-             <widget class="QLabel" name="label_24">
-              <property name="text">
-               <string>SB type</string>
-              </property>
-              <property name="buddy">
-               <cstring>comboBox_13</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboBox_13">
-              <property name="toolTip">
-               <string>Type of sblaster to emulate.</string>
-              </property>
-              <property name="statusTip">
-               <string>Type of sblaster to emulate.</string>
-              </property>
-              <property name="whatsThis">
-               <string>Type of sblaster to emulate.</string>
-              </property>
-              <property name="currentIndex">
-               <number>4</number>
-              </property>
-              <item>
-               <property name="text">
-                <string>sb1</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>sb2</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>sbpro1</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>sbpro2</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>sb16</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>none</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="0" column="2">
-           <layout class="QVBoxLayout" name="verticalLayout_27">
-            <item>
-             <widget class="QLabel" name="label_25">
-              <property name="text">
-               <string>SB Base</string>
-              </property>
-              <property name="buddy">
-               <cstring>comboBox_14</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboBox_14">
-              <property name="toolTip">
-               <string>The IO address of the soundblaster.</string>
-              </property>
-              <property name="statusTip">
-               <string>The IO address of the soundblaster.</string>
-              </property>
-              <property name="whatsThis">
-               <string>The IO address of the soundblaster.</string>
-              </property>
-              <item>
-               <property name="text">
-                <string>220</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>240</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>260</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>280</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>2a0</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>2c0</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>2e0</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>300</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="1" column="0">
-           <layout class="QVBoxLayout" name="verticalLayout_24">
-            <item>
-             <widget class="QLabel" name="label_26">
-              <property name="text">
-               <string>IRQ</string>
-              </property>
-              <property name="buddy">
-               <cstring>comboBox_15</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboBox_15">
-              <property name="toolTip">
-               <string>The IRQ number of the soundblaster.</string>
-              </property>
-              <property name="statusTip">
-               <string>The IRQ number of the soundblaster.</string>
-              </property>
-              <property name="whatsThis">
-               <string>The IRQ number of the soundblaster.</string>
-              </property>
-              <item>
-               <property name="text">
-                <string>7</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>5</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>3</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>9</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>10</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>11</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>12</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="1" column="1">
-           <layout class="QVBoxLayout" name="verticalLayout_23">
-            <item>
-             <widget class="QLabel" name="label_27">
-              <property name="text">
-               <string>DMA</string>
-              </property>
-              <property name="buddy">
-               <cstring>comboBox_16</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboBox_16">
-              <property name="toolTip">
-               <string>The High DMA number of the soundblaster.</string>
-              </property>
-              <property name="statusTip">
-               <string>The DMA number of the soundblaster.</string>
-              </property>
-              <property name="whatsThis">
-               <string>The DMA number of the soundblaster.</string>
-              </property>
-              <item>
-               <property name="text">
-                <string>1</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>5</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>0</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>3</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>6</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>7</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="1" column="2">
-           <layout class="QVBoxLayout" name="verticalLayout_25">
-            <item>
-             <widget class="QLabel" name="label_28">
-              <property name="text">
-               <string>HDMA</string>
-              </property>
-              <property name="buddy">
-               <cstring>comboBox_17</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboBox_17">
-              <property name="toolTip">
-               <string>The High DMA number of the soundblaster.</string>
-              </property>
-              <property name="statusTip">
-               <string>The High DMA number of the soundblaster.</string>
-              </property>
-              <property name="whatsThis">
-               <string>The High DMA number of the soundblaster.</string>
-              </property>
-              <item>
-               <property name="text">
-                <string>1</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>5</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>0</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>3</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>6</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>7</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="2" column="0">
-           <layout class="QVBoxLayout" name="verticalLayout_30">
-            <item>
-             <widget class="QLabel" name="label_30">
-              <property name="text">
-               <string>OPL mode</string>
-              </property>
-              <property name="buddy">
-               <cstring>comboBox_18</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboBox_18">
-              <property name="toolTip">
-               <string>Type of OPL emulation. On 'auto' the mode is determined
-by sblaster type. All OPL modes are Adlib-compatible,
-except for 'cms'.</string>
-              </property>
-              <property name="statusTip">
-               <string>Type of OPL emulation. On 'auto' the mode is determined by sblaster type. All OPL modes are Adlib-compatible,  except for 'cms'.</string>
-              </property>
-              <property name="whatsThis">
-               <string>Type of OPL emulation. On 'auto' the mode is determined
-by sblaster type. All OPL modes are Adlib-compatible,
-except for 'cms'.</string>
-              </property>
-              <item>
-               <property name="text">
-                <string>auto</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>cms</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>opl2</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>dualopl2</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>opl3</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>none</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="2" column="1">
-           <layout class="QVBoxLayout" name="verticalLayout_29">
-            <item>
-             <widget class="QLabel" name="label_31">
-              <property name="text">
-               <string>OPL emu</string>
-              </property>
-              <property name="buddy">
-               <cstring>comboBox_19</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboBox_19">
-              <property name="toolTip">
-               <string>Provider for the OPL emulation. compat or old
-might provide better quality (see oplrate as well).</string>
-              </property>
-              <property name="statusTip">
-               <string>Provider for the OPL emulation. compat or old might provide better quality (see oplrate as well).</string>
-              </property>
-              <property name="whatsThis">
-               <string>Provider for the OPL emulation. compat or old
-might provide better quality (see oplrate as well).</string>
-              </property>
-              <item>
-               <property name="text">
-                <string>default</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>compat</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>fast</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>old</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="2" column="2">
-           <layout class="QVBoxLayout" name="verticalLayout_28">
-            <item>
-             <widget class="QLabel" name="label_32">
-              <property name="text">
-               <string>OPL rate</string>
-              </property>
-              <property name="buddy">
-               <cstring>comboBox_20</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboBox_20">
-              <property name="toolTip">
-               <string>Sample rate of OPL music emulation. Use 49716
-for highest quality (set the mixer rate accordingly).</string>
-              </property>
-              <property name="currentIndex">
-               <number>4</number>
-              </property>
-              <item>
-               <property name="text">
-                <string>49716</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>48000</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>44100</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>32000</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>22050</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>16000</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>11025</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>8000</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item row="1" column="2">
-        <widget class="QGroupBox" name="groupBoxSpeaker">
-         <property name="minimumSize">
-          <size>
-           <width>262</width>
-           <height>216</height>
-          </size>
-         </property>
-         <property name="title">
-          <string>Speaker</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_7">
-          <item row="0" column="0">
-           <layout class="QVBoxLayout" name="verticalLayout_41">
-            <item>
-             <widget class="QLabel" name="label_42">
-              <property name="text">
-               <string>Speaker</string>
-              </property>
-              <property name="buddy">
-               <cstring>checkBox_10</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="checkBox_10">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>26</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string>Enable PC-Speaker emulation.</string>
-              </property>
-              <property name="statusTip">
-               <string>Enable PC-Speaker emulation.</string>
-              </property>
-              <property name="whatsThis">
-               <string>Enable PC-Speaker emulation.</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="checked">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="0" column="1">
-           <layout class="QVBoxLayout" name="verticalLayout_38">
-            <item>
-             <widget class="QLabel" name="label_33">
-              <property name="text">
-               <string>PC rate</string>
-              </property>
-              <property name="buddy">
-               <cstring>comboBox_25</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboBox_25">
-              <property name="toolTip">
-               <string>Sample rate of the PC-Speaker sound generation.</string>
-              </property>
-              <property name="statusTip">
-               <string>Sample rate of the PC-Speaker sound generation.</string>
-              </property>
-              <property name="whatsThis">
-               <string>Sample rate of the PC-Speaker sound generation.</string>
-              </property>
-              <property name="currentIndex">
-               <number>4</number>
-              </property>
-              <item>
-               <property name="text">
-                <string>49716</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>48000</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>44100</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>32000</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>22050</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>16000</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>11025</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>8000</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="1" column="0">
-           <layout class="QVBoxLayout" name="verticalLayout_37">
-            <item>
-             <widget class="QLabel" name="label_39">
-              <property name="text">
-               <string>Tandy</string>
-              </property>
-              <property name="buddy">
-               <cstring>comboBox_26</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboBox_26">
-              <property name="toolTip">
-               <string>Enable Tandy Sound System emulation. For 'auto',
-emulation is present only if machine is set to 'tandy'.</string>
-              </property>
-              <property name="statusTip">
-               <string>Enable Tandy Sound System emulation. For 'auto', emulation is present only if machine is set to 'tandy'.</string>
-              </property>
-              <property name="whatsThis">
-               <string>Enable Tandy Sound System emulation. For 'auto',
-emulation is present only if machine is set to 'tandy'.</string>
-              </property>
-              <item>
-               <property name="text">
-                <string>auto</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>on</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>off</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="1" column="1">
-           <layout class="QVBoxLayout" name="verticalLayout_39">
-            <item>
-             <widget class="QLabel" name="label_40">
-              <property name="text">
-               <string>Tandy rate</string>
-              </property>
-              <property name="buddy">
-               <cstring>comboBox_27</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="comboBox_27">
-              <property name="toolTip">
-               <string>Sample rate of the Tandy 3-Voice generation.</string>
-              </property>
-              <property name="statusTip">
-               <string>Sample rate of the Tandy 3-Voice generation.</string>
-              </property>
-              <property name="whatsThis">
-               <string>Sample rate of the Tandy 3-Voice generation.</string>
-              </property>
-              <property name="currentIndex">
-               <number>4</number>
-              </property>
-              <item>
-               <property name="text">
-                <string>49716</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>48000</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>44100</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>32000</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>22050</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>16000</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>11025</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>8000</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="2" column="0" colspan="2">
-           <layout class="QVBoxLayout" name="verticalLayout_40">
-            <item>
-             <widget class="QLabel" name="label_41">
-              <property name="text">
-               <string>Disney</string>
-              </property>
-              <property name="buddy">
-               <cstring>checkBox_11</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="checkBox_11">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>26</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string>Enable Disney Sound Source emulation. (Covox
-Voice Master and Speech Thing compatible).</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="checked">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item row="2" column="0" colspan="3">
-        <spacer name="verticalSpacer_3">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>738</width>
-           <height>13</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </widget>
@@ -4183,20 +4183,20 @@ ch (CH Flightstick).</string>
   <tabstop>mComboBoxMidiDevice</tabstop>
   <tabstop>mLineEditMidiConfig</tabstop>
   <tabstop>mToolButtonMidiConfig</tabstop>
-  <tabstop>checkBox_8</tabstop>
-  <tabstop>comboBox_13</tabstop>
-  <tabstop>comboBox_14</tabstop>
-  <tabstop>comboBox_15</tabstop>
-  <tabstop>comboBox_16</tabstop>
-  <tabstop>comboBox_17</tabstop>
-  <tabstop>comboBox_18</tabstop>
-  <tabstop>comboBox_19</tabstop>
-  <tabstop>comboBox_20</tabstop>
-  <tabstop>checkBox_10</tabstop>
-  <tabstop>comboBox_25</tabstop>
-  <tabstop>comboBox_26</tabstop>
-  <tabstop>comboBox_27</tabstop>
-  <tabstop>checkBox_11</tabstop>
+  <tabstop>mCheckBoxSBMixer</tabstop>
+  <tabstop>mComboBoxSBType</tabstop>
+  <tabstop>mComboBoxSBBase</tabstop>
+  <tabstop>mComboBoxSBIrq</tabstop>
+  <tabstop>mComboBoxSBDMA</tabstop>
+  <tabstop>mComboBoxSBHDMA</tabstop>
+  <tabstop>mComboBoxSBOplMode</tabstop>
+  <tabstop>mComboBoxSBOplEmu</tabstop>
+  <tabstop>mComboBoxSBOplRate</tabstop>
+  <tabstop>mCheckBoxSpeaker</tabstop>
+  <tabstop>mComboBoxSpeakerPCRate</tabstop>
+  <tabstop>mComboBoxSpeakerTandy</tabstop>
+  <tabstop>mComboBoxSpeakerTandyRate</tabstop>
+  <tabstop>mCheckBoxSpeakerDisney</tabstop>
   <tabstop>mToolBtnInternet</tabstop>
   <tabstop>comboBox_28</tabstop>
   <tabstop>comboBox_29</tabstop>
