@@ -447,7 +447,6 @@ SBlasterSection *DOSBoxIniFile::sblasterSection( QSettings &settings, bool defau
     soundBlaster->mOplMode = "auto";
     soundBlaster->mOplEmu = "default";
     soundBlaster->mOplRate = 22050;
-    settings.endGroup();
   }
   else {
 

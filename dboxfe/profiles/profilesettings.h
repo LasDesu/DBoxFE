@@ -60,6 +60,7 @@ namespace asaal {
       void initializeInternet( const DOSBoxConfiguration *config );
       void initializeDos( const DOSBoxConfiguration *config );
       void initializeAutoexec( const DOSBoxConfiguration *config );
+      void releaseConfiguration( DOSBoxConfiguration *config );
   };
 }
 

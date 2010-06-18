@@ -68,6 +68,7 @@ void DBoxFE::slotPreferences() {
 //#endif
 
   ProfileSettings *settings = new ProfileSettings();
+  settings->setProfile("Test", "");
   settings->setVisible(true);
 }
 

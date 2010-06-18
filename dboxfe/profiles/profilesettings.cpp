@@ -109,9 +109,7 @@ void ProfileSettings::initializeSettings() {
     initializeAutoexec(dosboxConfig);
   }
 
-  if( dosboxConfig )
-    delete dosboxConfig;
-  dosboxConfig = 0;
+  releaseConfiguration(dosboxConfig);
 }
 
 void ProfileSettings::initializeGraphic( const DOSBoxConfiguration *config ) {
@@ -170,7 +168,54 @@ void ProfileSettings::initializeGraphic( const DOSBoxConfiguration *config ) {
 
 void ProfileSettings::initializeSound( const DOSBoxConfiguration *config ) {
 
-  Q_UNUSED(config)
+  int comboIndex = 0;
+  MixerSection *mixer = config->mixer;
+  {
+    mCheckBoxMixerNoSound->setChecked(mixer->mNosound);
+
+    comboIndex = mComboBoxMixerRate->findText(QString("%1").arg(mixer->mRate));
+    mComboBoxMixerRate->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxMixerBlockSize->findText(QString("%1").arg(mixer->mBlockSize));
+    mComboBoxMixerBlockSize->setCurrentIndex(comboIndex);
+
+    mSpinBoxMixerPreBuffer->setValue(mixer->mPreBuffer);
+  }
+
+  MdiSection *mdi = config->mdi;
+  {
+    comboIndex = mComboBoxMidiMPU401->findText(mdi->mMpu401);
+    mComboBoxMidiMPU401->setCurrentIndex(comboIndex);
+
+    comboIndex = mComboBoxMidiDevice->findText(mdi->mMidiDevice);
+    mComboBoxMidiDevice->setCurrentIndex(comboIndex);
+
+    mLineEditMidiConfig->setText(mdi->mMidiConfig);
+  }
+
+  SBlasterSection *soundBlaster = config->soundBlaster;
+  {
+
+    /*
+     QString sbType = soundBlaster->mSBType;
+     int sbBase = soundBlaster->mSBBase;
+     int irq = soundBlaster->mIrq;
+     int dma = soundBlaster->mDma;
+     int hdma = soundBlaster->mHdma;
+     bool sbMixer = soundBlaster->mSBMixer;
+     QString soundBlaster->mOplMode;
+     QString soundBlaster->mOplEmu;
+     int oplRate = soundBlaster->mOplRate;
+     */
+  }
+
+  GusSection *gus = config->gus;
+  {
+  }
+
+  SpeakerSection *speaker = config->speaker;
+  {
+  }
 }
 
 void ProfileSettings::initializeInternet( const DOSBoxConfiguration *config ) {
@@ -186,4 +231,52 @@ void ProfileSettings::initializeDos( const DOSBoxConfiguration *config ) {
 void ProfileSettings::initializeAutoexec( const DOSBoxConfiguration *config ) {
 
   Q_UNUSED(config)
+}
+
+void ProfileSettings::releaseConfiguration( DOSBoxConfiguration *config ) {
+
+  if( config->sdl )
+    delete config->sdl;
+  
+  if( config->dosbox )
+    delete config->dosbox;
+  
+  if( config->render )
+    delete config->render;
+  
+  if( config->cpu )
+    delete config->cpu;
+  
+  if( config->mixer )
+    delete config->mixer;
+  
+  if( config->mdi )
+    delete config->mdi;
+  
+  if( config->soundBlaster )
+    delete config->soundBlaster;
+  
+  if( config->gus )
+    delete config->gus;
+  
+  if( config->speaker )
+    delete config->speaker;
+  
+  if( config->joystick )
+    delete config->joystick;
+  
+  if( config->serial )
+    delete config->serial;
+  
+  if( config->dos )
+    delete config->dos;
+  
+  if( config->ipx )
+    delete config->ipx;
+  
+  config->autoexec.clear();
+  
+  if( config )
+    delete config;
+  config = 0;
 }
