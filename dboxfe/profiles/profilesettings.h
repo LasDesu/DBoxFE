@@ -43,6 +43,7 @@ namespace asaal {
       ProfileSettings( QWidget *parent = 0 );
 
       void setProfile( const QString &profileName, const QString &profileFile );
+      void setProfile( const DBoxFEProfile *profile );
 
     private slots:
       void slotReset();

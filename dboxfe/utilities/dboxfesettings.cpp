@@ -38,7 +38,7 @@ void DBoxFESettings::writeConfiguration( const DBoxFEConfiguration *configuratio
 
   if( configuration ) {
     XmlPreferences &xmlPreference = XmlPreferences::instance();
-    bool configLoaded = xmlPreference.load(QString("%1/%2").arg(DBoxFEConfigDirectory).arg(DBoxFEConfigFile));
+    bool configLoaded = xmlPreference.load(QString("%1/%2/%3").arg(QDir::homePath()).arg(DBoxFEConfigDirectory).arg(DBoxFEConfigFile));
     if( configLoaded ) {
 
     }
@@ -56,7 +56,10 @@ void DBoxFESettings::writeConfiguration( const DBoxFEConfiguration *configuratio
 
       writeProfiles(configuration);
 
-      xmlPreference.save(QString("%1/%2").arg(DBoxFEConfigDirectory).arg(DBoxFEConfigFile));
+      xmlPreference.save(QString("%1/%2/%3").arg(QDir::homePath())
+                                            .arg(DBoxFEConfigDirectory)
+                                            .arg(DBoxFEConfigFile)
+                        );
     }
   }
 }
@@ -68,10 +71,10 @@ DBoxFEConfiguration *DBoxFESettings::readConfiguration() {
   XmlPreferences &xmlPreference = XmlPreferences::instance();
   xmlPreference.setProductVersion(DBoxFEProductVersion);
   xmlPreference.setProductInfo(DBoxFEProductCompany, DBoxFEProduct);
-  bool configLoaded = xmlPreference.load(QString("%1/%2").arg(DBoxFEConfigDirectory).arg(DBoxFEConfigFile));
+  bool configLoaded = xmlPreference.load(QString("%1/%2/%3").arg(QDir::homePath()).arg(DBoxFEConfigDirectory).arg(DBoxFEConfigFile));
   if( configLoaded ) {
 
-    configuration->mProfilePath = xmlPreference.getString("ProfilePath", DBoxFEProduct);
+    configuration->mProfilePath = xmlPreference.getString("ProfilePath", DBoxFEConfigDirectory);
     if( configuration->mProfilePath.isNull() || configuration->mProfilePath.isEmpty() )
       configuration->mProfilePath = QString("%1/%2").arg(QDir::homePath()).arg(DBoxFEConfigDirectory);
     configuration->mHideWindow = xmlPreference.getBool("HideWindow", DBoxFEProduct);
@@ -139,6 +142,8 @@ void writeProfiles( const DBoxFEConfiguration *configuration ) {
 
 QList<DBoxFEProfile*> readProfiles( const QString &profilePath ) {
 
-  Q_UNUSED(profilePath)
+  QString dboxfeProfileFile = QString("%1/%2").arg(profilePath).arg(DBoxFEProfileFile);
+
+  dboxfeProfileFile.clear();
   return QList<DBoxFEProfile*>();
 }

@@ -290,7 +290,7 @@ QToolButton:!checked {
    <item>
     <widget class="QStackedWidget" name="mStackedWidgetProfileSettings">
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="pageGraphic">
       <layout class="QGridLayout" name="gridLayoutGraphics">
@@ -2970,33 +2970,33 @@ This is usually the id of the device you want to use.</string>
      <widget class="QWidget" name="pageDos">
       <layout class="QGridLayout" name="gridLayout_13">
        <item row="0" column="0">
-        <widget class="QGroupBox" name="groupBox_13">
+        <widget class="QGroupBox" name="groupBoxDos">
          <property name="title">
           <string>DOS</string>
          </property>
-         <layout class="QGridLayout" name="gridLayout_12">
+         <layout class="QGridLayout" name="gridLayoutDos">
           <item row="0" column="0" colspan="2">
-           <widget class="QGroupBox" name="groupBox_10">
+           <widget class="QGroupBox" name="groupBoxDosSettings">
             <property name="title">
              <string/>
             </property>
-            <layout class="QGridLayout" name="gridLayout_11">
+            <layout class="QGridLayout" name="gridLayoutDosSettings">
              <item row="0" column="0">
-              <layout class="QVBoxLayout" name="verticalLayout_49">
+              <layout class="QVBoxLayout" name="verticalLayoutLanguage">
                <item>
-                <widget class="QLabel" name="label_46">
+                <widget class="QLabel" name="mLabelLanguage">
                  <property name="text">
                   <string>Language</string>
                  </property>
                  <property name="buddy">
-                  <cstring>lineEdit_4</cstring>
+                  <cstring>mLineEditDosLanguage</cstring>
                  </property>
                 </widget>
                </item>
                <item>
-                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                <layout class="QHBoxLayout" name="horizontalLayoutLineEditLanguage">
                  <item>
-                  <widget class="QLineEdit" name="lineEdit_4">
+                  <widget class="QLineEdit" name="mLineEditDosLanguage">
                    <property name="toolTip">
                     <string>Select another language file.</string>
                    </property>
@@ -3020,22 +3020,22 @@ This is usually the id of the device you want to use.</string>
               </layout>
              </item>
              <item row="0" column="1">
-              <layout class="QVBoxLayout" name="verticalLayout_50">
+              <layout class="QVBoxLayout" name="verticalLayoutMachine">
                <property name="bottomMargin">
                 <number>4</number>
                </property>
                <item>
-                <widget class="QLabel" name="label_47">
+                <widget class="QLabel" name="mLabelMachine">
                  <property name="text">
                   <string>Machine</string>
                  </property>
                  <property name="buddy">
-                  <cstring>comboBox_32</cstring>
+                  <cstring>mComboBoxDosMachine</cstring>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QComboBox" name="comboBox_32">
+                <widget class="QComboBox" name="mComboBoxDosMachine">
                  <property name="toolTip">
                   <string>The type of machine tries to emulate.</string>
                  </property>
@@ -3113,21 +3113,21 @@ This is usually the id of the device you want to use.</string>
               </layout>
              </item>
              <item row="1" column="0">
-              <layout class="QVBoxLayout" name="verticalLayout_51">
+              <layout class="QVBoxLayout" name="verticalLayoutCapture">
                <item>
-                <widget class="QLabel" name="label_48">
+                <widget class="QLabel" name="mLabelCapture">
                  <property name="text">
                   <string>Capture</string>
                  </property>
                  <property name="buddy">
-                  <cstring>lineEdit_5</cstring>
+                  <cstring>mLineEditDosCapture</cstring>
                  </property>
                 </widget>
                </item>
                <item>
-                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                <layout class="QHBoxLayout" name="horizontalLayoutLineEditCapture">
                  <item>
-                  <widget class="QLineEdit" name="lineEdit_5">
+                  <widget class="QLineEdit" name="mLineEditDosCapture">
                    <property name="toolTip">
                     <string>Directory where things like wave, midi, screenshot get captured.</string>
                    </property>
@@ -3154,19 +3154,19 @@ This is usually the id of the device you want to use.</string>
               </layout>
              </item>
              <item row="1" column="1">
-              <layout class="QVBoxLayout" name="verticalLayout_52">
+              <layout class="QVBoxLayout" name="verticalLayoutMemorySize">
                <item>
-                <widget class="QLabel" name="label_49">
+                <widget class="QLabel" name="mLabelMemorySize">
                  <property name="text">
                   <string>Memory size</string>
                  </property>
                  <property name="buddy">
-                  <cstring>spinBox_6</cstring>
+                  <cstring>mSpinBoxDosMemorySize</cstring>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QSpinBox" name="spinBox_6">
+                <widget class="QSpinBox" name="mSpinBoxDosMemorySize">
                  <property name="toolTip">
                   <string>Amount of memory DOSBox has in megabytes.
 This value is best left at its default to avoid
@@ -3213,15 +3213,15 @@ no speed advantage when raising this value.</string>
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QGroupBox" name="groupBox_11">
+           <widget class="QGroupBox" name="groupBoxDosbox">
             <property name="title">
              <string>Dosbox</string>
             </property>
-            <layout class="QVBoxLayout" name="verticalLayout_46">
+            <layout class="QVBoxLayout" name="verticalLayoutDosbox">
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <layout class="QHBoxLayout" name="horizontalLayoutDosboxCheckboxes">
                <item>
-                <widget class="QCheckBox" name="checkBox_13">
+                <widget class="QCheckBox" name="mCheckBoxDosBoxXMS">
                  <property name="toolTip">
                   <string>Enable XMS support</string>
                  </property>
@@ -3240,7 +3240,7 @@ no speed advantage when raising this value.</string>
                 </widget>
                </item>
                <item>
-                <widget class="QCheckBox" name="checkBox_14">
+                <widget class="QCheckBox" name="mCheckBoxDosBoxEMS">
                  <property name="toolTip">
                   <string>Enable EMS support</string>
                  </property>
@@ -3262,7 +3262,7 @@ no speed advantage when raising this value.</string>
                 </widget>
                </item>
                <item>
-                <widget class="QCheckBox" name="checkBox_15">
+                <widget class="QCheckBox" name="mCheckBoxDosBoxUMB">
                  <property name="toolTip">
                   <string>Enable UMB support</string>
                  </property>
@@ -3283,19 +3283,19 @@ no speed advantage when raising this value.</string>
               </layout>
              </item>
              <item>
-              <layout class="QVBoxLayout" name="verticalLayout_45">
+              <layout class="QVBoxLayout" name="verticalLayoutKeyboardLayout">
                <item>
-                <widget class="QLabel" name="label_17">
+                <widget class="QLabel" name="mLabelKeyboardLayout">
                  <property name="text">
                   <string>Keyboard Layout</string>
                  </property>
                  <property name="buddy">
-                  <cstring>comboBox_30</cstring>
+                  <cstring>mComboBoxKeyboardLayout</cstring>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QComboBox" name="comboBox_30">
+                <widget class="QComboBox" name="mComboBoxKeyboardLayout">
                  <property name="toolTip">
                   <string>Language code of the keyboard layout (or none)</string>
                  </property>
@@ -3393,15 +3393,15 @@ no speed advantage when raising this value.</string>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QGroupBox" name="groupBox_12">
+           <widget class="QGroupBox" name="groupBoxJoystick">
             <property name="title">
              <string>Joystick</string>
             </property>
-            <layout class="QVBoxLayout" name="verticalLayout_48">
+            <layout class="QVBoxLayout" name="verticalLayoutJoystick">
              <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <layout class="QHBoxLayout" name="horizontalLayoutJoystickCheckboxes">
                <item>
-                <widget class="QCheckBox" name="checkBox_16">
+                <widget class="QCheckBox" name="mCheckBoxJoystickTimed">
                  <property name="toolTip">
                   <string>Enable timed intervals for axis.
 (False is old style behaviour.)</string>
@@ -3422,7 +3422,7 @@ no speed advantage when raising this value.</string>
                 </widget>
                </item>
                <item>
-                <widget class="QCheckBox" name="checkBox_17">
+                <widget class="QCheckBox" name="mCheckBoxJoystickAutofire">
                  <property name="toolTip">
                   <string>Continuously fires as long as
 you keep the button pressed.</string>
@@ -3439,7 +3439,7 @@ you keep the button pressed.</string>
                 </widget>
                </item>
                <item>
-                <widget class="QCheckBox" name="checkBox_18">
+                <widget class="QCheckBox" name="mCheckBoxJoystickSwap34">
                  <property name="toolTip">
                   <string>Swap the 3rd and the 4th axis.
 Can be useful for certain joysticks.</string>
@@ -3457,7 +3457,7 @@ Can be useful for certain joysticks.</string>
                 </widget>
                </item>
                <item>
-                <widget class="QCheckBox" name="checkBox_19">
+                <widget class="QCheckBox" name="mCheckBoxJoystickButtonwrap">
                  <property name="toolTip">
                   <string>Enable button wrapping at the
 number of emulated buttons.</string>
@@ -3480,19 +3480,19 @@ number of emulated buttons.</string>
               </layout>
              </item>
              <item>
-              <layout class="QVBoxLayout" name="verticalLayout_47">
+              <layout class="QVBoxLayout" name="verticalLayoutJoystickType">
                <item>
-                <widget class="QLabel" name="label_45">
+                <widget class="QLabel" name="mLabelJoystickType">
                  <property name="text">
                   <string>Joystick type</string>
                  </property>
                  <property name="buddy">
-                  <cstring>comboBox_31</cstring>
+                  <cstring>mComboBoxJoystickType</cstring>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QComboBox" name="comboBox_31">
+                <widget class="QComboBox" name="mComboBoxJoystickType">
                  <property name="toolTip">
                   <string>Type of joystick to emulate:
 
@@ -3558,7 +3558,7 @@ ch (CH Flightstick).</string>
            </widget>
           </item>
           <item row="2" column="0" colspan="2">
-           <spacer name="verticalSpacer_4">
+           <spacer name="verticalSpacerDos">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -3578,24 +3578,24 @@ ch (CH Flightstick).</string>
      <widget class="QWidget" name="pageAutoexec">
       <layout class="QGridLayout" name="gridLayout_14">
        <item row="0" column="0">
-        <widget class="QGroupBox" name="groupBox_14">
+        <widget class="QGroupBox" name="groupBoxAutoexec">
          <property name="title">
           <string>Autoexec</string>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_60">
+         <layout class="QVBoxLayout" name="verticalLayoutAutoexec">
           <item>
-           <layout class="QGridLayout" name="gridLayout_16">
+           <layout class="QGridLayout" name="gridLayoutAutoexec">
             <item row="0" column="0">
-             <layout class="QVBoxLayout" name="verticalLayout_53">
+             <layout class="QVBoxLayout" name="verticalLayoutMountAs">
               <item>
-               <widget class="QLabel" name="label_18">
+               <widget class="QLabel" name="mLabelMountAs">
                 <property name="text">
                  <string>Mount as</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QComboBox" name="comboBox_33">
+               <widget class="QComboBox" name="mComboBoxMountAs">
                 <item>
                  <property name="text">
                   <string>Default</string>
@@ -3621,9 +3621,9 @@ ch (CH Flightstick).</string>
              </layout>
             </item>
             <item row="0" column="1" colspan="2">
-             <layout class="QVBoxLayout" name="verticalLayout_54">
+             <layout class="QVBoxLayout" name="verticalLayoutCDDVDType">
               <item>
-               <widget class="QLabel" name="label_44">
+               <widget class="QLabel" name="mLabelCDDVD">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -3633,7 +3633,7 @@ ch (CH Flightstick).</string>
                </widget>
               </item>
               <item>
-               <widget class="QComboBox" name="comboBox_34">
+               <widget class="QComboBox" name="mComboBoxCDDVDType">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -3652,9 +3652,9 @@ ch (CH Flightstick).</string>
              </layout>
             </item>
             <item row="1" column="0">
-             <layout class="QVBoxLayout" name="verticalLayout_55">
+             <layout class="QVBoxLayout" name="verticalLayoutImageType">
               <item>
-               <widget class="QLabel" name="label_50">
+               <widget class="QLabel" name="mLabelImageType">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -3664,7 +3664,7 @@ ch (CH Flightstick).</string>
                </widget>
               </item>
               <item>
-               <widget class="QComboBox" name="comboBox_36">
+               <widget class="QComboBox" name="mComboBoxImageType">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -3688,9 +3688,9 @@ ch (CH Flightstick).</string>
              </layout>
             </item>
             <item row="1" column="1">
-             <layout class="QVBoxLayout" name="verticalLayout_56">
+             <layout class="QVBoxLayout" name="verticalLayoutImageFormat">
               <item>
-               <widget class="QLabel" name="label_51">
+               <widget class="QLabel" name="mLabelImageFormat">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -3700,7 +3700,7 @@ ch (CH Flightstick).</string>
                </widget>
               </item>
               <item>
-               <widget class="QComboBox" name="comboBox_37">
+               <widget class="QComboBox" name="mComboBoxImageFormat">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -3724,9 +3724,9 @@ ch (CH Flightstick).</string>
              </layout>
             </item>
             <item row="1" column="2">
-             <layout class="QVBoxLayout" name="verticalLayout_57">
+             <layout class="QVBoxLayout" name="verticalLayoutHDDMode">
               <item>
-               <widget class="QLabel" name="label_52">
+               <widget class="QLabel" name="mLabelHDDMode">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -3736,7 +3736,7 @@ ch (CH Flightstick).</string>
                </widget>
               </item>
               <item>
-               <widget class="QComboBox" name="comboBox_38">
+               <widget class="QComboBox" name="mComboBoxHDDMode">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -3755,9 +3755,9 @@ ch (CH Flightstick).</string>
              </layout>
             </item>
             <item row="2" column="0" colspan="3">
-             <layout class="QVBoxLayout" name="verticalLayout_59">
+             <layout class="QVBoxLayout" name="verticalLayoutImageSize">
               <item>
-               <widget class="QLabel" name="label_54">
+               <widget class="QLabel" name="mLabelImageSize">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -3767,7 +3767,7 @@ ch (CH Flightstick).</string>
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_8">
+               <widget class="QLineEdit" name="mLineEditImageSize">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -3781,18 +3781,18 @@ ch (CH Flightstick).</string>
            </layout>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <layout class="QHBoxLayout" name="horizontalLayoutDrive">
             <item>
-             <layout class="QGridLayout" name="gridLayout_15">
+             <layout class="QGridLayout" name="gridLayoutDriveLetter">
               <item row="0" column="0" colspan="3">
-               <widget class="QLabel" name="label_53">
+               <widget class="QLabel" name="mLabelDriveDirectoryLetter">
                 <property name="text">
                  <string>Drive letter and directory</string>
                 </property>
                </widget>
               </item>
               <item row="1" column="0">
-               <widget class="QComboBox" name="comboBox_35">
+               <widget class="QComboBox" name="mComboBoxDriveLetter">
                 <property name="minimumSize">
                  <size>
                   <width>60</width>
@@ -3938,7 +3938,7 @@ ch (CH Flightstick).</string>
                </widget>
               </item>
               <item row="1" column="1">
-               <widget class="QLineEdit" name="lineEdit_6"/>
+               <widget class="QLineEdit" name="mLineEditDrive"/>
               </item>
               <item row="1" column="2">
                <widget class="QToolButton" name="toolButton_8">
@@ -3960,7 +3960,7 @@ ch (CH Flightstick).</string>
                </widget>
               </item>
               <item row="2" column="0" colspan="3">
-               <widget class="QCheckBox" name="checkBox_20">
+               <widget class="QCheckBox" name="mCheckBoxSwitchToFolder">
                 <property name="text">
                  <string>Switch into this folder after dosbox started</string>
                 </property>
@@ -3969,9 +3969,9 @@ ch (CH Flightstick).</string>
              </layout>
             </item>
             <item>
-             <layout class="QGridLayout" name="gridLayout_17">
+             <layout class="QGridLayout" name="gridLayoutDriveLabelName">
               <item row="0" column="0">
-               <widget class="QLabel" name="label_55">
+               <widget class="QLabel" name="mLabelCDDVDLabel">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
@@ -3981,14 +3981,14 @@ ch (CH Flightstick).</string>
                </widget>
               </item>
               <item row="1" column="0">
-               <widget class="QLineEdit" name="lineEdit_7">
+               <widget class="QLineEdit" name="mLineEditLabelName">
                 <property name="enabled">
                  <bool>false</bool>
                 </property>
                </widget>
               </item>
               <item row="2" column="0">
-               <widget class="QCheckBox" name="checkBox_21">
+               <widget class="QCheckBox" name="mCheckBoxUseLabelForCDDVD">
                 <property name="text">
                  <string>Use label for CD/DVD ROM</string>
                 </property>
@@ -3999,9 +3999,9 @@ ch (CH Flightstick).</string>
            </layout>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <layout class="QHBoxLayout" name="horizontalLayoutAutoexec">
             <item>
-             <widget class="QTreeWidget" name="treeWidget_2">
+             <widget class="QTreeWidget" name="mTreeWidgetAutoexec">
               <property name="showDropIndicator" stdset="0">
                <bool>false</bool>
               </property>
@@ -4019,23 +4019,23 @@ ch (CH Flightstick).</string>
              </widget>
             </item>
             <item>
-             <layout class="QVBoxLayout" name="verticalLayout_58">
+             <layout class="QVBoxLayout" name="verticalLayoutAutoexecButtons">
               <item>
-               <widget class="QToolButton" name="toolButton_10">
+               <widget class="QToolButton" name="mToolButtonUp">
                 <property name="text">
                  <string>&gt;</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QToolButton" name="toolButton_11">
+               <widget class="QToolButton" name="mToolButtonDown">
                 <property name="text">
                  <string>&lt;</string>
                 </property>
                </widget>
               </item>
               <item>
-               <spacer name="verticalSpacer_5">
+               <spacer name="verticalSpacerAutoexec">
                 <property name="orientation">
                  <enum>Qt::Vertical</enum>
                 </property>
@@ -4048,14 +4048,14 @@ ch (CH Flightstick).</string>
                </spacer>
               </item>
               <item>
-               <widget class="QToolButton" name="toolButton_12">
+               <widget class="QToolButton" name="mToolButtonAdd">
                 <property name="text">
                  <string>+</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QToolButton" name="toolButton_9">
+               <widget class="QToolButton" name="mToolButtonRemove">
                 <property name="text">
                  <string>-</string>
                 </property>
@@ -4087,7 +4087,7 @@ ch (CH Flightstick).</string>
       <number>6</number>
      </property>
      <item>
-      <widget class="QPushButton" name="m_btnDefault">
+      <widget class="QPushButton" name="mButtonDefault">
        <property name="minimumSize">
         <size>
          <width>110</width>
@@ -4113,7 +4113,7 @@ ch (CH Flightstick).</string>
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="m_btnCancel">
+      <widget class="QPushButton" name="mButtonCancel">
        <property name="minimumSize">
         <size>
          <width>110</width>
@@ -4126,7 +4126,7 @@ ch (CH Flightstick).</string>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="m_btnOk">
+      <widget class="QPushButton" name="mButtonOk">
        <property name="minimumSize">
         <size>
          <width>110</width>
@@ -4146,7 +4146,7 @@ ch (CH Flightstick).</string>
   </layout>
  </widget>
  <tabstops>
-  <tabstop>m_btnCancel</tabstop>
+  <tabstop>mButtonCancel</tabstop>
   <tabstop>mCheckBoxWaitOnError</tabstop>
   <tabstop>mCheckBoxUseScanCodes</tabstop>
   <tabstop>mCheckBoxFullDouble</tabstop>
@@ -4205,23 +4205,23 @@ ch (CH Flightstick).</string>
   <tabstop>toolButton_5</tabstop>
   <tabstop>checkBox_12</tabstop>
   <tabstop>mToolBtnDos</tabstop>
-  <tabstop>lineEdit_4</tabstop>
+  <tabstop>mLineEditDosLanguage</tabstop>
   <tabstop>toolButton_6</tabstop>
-  <tabstop>comboBox_32</tabstop>
-  <tabstop>lineEdit_5</tabstop>
+  <tabstop>mComboBoxDosMachine</tabstop>
+  <tabstop>mLineEditDosCapture</tabstop>
   <tabstop>toolButton_7</tabstop>
-  <tabstop>spinBox_6</tabstop>
-  <tabstop>checkBox_13</tabstop>
-  <tabstop>checkBox_14</tabstop>
-  <tabstop>checkBox_15</tabstop>
-  <tabstop>comboBox_30</tabstop>
-  <tabstop>checkBox_16</tabstop>
-  <tabstop>checkBox_17</tabstop>
-  <tabstop>checkBox_18</tabstop>
-  <tabstop>checkBox_19</tabstop>
-  <tabstop>comboBox_31</tabstop>
+  <tabstop>mSpinBoxDosMemorySize</tabstop>
+  <tabstop>mCheckBoxDosBoxXMS</tabstop>
+  <tabstop>mCheckBoxDosBoxEMS</tabstop>
+  <tabstop>mCheckBoxDosBoxUMB</tabstop>
+  <tabstop>mComboBoxKeyboardLayout</tabstop>
+  <tabstop>mCheckBoxJoystickTimed</tabstop>
+  <tabstop>mCheckBoxJoystickAutofire</tabstop>
+  <tabstop>mCheckBoxJoystickSwap34</tabstop>
+  <tabstop>mCheckBoxJoystickButtonwrap</tabstop>
+  <tabstop>mComboBoxJoystickType</tabstop>
   <tabstop>mToolBtnAutoexec</tabstop>
-  <tabstop>m_btnDefault</tabstop>
+  <tabstop>mButtonDefault</tabstop>
   <tabstop>mToolBtnGraphic</tabstop>
   <tabstop>mCheckBoxFullScreen</tabstop>
  </tabstops>

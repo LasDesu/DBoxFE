@@ -25,11 +25,15 @@
 #include "dosboxinifile.h"
 #include "profilesettings.h"
 
+#include <QApplication>
+#include <QMessageBox>
+
 using namespace asaal;
 
 ProfileSettings::ProfileSettings( QWidget *parent )
   : QWidget(parent), 
-    mDosBoxConfig(0) {
+    mDosBoxConfig(0)
+{
 
   setupUi(this);
 
@@ -38,6 +42,10 @@ ProfileSettings::ProfileSettings( QWidget *parent )
   connect(mToolBtnGraphic, SIGNAL(clicked()), this, SLOT(slotSwitchSettings()));
   connect(mToolBtnInternet, SIGNAL(clicked()), this, SLOT(slotSwitchSettings()));
   connect(mToolBtnSound, SIGNAL(clicked()), this, SLOT(slotSwitchSettings()));
+
+  connect(mButtonOk, SIGNAL(clicked()), this, SLOT(slotSave()));
+  connect(mButtonCancel, SIGNAL(clicked()), this, SLOT(slotAbort()));
+  connect(mButtonDefault, SIGNAL(clicked()), this, SLOT(slotReset()));
 
   mStackedWidgetProfileSettings->setCurrentIndex(0);
 }
@@ -59,8 +67,39 @@ void ProfileSettings::setProfile( const QString &profileName, const QString &pro
   mWindowTitle.clear();
 }
 
-void ProfileSettings::slotReset() {
+void ProfileSettings::setProfile( const DBoxFEProfile *profile ) {
 
+  if( !profile )
+    return;
+
+  setProfile(profile->mName, profile->mFile);
+}
+
+void ProfileSettings::slotReset() {
+  
+  if( mProfileFile.isEmpty() || mProfileFile.isNull() )
+    return;
+
+  QMessageBox::StandardButton standardButton = QMessageBox::question(this, 
+                                                                     QApplication::applicationName(), 
+                                                                     tr("Are you sure that you want to\n"
+                                                                        "reset the current configuration?"
+                                                                        "\n\n"
+                                                                        "All previous configuration"
+                                                                        "will be lost!"),
+                                                                     QMessageBox::Yes | QMessageBox::No);
+
+  switch(standardButton) {
+    case QMessageBox::Yes:
+      {
+        DOSBoxConfiguration *dosboxConfig = DOSBoxIniFile::defaultConfiguration();
+        DOSBoxIniFile::write(mProfileFile, dosboxConfig);
+        releaseConfiguration(dosboxConfig);
+      }
+      break;
+    default:
+      return;
+  }
 }
 
 void ProfileSettings::slotSave() {
@@ -112,6 +151,8 @@ void ProfileSettings::slotSwitchSettings() {
  * Read configuration
  *******************************************************************************************/
 void ProfileSettings::initializeSettings() {
+  
+  releaseConfiguration(mDosBoxConfig);
 
   if( mProfileFile.isEmpty() ) {
 
@@ -283,7 +324,37 @@ void ProfileSettings::initializeInternet( const DOSBoxConfiguration *config ) {
 
 void ProfileSettings::initializeDos( const DOSBoxConfiguration *config ) {
 
-  Q_UNUSED(config)
+  int comboIndex = 0;
+  DosboxSection *dosbox = config->dosbox;
+  {
+    mLineEditDosLanguage->setText(dosbox->mLanguage);
+    mLineEditDosCapture->setText(dosbox->mCaptures);
+    mSpinBoxDosMemorySize->setValue(dosbox->mMemsize);
+
+    comboIndex = mComboBoxDosMachine->findText(dosbox->mMachine);
+    mComboBoxDosMachine->setCurrentIndex(comboIndex);
+  }
+  
+  JoystickSection *joystick = config->joystick;
+  {
+    mCheckBoxJoystickTimed->setChecked(joystick->mTimed);
+    mCheckBoxJoystickAutofire->setChecked(joystick->mAutoFire);
+    mCheckBoxJoystickSwap34->setChecked(joystick->mSwap34);
+    mCheckBoxJoystickButtonwrap->setChecked(joystick->mButtonwrap);
+
+    comboIndex = mComboBoxJoystickType->findText(joystick->mJoystickType);
+    mComboBoxJoystickType->setCurrentIndex(comboIndex);
+  }
+
+  DosSection *dos = config->dos;
+  {
+    mCheckBoxDosBoxXMS->setChecked(dos->mXms);
+    mCheckBoxDosBoxEMS->setChecked(dos->mEms);
+    mCheckBoxDosBoxUMB->setChecked(dos->mUmb);
+
+    comboIndex = mComboBoxKeyboardLayout->findText(dos->mKeyboardLayout);
+    mComboBoxKeyboardLayout->setCurrentIndex(comboIndex);
+  }
 }
 
 void ProfileSettings::initializeAutoexec( const DOSBoxConfiguration *config ) {
@@ -377,7 +448,7 @@ void ProfileSettings::releaseConfiguration( DOSBoxConfiguration *config ) {
     delete config->ipx;
   
   config->autoexec.clear();
-  
+
   if( config )
     delete config;
   config = 0;
