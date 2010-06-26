@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>895</width>
+    <width>892</width>
     <height>595</height>
    </rect>
   </property>
@@ -19,11 +19,11 @@
 }
 
 QStackedWidget {
-  background-color: transparent;
+  background-color: #ededed;
 }
 
 QGroupBox:title {
-  background-color: transparent;
+  background-color: #ededed;
   padding-top: 0px;
   padding-left: 6px;
 }
@@ -293,7 +293,7 @@ QToolButton:!checked {
    <item>
     <widget class="QStackedWidget" name="mStackedWidgetProfileSettings">
      <property name="currentIndex">
-      <number>0</number>
+      <number>4</number>
      </property>
      <widget class="QWidget" name="pageGraphic">
       <layout class="QGridLayout" name="gridLayoutGraphics">
