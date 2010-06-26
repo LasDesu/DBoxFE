@@ -69,8 +69,7 @@ namespace asaal {
       void setInternet( DOSBoxConfiguration *config );
       void setDos( DOSBoxConfiguration *config );
       void setAutoexec( DOSBoxConfiguration *config );
-    
-    
+
       void releaseConfiguration( DOSBoxConfiguration *config );
   };
 }

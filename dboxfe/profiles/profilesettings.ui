@@ -6,27 +6,30 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>762</width>
-    <height>594</height>
+    <width>895</width>
+    <height>595</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Profile settings</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">#UiProfileSettingBase,
-#mStackedWidgetProfileSettings {
+   <string notr="true">#UiProfileSettingBase {
   background-color: #ededed;
+}
+
+QStackedWidget {
+  background-color: transparent;
 }
 
 QGroupBox:title {
   background-color: transparent;
-  padding-top: 1px;
+  padding-top: 0px;
   padding-left: 6px;
 }
 
 QGroupBox {
-  background-color: transparent;
+  background-color: #ededed;
 }
 
 QWidget#mWidgetToolBar {
@@ -290,7 +293,7 @@ QToolButton:!checked {
    <item>
     <widget class="QStackedWidget" name="mStackedWidgetProfileSettings">
      <property name="currentIndex">
-      <number>3</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="pageGraphic">
       <layout class="QGridLayout" name="gridLayoutGraphics">
@@ -836,7 +839,7 @@ QToolButton:!checked {
                </widget>
               </item>
               <item>
-               <widget class="QToolButton" name="mToolButtonMapperFile">
+               <widget class="QToolButton" name="mToolButtonSelectMapperFile">
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
@@ -1263,15 +1266,9 @@ QToolButton:!checked {
       </layout>
      </widget>
      <widget class="QWidget" name="pageSound">
-      <layout class="QGridLayout" name="gridLayout_8">
+      <layout class="QGridLayout" name="gridLayout_7">
        <item row="0" column="0">
         <widget class="QGroupBox" name="groupBoxMixer">
-         <property name="minimumSize">
-          <size>
-           <width>133</width>
-           <height>242</height>
-          </size>
-         </property>
          <property name="title">
           <string>Mixer</string>
          </property>
@@ -1477,12 +1474,6 @@ to keep on top of the blocksize.</string>
        </item>
        <item row="0" column="1">
         <widget class="QGroupBox" name="groupBoxGus">
-         <property name="minimumSize">
-          <size>
-           <width>262</width>
-           <height>243</height>
-          </size>
-         </property>
          <property name="title">
           <string>GUS</string>
          </property>
@@ -1802,7 +1793,162 @@ with Timidity should work fine.</string>
                </widget>
               </item>
               <item>
-               <widget class="QToolButton" name="mToolButtonGusUltraDir">
+               <widget class="QToolButton" name="mToolButtonSelectGusUltraDir">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QGroupBox" name="groupBoxMidi">
+         <property name="title">
+          <string>MDI</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayoutMidi">
+          <property name="topMargin">
+           <number>36</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayoutMPU">
+            <item>
+             <widget class="QLabel" name="mLabelMidiMPU401">
+              <property name="text">
+               <string>MPU-401</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxMidiMPU401</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxMidiMPU401">
+              <property name="toolTip">
+               <string>Type of MPU-401 to emulate.</string>
+              </property>
+              <property name="statusTip">
+               <string>Type of MPU-401 to emulate.</string>
+              </property>
+              <property name="whatsThis">
+               <string>Type of MPU-401 to emulate.</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>intelligent</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>uart</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>none</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayoutMidiDevice">
+            <item>
+             <widget class="QLabel" name="mLabelMidiDevice">
+              <property name="text">
+               <string>MDI device</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxMidiDevice</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxMidiDevice">
+              <property name="toolTip">
+               <string>Device that will receive the MIDI data from MPU-401.</string>
+              </property>
+              <property name="statusTip">
+               <string>Device that will receive the MIDI data from MPU-401.</string>
+              </property>
+              <property name="whatsThis">
+               <string>Device that will receive the MIDI data from MPU-401.</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>default</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>win32</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>alsa</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>oss</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>coreaudio</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>coremidi</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>none</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayoutMidiConfig">
+            <item>
+             <widget class="QLabel" name="mLabelMdiConfig">
+              <property name="text">
+               <string>MDI config</string>
+              </property>
+              <property name="buddy">
+               <cstring>mLineEditMidiConfig</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayoutMidiConfig">
+              <item>
+               <widget class="QLineEdit" name="mLineEditMidiConfig">
+                <property name="toolTip">
+                 <string>Special configuration options for the device driver.
+This is usually the id of the device you want to use.</string>
+                </property>
+                <property name="statusTip">
+                 <string>Special configuration options for the device driver. This is usually the id of the device you want to use.</string>
+                </property>
+                <property name="whatsThis">
+                 <string>Special configuration options for the device driver. This is usually the id of the device you want to use.</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QToolButton" name="mToolButtonSelectMidiConfig">
                 <property name="text">
                  <string>...</string>
                 </property>
@@ -1817,16 +1963,10 @@ with Timidity should work fine.</string>
        </item>
        <item row="1" column="0" colspan="2">
         <widget class="QGroupBox" name="groupBoxSoundBlaster">
-         <property name="minimumSize">
-          <size>
-           <width>383</width>
-           <height>217</height>
-          </size>
-         </property>
          <property name="title">
           <string>Soundblaster</string>
          </property>
-         <layout class="QGridLayout" name="gridLayoutSoundBlaster">
+         <layout class="QGridLayout" name="gridLayout_5">
           <item row="0" column="0">
            <layout class="QVBoxLayout" name="verticalLayoutSBMixer">
             <item>
@@ -2350,16 +2490,10 @@ for highest quality (set the mixer rate accordingly).</string>
        </item>
        <item row="1" column="2">
         <widget class="QGroupBox" name="groupBoxSpeaker">
-         <property name="minimumSize">
-          <size>
-           <width>262</width>
-           <height>216</height>
-          </size>
-         </property>
          <property name="title">
           <string>Speaker</string>
          </property>
-         <layout class="QGridLayout" name="gridLayoutSpeaker">
+         <layout class="QGridLayout" name="gridLayout_6">
           <item row="0" column="0">
            <layout class="QVBoxLayout" name="verticalLayoutSpeaker">
             <item>
@@ -2395,76 +2529,6 @@ for highest quality (set the mixer rate accordingly).</string>
               <property name="checked">
                <bool>true</bool>
               </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="0" column="1">
-           <layout class="QVBoxLayout" name="verticalLayoutSpeakerPCRate">
-            <item>
-             <widget class="QLabel" name="mLabelSpeakerPCRate">
-              <property name="text">
-               <string>PC rate</string>
-              </property>
-              <property name="buddy">
-               <cstring>mComboBoxSpeakerPCRate</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="mComboBoxSpeakerPCRate">
-              <property name="toolTip">
-               <string>Sample rate of the PC-Speaker sound generation.</string>
-              </property>
-              <property name="statusTip">
-               <string>Sample rate of the PC-Speaker sound generation.</string>
-              </property>
-              <property name="whatsThis">
-               <string>Sample rate of the PC-Speaker sound generation.</string>
-              </property>
-              <property name="currentIndex">
-               <number>4</number>
-              </property>
-              <item>
-               <property name="text">
-                <string>49716</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>48000</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>44100</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>32000</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>22050</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>16000</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>11025</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>8000</string>
-               </property>
-              </item>
              </widget>
             </item>
            </layout>
@@ -2583,7 +2647,77 @@ emulation is present only if machine is set to 'tandy'.</string>
             </item>
            </layout>
           </item>
-          <item row="2" column="0" colspan="2">
+          <item row="0" column="1">
+           <layout class="QVBoxLayout" name="verticalLayoutSpeakerPCRate">
+            <item>
+             <widget class="QLabel" name="mLabelSpeakerPCRate">
+              <property name="text">
+               <string>PC rate</string>
+              </property>
+              <property name="buddy">
+               <cstring>mComboBoxSpeakerPCRate</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="mComboBoxSpeakerPCRate">
+              <property name="toolTip">
+               <string>Sample rate of the PC-Speaker sound generation.</string>
+              </property>
+              <property name="statusTip">
+               <string>Sample rate of the PC-Speaker sound generation.</string>
+              </property>
+              <property name="whatsThis">
+               <string>Sample rate of the PC-Speaker sound generation.</string>
+              </property>
+              <property name="currentIndex">
+               <number>4</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>49716</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>48000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>44100</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>32000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>22050</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>16000</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>11025</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8000</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
            <layout class="QVBoxLayout" name="verticalLayoutSpeakerDisney">
             <item>
              <widget class="QLabel" name="mLabelSpeakerDisney">
@@ -2633,191 +2767,30 @@ Voice Master and Speech Thing compatible).</string>
          </property>
         </spacer>
        </item>
-       <item row="0" column="2">
-        <widget class="QGroupBox" name="groupBoxMidi">
-         <property name="minimumSize">
-          <size>
-           <width>217</width>
-           <height>220</height>
-          </size>
-         </property>
-         <property name="title">
-          <string>MDI</string>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayoutMidi">
-          <property name="topMargin">
-           <number>35</number>
-          </property>
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayoutMPU">
-            <item>
-             <widget class="QLabel" name="mLabelMidiMPU401">
-              <property name="text">
-               <string>MPU-401</string>
-              </property>
-              <property name="buddy">
-               <cstring>mComboBoxMidiMPU401</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="mComboBoxMidiMPU401">
-              <property name="toolTip">
-               <string>Type of MPU-401 to emulate.</string>
-              </property>
-              <property name="statusTip">
-               <string>Type of MPU-401 to emulate.</string>
-              </property>
-              <property name="whatsThis">
-               <string>Type of MPU-401 to emulate.</string>
-              </property>
-              <item>
-               <property name="text">
-                <string>intelligent</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>uart</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>none</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayoutMidiDevice">
-            <item>
-             <widget class="QLabel" name="mLabelMidiDevice">
-              <property name="text">
-               <string>MDI device</string>
-              </property>
-              <property name="buddy">
-               <cstring>mComboBoxMidiDevice</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="mComboBoxMidiDevice">
-              <property name="toolTip">
-               <string>Device that will receive the MIDI data from MPU-401.</string>
-              </property>
-              <property name="statusTip">
-               <string>Device that will receive the MIDI data from MPU-401.</string>
-              </property>
-              <property name="whatsThis">
-               <string>Device that will receive the MIDI data from MPU-401.</string>
-              </property>
-              <item>
-               <property name="text">
-                <string>default</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>win32</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>alsa</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>oss</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>coreaudio</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>coremidi</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>none</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayoutMidiConfig">
-            <item>
-             <widget class="QLabel" name="mLabelMdiConfig">
-              <property name="text">
-               <string>MDI config</string>
-              </property>
-              <property name="buddy">
-               <cstring>mLineEditMidiConfig</cstring>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayoutMidiConfig">
-              <item>
-               <widget class="QLineEdit" name="mLineEditMidiConfig">
-                <property name="toolTip">
-                 <string>Special configuration options for the device driver.
-This is usually the id of the device you want to use.</string>
-                </property>
-                <property name="statusTip">
-                 <string>Special configuration options for the device driver. This is usually the id of the device you want to use.</string>
-                </property>
-                <property name="whatsThis">
-                 <string>Special configuration options for the device driver. This is usually the id of the device you want to use.</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QToolButton" name="mToolButtonMidiConfig">
-                <property name="text">
-                 <string>...</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </widget>
-       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="pageInternet">
       <layout class="QGridLayout" name="gridLayout_9">
        <item row="0" column="0">
-        <widget class="QGroupBox" name="groupBox_9">
+        <widget class="QGroupBox" name="groupBoxSerial">
          <property name="title">
           <string>Serial</string>
          </property>
-         <layout class="QGridLayout" name="gridLayout_10">
+         <layout class="QGridLayout" name="gridLayoutSerial">
           <item row="0" column="0">
-           <layout class="QVBoxLayout" name="verticalLayout_43">
+           <layout class="QVBoxLayout" name="verticalLayoutSerial">
             <item>
-             <widget class="QLabel" name="label_16">
+             <widget class="QLabel" name="mLabelSerial">
               <property name="text">
                <string>Serial</string>
               </property>
               <property name="buddy">
-               <cstring>comboBox_28</cstring>
+               <cstring>mComboBoxSerial</cstring>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QComboBox" name="comboBox_28">
+             <widget class="QComboBox" name="mComboBoxSerial">
               <property name="toolTip">
                <string>Set type of device connected to com port.</string>
               </property>
@@ -2852,19 +2825,19 @@ This is usually the id of the device you want to use.</string>
            </layout>
           </item>
           <item row="0" column="1">
-           <layout class="QVBoxLayout" name="verticalLayout_42">
+           <layout class="QVBoxLayout" name="verticalLayoutSerialDevice">
             <item>
-             <widget class="QLabel" name="label_43">
+             <widget class="QLabel" name="mLabelSerialDevice">
               <property name="text">
                <string>Device</string>
               </property>
               <property name="buddy">
-               <cstring>comboBox_29</cstring>
+               <cstring>mComboBoxSerialDevice</cstring>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QComboBox" name="comboBox_29">
+             <widget class="QComboBox" name="mComboBoxSerialDevice">
               <item>
                <property name="text">
                 <string>dummy</string>
@@ -2895,21 +2868,24 @@ This is usually the id of the device you want to use.</string>
            </layout>
           </item>
           <item row="1" column="0" colspan="2">
-           <widget class="QStackedWidget" name="stackedWidget">
+           <widget class="QStackedWidget" name="mStackedWidgetSerialOption">
             <property name="minimumSize">
              <size>
               <width>0</width>
               <height>150</height>
              </size>
             </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
             <widget class="QWidget" name="page"/>
             <widget class="QWidget" name="page_2"/>
            </widget>
           </item>
           <item row="2" column="0" colspan="2">
-           <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <layout class="QHBoxLayout" name="horizontalLayoutSerial">
             <item>
-             <widget class="QTreeWidget" name="treeWidget">
+             <widget class="QTreeWidget" name="mTreeWidgetSerial">
               <column>
                <property name="text">
                 <string>Serial</string>
@@ -2923,23 +2899,23 @@ This is usually the id of the device you want to use.</string>
              </widget>
             </item>
             <item>
-             <layout class="QVBoxLayout" name="verticalLayout_44">
+             <layout class="QVBoxLayout" name="verticalLayoutSerialButton">
               <item>
-               <widget class="QToolButton" name="toolButton_4">
+               <widget class="QToolButton" name="mToolButtonSerialAdd">
                 <property name="text">
                  <string>+</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QToolButton" name="toolButton_5">
+               <widget class="QToolButton" name="mToolButtonSerialRemove">
                 <property name="text">
                  <string>-</string>
                 </property>
                </widget>
               </item>
               <item>
-               <spacer name="verticalSpacer_2">
+               <spacer name="verticalSpacerSerialButton">
                 <property name="orientation">
                  <enum>Qt::Vertical</enum>
                 </property>
@@ -2956,7 +2932,7 @@ This is usually the id of the device you want to use.</string>
            </layout>
           </item>
           <item row="3" column="0">
-           <widget class="QCheckBox" name="checkBox_12">
+           <widget class="QCheckBox" name="mCheckBoxIpx">
             <property name="text">
              <string>IPX</string>
             </property>
@@ -3009,7 +2985,7 @@ This is usually the id of the device you want to use.</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QToolButton" name="toolButton_6">
+                  <widget class="QToolButton" name="mToolButtonSelectLanguage">
                    <property name="text">
                     <string>...</string>
                    </property>
@@ -3143,7 +3119,7 @@ This is usually the id of the device you want to use.</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QToolButton" name="toolButton_7">
+                  <widget class="QToolButton" name="mToolButtonSelectCapture">
                    <property name="text">
                     <string>...</string>
                    </property>
@@ -3582,488 +3558,744 @@ ch (CH Flightstick).</string>
          <property name="title">
           <string>Autoexec</string>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayoutAutoexec">
-          <item>
-           <layout class="QGridLayout" name="gridLayoutAutoexec">
-            <item row="0" column="0">
-             <layout class="QVBoxLayout" name="verticalLayoutMountAs">
-              <item>
-               <widget class="QLabel" name="mLabelMountAs">
-                <property name="text">
-                 <string>Mount as</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QComboBox" name="mComboBoxMountAs">
-                <item>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="title">
+             <string>Global mount option</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0" colspan="2">
+              <layout class="QVBoxLayout" name="verticalLayoutMountAs">
+               <item>
+                <widget class="QLabel" name="mLabelMountAs">
                  <property name="text">
-                  <string>Default</string>
+                  <string>Mount as</string>
                  </property>
-                </item>
-                <item>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="mComboBoxMountAs">
+                 <item>
+                  <property name="text">
+                   <string>Default</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>CD/DVD ROM</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Floppy</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Image</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="2" colspan="2">
+              <layout class="QVBoxLayout" name="verticalLayoutCDDVDType">
+               <item>
+                <widget class="QLabel" name="mLabelCDDVD">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
                  <property name="text">
-                  <string>CD/DVD ROM</string>
+                  <string>CD / DVD Type</string>
                  </property>
-                </item>
-                <item>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="mComboBoxCDDVDType">
+                 <item>
+                  <property name="text">
+                   <string>Windows 2k/XP/Linux</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Windows 98</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QLabel" name="label">
                  <property name="text">
-                  <string>Floppy</string>
+                  <string>BPS</string>
                  </property>
-                </item>
-                <item>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="mSpinBoxBytePerSector">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>65534</number>
+                 </property>
+                 <property name="value">
+                  <number>512</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="0" colspan="4">
+              <layout class="QGridLayout" name="gridLayoutDriveLetter">
+               <item row="0" column="0" colspan="3">
+                <widget class="QLabel" name="mLabelDriveDirectoryLetter">
                  <property name="text">
-                  <string>Image</string>
+                  <string>Drive letter and directory</string>
                  </property>
-                </item>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item row="0" column="1" colspan="2">
-             <layout class="QVBoxLayout" name="verticalLayoutCDDVDType">
-              <item>
-               <widget class="QLabel" name="mLabelCDDVD">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <property name="text">
-                 <string>CD / DVD Type</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QComboBox" name="mComboBoxCDDVDType">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <item>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QComboBox" name="mComboBoxDriveLetter">
+                 <property name="minimumSize">
+                  <size>
+                   <width>60</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>60</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>A</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>B</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>C</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>D</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>E</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>F</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>G</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>H</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>I</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>J</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>K</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>L</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>M</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>N</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>O</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>P</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Q</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>R</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>S</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>T</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>U</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>V</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>W</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>X</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Y</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Z</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="mLineEditDrive"/>
+               </item>
+               <item row="1" column="2">
+                <widget class="QToolButton" name="mToolButtonSelectDrive">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>22</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>22</height>
+                  </size>
+                 </property>
                  <property name="text">
-                  <string>Windows 2000/XP and Linux CD/DVD ROM</string>
+                  <string>...</string>
                  </property>
-                </item>
-                <item>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="3">
+                <widget class="QCheckBox" name="mCheckBoxSwitchToFolder">
                  <property name="text">
-                  <string>Windows 98 CD/DVD ROM</string>
+                  <string>Switch into this folder after dosbox started</string>
                  </property>
-                </item>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item row="1" column="0">
-             <layout class="QVBoxLayout" name="verticalLayoutImageType">
-              <item>
-               <widget class="QLabel" name="mLabelImageType">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <property name="text">
-                 <string>Image type</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QComboBox" name="mComboBoxImageType">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="6" column="0" colspan="4">
+              <layout class="QGridLayout" name="gridLayoutDriveLabelName">
+               <item row="0" column="0">
+                <widget class="QLabel" name="mLabelCDDVDLabel">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
                  <property name="text">
-                  <string>floppy</string>
+                  <string>Label name</string>
                  </property>
-                </item>
-                <item>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLineEdit" name="mLineEditLabelName">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QCheckBox" name="mCheckBoxUseLabelForCDDVD">
                  <property name="text">
-                  <string>iso</string>
+                  <string>Use label for CD/DVD ROM</string>
                  </property>
-                </item>
-                <item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="1">
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QLabel" name="label_2">
                  <property name="text">
-                  <string>hdd</string>
+                  <string>SPC</string>
                  </property>
-                </item>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item row="1" column="1">
-             <layout class="QVBoxLayout" name="verticalLayoutImageFormat">
-              <item>
-               <widget class="QLabel" name="mLabelImageFormat">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <property name="text">
-                 <string>Image format</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QComboBox" name="mComboBoxImageFormat">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <item>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="mSpinBoxSectorsPerCluster">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>127</number>
+                 </property>
+                 <property name="value">
+                  <number>127</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="2">
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <widget class="QLabel" name="label_3">
                  <property name="text">
-                  <string>iso</string>
+                  <string>TC</string>
                  </property>
-                </item>
-                <item>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="mSpinBoxTotalCluster">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>65534</number>
+                 </property>
+                 <property name="value">
+                  <number>16513</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="3">
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QLabel" name="label_4">
                  <property name="text">
-                  <string>flat</string>
+                  <string>TFC</string>
                  </property>
-                </item>
-                <item>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="mSpinBoxTotalFreeCluster">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>65534</number>
+                 </property>
+                 <property name="value">
+                  <number>13500</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="2" column="0" colspan="4">
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <widget class="QLabel" name="label_7">
                  <property name="text">
-                  <string>none</string>
+                  <string>Free size</string>
                  </property>
-                </item>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item row="1" column="2">
-             <layout class="QVBoxLayout" name="verticalLayoutHDDMode">
-              <item>
-               <widget class="QLabel" name="mLabelHDDMode">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <property name="text">
-                 <string>HDD mode</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QComboBox" name="mComboBoxHDDMode">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <item>
-                 <property name="text">
-                  <string>master</string>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_2">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                  </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>slave</string>
+                 <property name="suffix">
+                  <string> MB</string>
                  </property>
-                </item>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item row="2" column="0" colspan="3">
-             <layout class="QVBoxLayout" name="verticalLayoutImageSize">
-              <item>
-               <widget class="QLabel" name="mLabelImageSize">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <property name="text">
-                 <string>Size</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="mLineEditImageSize">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <property name="text">
-                 <string>512,63,16,142</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayoutDrive">
-            <item>
-             <layout class="QGridLayout" name="gridLayoutDriveLetter">
-              <item row="0" column="0" colspan="3">
-               <widget class="QLabel" name="mLabelDriveDirectoryLetter">
-                <property name="text">
-                 <string>Drive letter and directory</string>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0">
-               <widget class="QComboBox" name="mComboBoxDriveLetter">
-                <property name="minimumSize">
-                 <size>
-                  <width>60</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>60</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <item>
-                 <property name="text">
-                  <string>A</string>
+                 <property name="minimum">
+                  <number>1</number>
                  </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>B</string>
+                 <property name="maximum">
+                  <number>65534</number>
                  </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>C</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>D</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>E</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>F</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>G</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>H</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>I</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>J</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>K</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>L</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>M</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>N</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>O</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>P</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Q</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>R</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>S</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>T</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>U</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>V</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>W</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>X</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Y</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Z</string>
-                 </property>
-                </item>
-               </widget>
-              </item>
-              <item row="1" column="1">
-               <widget class="QLineEdit" name="mLineEditDrive"/>
-              </item>
-              <item row="1" column="2">
-               <widget class="QToolButton" name="toolButton_8">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>22</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>22</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>...</string>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="0" colspan="3">
-               <widget class="QCheckBox" name="mCheckBoxSwitchToFolder">
-                <property name="text">
-                 <string>Switch into this folder after dosbox started</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QGridLayout" name="gridLayoutDriveLabelName">
-              <item row="0" column="0">
-               <widget class="QLabel" name="mLabelCDDVDLabel">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-                <property name="text">
-                 <string>Label name</string>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0">
-               <widget class="QLineEdit" name="mLineEditLabelName">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="0">
-               <widget class="QCheckBox" name="mCheckBoxUseLabelForCDDVD">
-                <property name="text">
-                 <string>Use label for CD/DVD ROM</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayoutAutoexec">
-            <item>
-             <widget class="QTreeWidget" name="mTreeWidgetAutoexec">
-              <property name="showDropIndicator" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="rootIsDecorated">
-               <bool>false</bool>
-              </property>
-              <property name="itemsExpandable">
-               <bool>false</bool>
-              </property>
-              <column>
-               <property name="text">
-                <string>Mount option</string>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="3" column="0" colspan="4">
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
                </property>
-              </column>
-             </widget>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayoutAutoexecButtons">
-              <item>
-               <widget class="QToolButton" name="mToolButtonUp">
-                <property name="text">
-                 <string>&gt;</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QToolButton" name="mToolButtonDown">
-                <property name="text">
-                 <string>&lt;</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="verticalSpacerAutoexec">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>40</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QToolButton" name="mToolButtonAdd">
-                <property name="text">
-                 <string>+</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QToolButton" name="mToolButtonRemove">
-                <property name="text">
-                 <string>-</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>5</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="5" column="0" colspan="4">
+              <spacer name="verticalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>5</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string>Image mount option</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayoutImageType">
+               <item>
+                <widget class="QLabel" name="mLabelImageType">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>Image type</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="mComboBoxImageType">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>floppy</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>cdrom</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>hdd</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="1">
+              <layout class="QVBoxLayout" name="verticalLayoutImageFormat">
+               <item>
+                <widget class="QLabel" name="mLabelImageFormat">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>File system format</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="mComboBoxImageFormat">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>iso</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>fat</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>none</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="2" colspan="2">
+              <layout class="QVBoxLayout" name="verticalLayoutHDDMode">
+               <item>
+                <widget class="QLabel" name="mLabelHDDMode">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>HDD mode</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="mComboBoxHDDMode">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>master</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>slave</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>Sectors byte size</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="1">
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <widget class="QLabel" name="label_8">
+                 <property name="text">
+                  <string>Sectors per head</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_3">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="2">
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <item>
+                <widget class="QLabel" name="label_9">
+                 <property name="text">
+                  <string>Heads</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_4">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="3">
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <widget class="QLabel" name="label_10">
+                 <property name="text">
+                  <string>Cylinders</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox_5">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="2" column="0" colspan="4">
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>Images</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <property name="spacing">
+                  <number>8</number>
+                 </property>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit"/>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="toolButton_5">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>22</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>22</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QGridLayout" name="gridLayout">
+                 <item row="0" column="0" rowspan="5">
+                  <widget class="QListWidget" name="listWidget"/>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QToolButton" name="toolButton">
+                   <property name="text">
+                    <string>&lt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QToolButton" name="toolButton_2">
+                   <property name="text">
+                    <string>&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <spacer name="verticalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>13</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QToolButton" name="toolButton_4">
+                   <property name="text">
+                    <string>+</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QToolButton" name="toolButton_3">
+                   <property name="text">
+                    <string>-</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <spacer name="verticalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>838</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -4157,7 +4389,7 @@ ch (CH Flightstick).</string>
   <tabstop>mComboBoxWindowWidthHeight</tabstop>
   <tabstop>mHorizontalSliderSensitivity</tabstop>
   <tabstop>mLineEditMapperFile</tabstop>
-  <tabstop>mToolButtonMapperFile</tabstop>
+  <tabstop>mToolButtonSelectMapperFile</tabstop>
   <tabstop>mComboBoxCore</tabstop>
   <tabstop>mComboBoxType</tabstop>
   <tabstop>mComboBoxCycles</tabstop>
@@ -4178,11 +4410,11 @@ ch (CH Flightstick).</string>
   <tabstop>mComboBoxGusRate</tabstop>
   <tabstop>mComboBoxGusDMA</tabstop>
   <tabstop>mLineEditGusUltraDir</tabstop>
-  <tabstop>mToolButtonGusUltraDir</tabstop>
+  <tabstop>mToolButtonSelectGusUltraDir</tabstop>
   <tabstop>mComboBoxMidiMPU401</tabstop>
   <tabstop>mComboBoxMidiDevice</tabstop>
   <tabstop>mLineEditMidiConfig</tabstop>
-  <tabstop>mToolButtonMidiConfig</tabstop>
+  <tabstop>mToolButtonSelectMidiConfig</tabstop>
   <tabstop>mCheckBoxSBMixer</tabstop>
   <tabstop>mComboBoxSBType</tabstop>
   <tabstop>mComboBoxSBBase</tabstop>
@@ -4198,18 +4430,18 @@ ch (CH Flightstick).</string>
   <tabstop>mComboBoxSpeakerTandyRate</tabstop>
   <tabstop>mCheckBoxSpeakerDisney</tabstop>
   <tabstop>mToolBtnInternet</tabstop>
-  <tabstop>comboBox_28</tabstop>
-  <tabstop>comboBox_29</tabstop>
-  <tabstop>treeWidget</tabstop>
-  <tabstop>toolButton_4</tabstop>
-  <tabstop>toolButton_5</tabstop>
-  <tabstop>checkBox_12</tabstop>
+  <tabstop>mComboBoxSerial</tabstop>
+  <tabstop>mComboBoxSerialDevice</tabstop>
+  <tabstop>mTreeWidgetSerial</tabstop>
+  <tabstop>mToolButtonSerialAdd</tabstop>
+  <tabstop>mToolButtonSerialRemove</tabstop>
+  <tabstop>mCheckBoxIpx</tabstop>
   <tabstop>mToolBtnDos</tabstop>
   <tabstop>mLineEditDosLanguage</tabstop>
-  <tabstop>toolButton_6</tabstop>
+  <tabstop>mToolButtonSelectLanguage</tabstop>
   <tabstop>mComboBoxDosMachine</tabstop>
   <tabstop>mLineEditDosCapture</tabstop>
-  <tabstop>toolButton_7</tabstop>
+  <tabstop>mToolButtonSelectCapture</tabstop>
   <tabstop>mSpinBoxDosMemorySize</tabstop>
   <tabstop>mCheckBoxDosBoxXMS</tabstop>
   <tabstop>mCheckBoxDosBoxEMS</tabstop>

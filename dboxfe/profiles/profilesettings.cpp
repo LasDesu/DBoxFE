@@ -31,9 +31,8 @@
 using namespace asaal;
 
 ProfileSettings::ProfileSettings( QWidget *parent )
-  : QWidget(parent), 
-    mDosBoxConfig(0)
-{
+  : QWidget(parent),
+    mDosBoxConfig(0) {
 
   setupUi(this);
 
@@ -76,12 +75,12 @@ void ProfileSettings::setProfile( const DBoxFEProfile *profile ) {
 }
 
 void ProfileSettings::slotReset() {
-  
+
   if( mProfileFile.isEmpty() || mProfileFile.isNull() )
     return;
 
-  QMessageBox::StandardButton standardButton = QMessageBox::question(this, 
-                                                                     QApplication::applicationName(), 
+  QMessageBox::StandardButton standardButton = QMessageBox::question(this,
+                                                                     QApplication::applicationName(),
                                                                      tr("Are you sure that you want to\n"
                                                                         "reset the current configuration?"
                                                                         "\n\n"
@@ -147,11 +146,12 @@ void ProfileSettings::slotSwitchSettings() {
     }
   }
 }
+
 /*******************************************************************************************
- * Read configuration
+ * Initialize configuration
  *******************************************************************************************/
 void ProfileSettings::initializeSettings() {
-  
+
   releaseConfiguration(mDosBoxConfig);
 
   if( mProfileFile.isEmpty() ) {
@@ -284,16 +284,16 @@ void ProfileSettings::initializeSound( const DOSBoxConfiguration *config ) {
   GusSection *gus = config->gus;
   {
     mCheckBoxGus->setChecked(gus->mGus);
-     
+
     comboIndex = mComboBoxGusRate->findText(QString("%1").arg(gus->mGusRate));
     mComboBoxGusRate->setCurrentIndex(comboIndex);
-     
+
     comboIndex = mComboBoxGusBase->findText(QString("%1").arg(gus->mGusBase));
     mComboBoxGusBase->setCurrentIndex(comboIndex);
-     
+
     comboIndex = mComboBoxGusIRQ->findText(QString("%1").arg(gus->mGusIrq));
     mComboBoxGusIRQ->setCurrentIndex(comboIndex);
-     
+
     comboIndex = mComboBoxGusDMA->findText(QString("%1").arg(gus->mGusDma));
     mComboBoxGusDMA->setCurrentIndex(comboIndex);
 
@@ -318,8 +318,20 @@ void ProfileSettings::initializeSound( const DOSBoxConfiguration *config ) {
 }
 
 void ProfileSettings::initializeInternet( const DOSBoxConfiguration *config ) {
-  
-  Q_UNUSED(config)
+
+  SerialSection *serial = config->serial;
+  {
+    QStringList serialList = serial->mSerial1.split(" ");
+    if( serialList.count() > 0 ) {
+
+    }
+
+    serialList = serial->mSerial2.split(" ");
+    serialList = serial->mSerial3.split(" ");
+    serialList = serial->mSerial4.split(" ");
+
+    serialList.clear();
+  }
 }
 
 void ProfileSettings::initializeDos( const DOSBoxConfiguration *config ) {
@@ -334,7 +346,7 @@ void ProfileSettings::initializeDos( const DOSBoxConfiguration *config ) {
     comboIndex = mComboBoxDosMachine->findText(dosbox->mMachine);
     mComboBoxDosMachine->setCurrentIndex(comboIndex);
   }
-  
+
   JoystickSection *joystick = config->joystick;
   {
     mCheckBoxJoystickTimed->setChecked(joystick->mTimed);
@@ -370,11 +382,11 @@ void ProfileSettings::setGraphic( DOSBoxConfiguration *config ) {
   config->sdl = new SdlSection;
   config->render = new RenderSection;
   config->cpu = new CpuSection;
-  
+
 }
 
 void ProfileSettings::setSound( DOSBoxConfiguration *config ) {
-  
+
   config->mixer = new MixerSection;
   config->mdi = new MdiSection;
   config->soundBlaster = new SBlasterSection;
@@ -389,7 +401,7 @@ void ProfileSettings::setInternet( DOSBoxConfiguration *config ) {
 }
 
 void ProfileSettings::setDos( DOSBoxConfiguration *config ) {
-  
+
   config->dosbox = new DosboxSection;
   config->joystick = new JoystickSection;
   config->dos = new DosSection;
@@ -407,46 +419,46 @@ void ProfileSettings::releaseConfiguration( DOSBoxConfiguration *config ) {
 
   if( !config )
     return;
-    
+
   if( config->sdl )
     delete config->sdl;
-  
+
   if( config->dosbox )
     delete config->dosbox;
-  
+
   if( config->render )
     delete config->render;
-  
+
   if( config->cpu )
     delete config->cpu;
-  
+
   if( config->mixer )
     delete config->mixer;
-  
+
   if( config->mdi )
     delete config->mdi;
-  
+
   if( config->soundBlaster )
     delete config->soundBlaster;
-  
+
   if( config->gus )
     delete config->gus;
-  
+
   if( config->speaker )
     delete config->speaker;
-  
+
   if( config->joystick )
     delete config->joystick;
-  
+
   if( config->serial )
     delete config->serial;
-  
+
   if( config->dos )
     delete config->dos;
-  
+
   if( config->ipx )
     delete config->ipx;
-  
+
   config->autoexec.clear();
 
   if( config )
