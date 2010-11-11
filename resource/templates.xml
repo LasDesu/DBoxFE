@@ -284,7 +284,7 @@
 		<profile name="Discworld 2" file="templates/Discworld 2.prof"/>
 		<profile name="Discworld" file="templates/Discworld.prof"/>
 		<profile name="DiskWorld" file="templates/DiskWorld.prof"/>
-		<profile name="Diskoexpriment" file="templates/Diskoexpriment.prof"/>
+		<profile name="Diskoexpäriment" file="templates/Diskoexpäriment.prof"/>
 		<profile name="Disneys Aladdin" file="templates/Disneys Aladdin.prof"/>
 		<profile name="Disneys Beauty and the Beast" file="templates/Disneys Beauty and the Beast.prof"/>
 		<profile name="Doom 1.0" file="templates/Doom 1.0.prof"/>
@@ -732,7 +732,7 @@
 		<profile name="Mortal Combat 2" file="templates/Mortal Combat 2.prof"/>
 		<profile name="Mortal Combat" file="templates/Mortal Combat.prof"/>
 		<profile name="Mystic Towers" file="templates/Mystic Towers.prof"/>
-		<profile name="Mhle 12" file="templates/Mhle 12.prof"/>
+		<profile name="Mühle 12" file="templates/Mühle 12.prof"/>
 		<profile name="NHL 96" file="templates/NHL 96.prof"/>
 		<profile name="NHL Hockey" file="templates/NHL Hockey.prof"/>
 		<profile name="Nascar Racing 2" file="templates/Nascar Racing 2.prof"/>
@@ -830,7 +830,7 @@
 		<profile name="Railroad Tycoon Deluxe" file="templates/Railroad Tycoon Deluxe.prof"/>
 		<profile name="Railroad Tycoon" file="templates/Railroad Tycoon.prof"/>
 		<profile name="Rally Championship" file="templates/Rally Championship.prof"/>
-		<profile name="Ramona das Apfelwrmchen" file="templates/Ramona das Apfelwrmchen.prof"/>
+		<profile name="Ramona das Apfelwürmchen" file="templates/Ramona das Apfelwürmchen.prof"/>
 		<profile name="Rampage" file="templates/Rampage.prof"/>
 		<profile name="Raptor Call of the Shadows 1.0" file="templates/Raptor Call of the Shadows 1.0.prof"/>
 		<profile name="Raptor Call of the Shadows 1.1" file="templates/Raptor Call of the Shadows 1.1.prof"/>
@@ -1245,6 +1245,6 @@
 		<profile name="Zweilight Zone" file="templates/Zweilight Zone.prof"/>
 		<profile name="dBase III Plus" file="templates/dBase III Plus.prof"/>
 		<profile name="electro BODY" file="templates/electro BODY.prof"/>
-		<profile name="kopoly" file="templates/kopoly.prof"/>
+		<profile name="Ökopoly" file="templates/Ökopoly.prof"/>
 	</profile>
 </dfendreloaded>
