@@ -7,7 +7,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string>Copyright (c) 2004 - 2010 by Alexander Saal</string>
 	<key>CFBundleVersion</key>
-	<string>0.9.74</string>
+	<string>0.9.9</string>
 	<key>CFBundleExecutable</key>
 	<string>DBoxFE</string>
 	<key>CFBundleIdentifier</key>
