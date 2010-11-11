@@ -32,32 +32,26 @@ RESOURCES += resource/dboxfe.qrc
 CONFIG += qt thread warn_on
 QT += network sql xml
 
+TARGET = DBoxFE
+RCC_DIR = build/$${TARGET}/rcc
+MOC_DIR += build/$${TARGET}/moc
+OBJECTS_DIR += build/$${TARGET}/obj
+UI_DIR += build/$${TARGET}/ui
+
 # Config settings
 CONFIG(debug, debug|release) {
-
-  TARGET = DBoxFEd
-  RCC_DIR = build/dboxfed/rcc
-  MOC_DIR += build/dboxfed/moc
-  OBJECTS_DIR += build/dboxfed/obj
-  UI_DIR += build/dboxfed/ui
 
   DEFINES += DEBUG
 
 } else {
 
-  TARGET = DBoxFE
-  RCC_DIR = build/dboxfe/rcc
-  MOC_DIR += build/dboxfe/moc
-  OBJECTS_DIR += build/dboxfe/obj
-  UI_DIR += build/dboxfe/ui
-
   DEFINES -= DEBUG
 
   mac {
-    QMAKE_POST_LINK = strip -s build/bin/dboxfe.app/Contents/MacOS/DBoxFE
+    QMAKE_POST_LINK = strip -s build/bin/$${TARGET}.app/Contents/MacOS/$${TARGET}
   }
   unix:!mac {
-    QMAKE_POST_LINK = strip -s build/bin/DBoxFE
+    QMAKE_POST_LINK = strip -s build/bin/$${TARGET}
   }
 }
 
@@ -91,7 +85,7 @@ mac {
   }
   else {
     contains(QT_VERSION, ^4\.[0-5]\..*) {
-      error("Can't build DBoxFE with Qt version $${QT_VERSION}.")
+      error("Can't build $${TARGET} with Qt version $${QT_VERSION}.")
     }
   }
 }

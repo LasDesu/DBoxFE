@@ -58,13 +58,13 @@ Year=2007
 Notes=
 WWW=http://sourceforge.net/projects/doszip
 Language=English
-UserInfo=
+UserInfo=License=Open Source (GPL2)[13][10]
 
 [sdl]
 fullscreen=0
 autolock=1
 fulldouble=0
-usecancodes=1
+usescancodes=1
 sensitivity=100
 output=surface
 windowresolution=original

@@ -39,7 +39,7 @@ then
 
     echo "Build DBoxFE in release mode ..."
     cd ../
-    make -j 2 distclean &>/dev/null
+    make --jobs=2 distclean &>/dev/null
     $QMAKE "CONFIG+=release" -recursive &>/dev/null
     make &>/dev/null
     cd deployment
@@ -55,7 +55,7 @@ then
 
     echo "Cleanup build ..."
     cd ../
-    make -j 2 distclean &>/dev/null
+    make --jobs=2 distclean &>/dev/null
     cd deployment
   else
     echo "Mac deploying tool not available for this Qt version."

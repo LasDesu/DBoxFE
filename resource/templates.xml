@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8">
 <dfendreloaded>
-	<profiles count="997">
+	<profile count="1245">
 		<profile name="4D Sports Boxing" file="templates/4D Sports Boxing.prof"/>
-		<profile name="4DOS 7" file="templates/4DOS 7.50.prof"/>
-		<profile name="4DOS 7" file="templates/4DOS 7.58.prof"/>
-		<profile name="4DOS 7" file="templates/4DOS 7.61.prof"/>
+		<profile name="4DOS 7.50" file="templates/4DOS 7.50.prof"/>
+		<profile name="4DOS 7.58" file="templates/4DOS 7.58.prof"/>
+		<profile name="4DOS 7.61" file="templates/4DOS 7.61.prof"/>
 		<profile name="73 Million Seconds" file="templates/73 Million Seconds.prof"/>
 		<profile name="8088 Corruption" file="templates/8088 Corruption.prof"/>
 		<profile name="A-Train" file="templates/A-Train.prof"/>
@@ -17,9 +17,11 @@
 		<profile name="Act1" file="templates/Act1.prof"/>
 		<profile name="Advanced Civilization" file="templates/Advanced Civilization.prof"/>
 		<profile name="Advantage Tennis" file="templates/Advantage Tennis.prof"/>
+		<profile name="Adventure Math 2.0" file="templates/Adventure Math 2.0.prof"/>
 		<profile name="Adventures of Robbo (Shareware)" file="templates/Adventures of Robbo (Shareware).prof"/>
 		<profile name="Adventures of Robbo" file="templates/Adventures of Robbo.prof"/>
 		<profile name="Airbus A320" file="templates/Airbus A320.prof"/>
+		<profile name="Airlift Rescue" file="templates/Airlift Rescue.prof"/>
 		<profile name="Aladin" file="templates/Aladin.prof"/>
 		<profile name="Aldo Again (Aldo 2)" file="templates/Aldo Again (Aldo 2).prof"/>
 		<profile name="Aldos Adventure (Aldo 1)" file="templates/Aldos Adventure (Aldo 1).prof"/>
@@ -31,19 +33,24 @@
 		<profile name="Alone in the dark (Shareware)" file="templates/Alone in the dark (Shareware).prof"/>
 		<profile name="Alone in the dark 2" file="templates/Alone in the dark 2.prof"/>
 		<profile name="Alone in the dark" file="templates/Alone in the dark.prof"/>
-		<profile name="Alpha Man 1" file="templates/Alpha Man 1.0.prof"/>
-		<profile name="Alpha Man 1" file="templates/Alpha Man 1.1.prof"/>
+		<profile name="Alpha Man 1.0" file="templates/Alpha Man 1.0.prof"/>
+		<profile name="Alpha Man 1.1" file="templates/Alpha Man 1.1.prof"/>
+		<profile name="Amazing Learning Games With Rayman" file="templates/Amazing Learning Games With Rayman.prof"/>
 		<profile name="Amnesia" file="templates/Amnesia.prof"/>
-		<profile name="Ancients 1 Deathwatch 1" file="templates/Ancients 1 Deathwatch 1.2.prof"/>
+		<profile name="Ancients 1 Deathwatch 1.2" file="templates/Ancients 1 Deathwatch 1.2.prof"/>
 		<profile name="Ancients 1 Deathwatch" file="templates/Ancients 1 Deathwatch.prof"/>
 		<profile name="Angeldust 2" file="templates/Angeldust 2.prof"/>
 		<profile name="Angeldust" file="templates/Angeldust.prof"/>
-		<profile name="AnsiDraw 3" file="templates/AnsiDraw 3.0.prof"/>
-		<profile name="Ant Run 1" file="templates/Ant Run 1.0.prof"/>
-		<profile name="Ant Run 2" file="templates/Ant Run 2.0.prof"/>
-		<profile name="Ant Run 2" file="templates/Ant Run 2.1.prof"/>
-		<profile name="Ant Run 2" file="templates/Ant Run 2.3.prof"/>
-		<profile name="Ant Run 3" file="templates/Ant Run 3.0.prof"/>
+		<profile name="Animal Quest 1.5" file="templates/Animal Quest 1.5.prof"/>
+		<profile name="Animal Quest 2.0" file="templates/Animal Quest 2.0.prof"/>
+		<profile name="Animal Quest 4.0" file="templates/Animal Quest 4.0.prof"/>
+		<profile name="Animal Quest" file="templates/Animal Quest.prof"/>
+		<profile name="AnsiDraw 3.0" file="templates/AnsiDraw 3.0.prof"/>
+		<profile name="Ant Run 1.0" file="templates/Ant Run 1.0.prof"/>
+		<profile name="Ant Run 2.0" file="templates/Ant Run 2.0.prof"/>
+		<profile name="Ant Run 2.1" file="templates/Ant Run 2.1.prof"/>
+		<profile name="Ant Run 2.3" file="templates/Ant Run 2.3.prof"/>
+		<profile name="Ant Run 3.0" file="templates/Ant Run 3.0.prof"/>
 		<profile name="Arabicum" file="templates/Arabicum.prof"/>
 		<profile name="Arcade Volleyball" file="templates/Arcade Volleyball.prof"/>
 		<profile name="Arctic Adventure (Shareware)" file="templates/Arctic Adventure (Shareware).prof"/>
@@ -51,25 +58,27 @@
 		<profile name="Arctic Fox" file="templates/Arctic Fox.prof"/>
 		<profile name="Arcy 2" file="templates/Arcy 2.prof"/>
 		<profile name="Arena" file="templates/Arena.prof"/>
+		<profile name="Argo Checkers" file="templates/Argo Checkers.prof"/>
 		<profile name="Armored Fist" file="templates/Armored Fist.prof"/>
 		<profile name="ArticFox Tanks" file="templates/ArticFox Tanks.prof"/>
 		<profile name="Aspetra" file="templates/Aspetra.prof"/>
 		<profile name="Astral Blur" file="templates/Astral Blur.prof"/>
-		<profile name="AstroFire 1" file="templates/AstroFire 1.0.prof"/>
-		<profile name="AstroFire 1" file="templates/AstroFire 1.1.prof"/>
-		<profile name="AstroFire 2" file="templates/AstroFire 2.0.prof"/>
+		<profile name="Astro3D" file="templates/Astro3D.prof"/>
+		<profile name="AstroFire 1.0" file="templates/AstroFire 1.0.prof"/>
+		<profile name="AstroFire 1.1" file="templates/AstroFire 1.1.prof"/>
+		<profile name="AstroFire 2.0" file="templates/AstroFire 2.0.prof"/>
 		<profile name="Atomic Tetris" file="templates/Atomic Tetris.prof"/>
 		<profile name="Atomix" file="templates/Atomix.prof"/>
-		<profile name="Auto Sketch 1" file="templates/Auto Sketch 1.0.prof"/>
+		<profile name="Auto Sketch 1.0" file="templates/Auto Sketch 1.0.prof"/>
 		<profile name="BC-Race" file="templates/BC-Race.prof"/>
-		<profile name="Balloon Challenge 1" file="templates/Balloon Challenge 1.0.prof"/>
-		<profile name="Balloon Challenge 1" file="templates/Balloon Challenge 1.1.prof"/>
-		<profile name="Balloon Challenge 2" file="templates/Balloon Challenge 2.0.prof"/>
+		<profile name="Balloon Challenge 1.0" file="templates/Balloon Challenge 1.0.prof"/>
+		<profile name="Balloon Challenge 1.1" file="templates/Balloon Challenge 1.1.prof"/>
+		<profile name="Balloon Challenge 2.0" file="templates/Balloon Challenge 2.0.prof"/>
 		<profile name="Bananoid" file="templates/Bananoid.prof"/>
 		<profile name="Bannermania" file="templates/Bannermania.prof"/>
-		<profile name="Banyon Wars 1" file="templates/Banyon Wars 1.0.prof"/>
-		<profile name="Banyon Wars 2" file="templates/Banyon Wars 2.0.prof"/>
-		<profile name="Bart Simpson vs" file="templates/Bart Simpson vs. Space Mutants.prof"/>
+		<profile name="Banyon Wars 1.0" file="templates/Banyon Wars 1.0.prof"/>
+		<profile name="Banyon Wars 2.0" file="templates/Banyon Wars 2.0.prof"/>
+		<profile name="Bart Simpson vs. Space Mutants" file="templates/Bart Simpson vs. Space Mutants.prof"/>
 		<profile name="Bart Simpsons House of Weirdness" file="templates/Bart Simpsons House of Weirdness.prof"/>
 		<profile name="Battle Bugs" file="templates/Battle Bugs.prof"/>
 		<profile name="Battle Chess 4000" file="templates/Battle Chess 4000.prof"/>
@@ -77,9 +86,9 @@
 		<profile name="Battle Isle 2" file="templates/Battle Isle 2.prof"/>
 		<profile name="Battle Isle" file="templates/Battle Isle.prof"/>
 		<profile name="Battle Zone" file="templates/Battle Zone.prof"/>
-		<profile name="Battle for Atlantis 1" file="templates/Battle for Atlantis 1.0.prof"/>
-		<profile name="Battle for Atlantis 2" file="templates/Battle for Atlantis 2.0.prof"/>
-		<profile name="Battle for Atlantis 2" file="templates/Battle for Atlantis 2.2.prof"/>
+		<profile name="Battle for Atlantis 1.0" file="templates/Battle for Atlantis 1.0.prof"/>
+		<profile name="Battle for Atlantis 2.0" file="templates/Battle for Atlantis 2.0.prof"/>
+		<profile name="Battle for Atlantis 2.2" file="templates/Battle for Atlantis 2.2.prof"/>
 		<profile name="Beast" file="templates/Beast.prof"/>
 		<profile name="Beneath a Steel Sky (2)" file="templates/Beneath a Steel Sky (2).prof"/>
 		<profile name="Beneath a Steel Sky" file="templates/Beneath a Steel Sky.prof"/>
@@ -93,29 +102,38 @@
 		<profile name="Black Thorne" file="templates/Black Thorne.prof"/>
 		<profile name="Blake Stone Aliens of Gold" file="templates/Blake Stone Aliens of Gold.prof"/>
 		<profile name="Bleed" file="templates/Bleed.prof"/>
-		<profile name="Blind Wars 1" file="templates/Blind Wars 1.0.prof"/>
-		<profile name="Blind Wars 1" file="templates/Blind Wars 1.1.prof"/>
+		<profile name="Blind Wars 1.0" file="templates/Blind Wars 1.0.prof"/>
+		<profile name="Blind Wars 1.1" file="templates/Blind Wars 1.1.prof"/>
 		<profile name="Block-man 2" file="templates/Block-man 2.prof"/>
 		<profile name="Block-man" file="templates/Block-man.prof"/>
+		<profile name="Blood 0.99" file="templates/Blood 0.99.prof"/>
+		<profile name="Blood 0.99b" file="templates/Blood 0.99b.prof"/>
+		<profile name="Blood 1.0" file="templates/Blood 1.0.prof"/>
+		<profile name="Blood 1.01" file="templates/Blood 1.01.prof"/>
+		<profile name="Blood 1.02" file="templates/Blood 1.02.prof"/>
+		<profile name="Blood 1.11" file="templates/Blood 1.11.prof"/>
 		<profile name="Blood" file="templates/Blood.prof"/>
 		<profile name="Blue Force" file="templates/Blue Force.prof"/>
 		<profile name="Blues Brothers 2" file="templates/Blues Brothers 2.prof"/>
 		<profile name="Blues Brothers" file="templates/Blues Brothers.prof"/>
-		<profile name="Bolo Ball 1" file="templates/Bolo Ball 1.2.prof"/>
-		<profile name="Bolo Ball 2" file="templates/Bolo Ball 2.0.prof"/>
-		<profile name="Bolo Ball 2" file="templates/Bolo Ball 2.1.prof"/>
-		<profile name="Bolo Ball 2" file="templates/Bolo Ball 2.2.prof"/>
+		<profile name="Bolo Ball 1.2" file="templates/Bolo Ball 1.2.prof"/>
+		<profile name="Bolo Ball 2.0" file="templates/Bolo Ball 2.0.prof"/>
+		<profile name="Bolo Ball 2.1" file="templates/Bolo Ball 2.1.prof"/>
+		<profile name="Bolo Ball 2.2" file="templates/Bolo Ball 2.2.prof"/>
 		<profile name="Bomb" file="templates/Bomb.prof"/>
-		<profile name="Boppin 1" file="templates/Boppin 1.0 (Shareware).prof"/>
-		<profile name="Boppin 1" file="templates/Boppin 1.0.prof"/>
-		<profile name="Boppin 1" file="templates/Boppin 1.1 (Shareware).prof"/>
-		<profile name="Boppin 1" file="templates/Boppin 1.1.prof"/>
-		<profile name="Borland C 2" file="templates/Borland C 2.0.prof"/>
-		<profile name="Borland Pascal 7" file="templates/Borland Pascal 7.0.prof"/>
-		<profile name="Brix 1" file="templates/Brix 1.0.prof"/>
+		<profile name="Boppin 1.0 (Shareware)" file="templates/Boppin 1.0 (Shareware).prof"/>
+		<profile name="Boppin 1.0" file="templates/Boppin 1.0.prof"/>
+		<profile name="Boppin 1.1 (Shareware)" file="templates/Boppin 1.1 (Shareware).prof"/>
+		<profile name="Boppin 1.1" file="templates/Boppin 1.1.prof"/>
+		<profile name="Borland C 2.0" file="templates/Borland C 2.0.prof"/>
+		<profile name="Borland Pascal 7.0" file="templates/Borland Pascal 7.0.prof"/>
+		<profile name="Brix 1.0" file="templates/Brix 1.0.prof"/>
+		<profile name="Brix 2" file="templates/Brix 2.prof"/>
 		<profile name="Brix" file="templates/Brix.prof"/>
 		<profile name="Bugfixed" file="templates/Bugfixed.prof"/>
 		<profile name="Bureau 13" file="templates/Bureau 13.prof"/>
+		<profile name="California Games 1" file="templates/California Games 1.prof"/>
+		<profile name="California Games 2" file="templates/California Games 2.prof"/>
 		<profile name="Cannon Fodder 2" file="templates/Cannon Fodder 2.prof"/>
 		<profile name="Captain Comic (Revision 1)" file="templates/Captain Comic (Revision 1).prof"/>
 		<profile name="Captain Comic (Revision 3)" file="templates/Captain Comic (Revision 3).prof"/>
@@ -124,13 +142,13 @@
 		<profile name="Captain Comic 2" file="templates/Captain Comic 2.prof"/>
 		<profile name="Captain Comic" file="templates/Captain Comic.prof"/>
 		<profile name="Capture The Flag" file="templates/Capture The Flag.prof"/>
-		<profile name="Capture the Flag 1" file="templates/Capture the Flag 1.01.prof"/>
-		<profile name="Capture the Flag 1" file="templates/Capture the Flag 1.2.prof"/>
-		<profile name="Capture the Flag 1" file="templates/Capture the Flag 1.3.prof"/>
-		<profile name="Capture the Flag 1" file="templates/Capture the Flag 1.4.prof"/>
-		<profile name="Capture the Flag 3" file="templates/Capture the Flag 3.0.prof"/>
-		<profile name="Capture the Flag 3" file="templates/Capture the Flag 3.1.prof"/>
-		<profile name="Capture the Flag 3" file="templates/Capture the Flag 3.2.prof"/>
+		<profile name="Capture the Flag 1.01" file="templates/Capture the Flag 1.01.prof"/>
+		<profile name="Capture the Flag 1.2" file="templates/Capture the Flag 1.2.prof"/>
+		<profile name="Capture the Flag 1.3" file="templates/Capture the Flag 1.3.prof"/>
+		<profile name="Capture the Flag 1.4" file="templates/Capture the Flag 1.4.prof"/>
+		<profile name="Capture the Flag 3.0" file="templates/Capture the Flag 3.0.prof"/>
+		<profile name="Capture the Flag 3.1" file="templates/Capture the Flag 3.1.prof"/>
+		<profile name="Capture the Flag 3.2" file="templates/Capture the Flag 3.2.prof"/>
 		<profile name="Cardiac" file="templates/Cardiac.prof"/>
 		<profile name="Cargo Bay" file="templates/Cargo Bay.prof"/>
 		<profile name="Castle Adventure" file="templates/Castle Adventure.prof"/>
@@ -143,42 +161,47 @@
 		<profile name="Caves of Thor" file="templates/Caves of Thor.prof"/>
 		<profile name="Charlie the Duck (2)" file="templates/Charlie the Duck (2).prof"/>
 		<profile name="Charlie the Duck" file="templates/Charlie the Duck.prof"/>
-		<profile name="Chinese Checkers" file="templates/Chinese Checkers.prof"/>
-		<profile name="Chopper Commando 2" file="templates/Chopper Commando 2.00.prof"/>
-		<profile name="Chopper Commando 2" file="templates/Chopper Commando 2.56.prof"/>
-		<profile name="Cipher 1" file="templates/Cipher 1.0.prof"/>
-		<profile name="Cipher 1" file="templates/Cipher 1.2.prof"/>
-		<profile name="Cipher 2" file="templates/Cipher 2.0.prof"/>
-		<profile name="Cipher 2" file="templates/Cipher 2.1.prof"/>
-		<profile name="Cipher 2" file="templates/Cipher 2.11.prof"/>
-		<profile name="Cipher 2" file="templates/Cipher 2.2.prof"/>
+		<profile name="Chinese Checkers 1.1" file="templates/Chinese Checkers 1.1.prof"/>
+		<profile name="Chinese Checkers 1.2" file="templates/Chinese Checkers 1.2.prof"/>
+		<profile name="Chinese Checkers 1.3" file="templates/Chinese Checkers 1.3.prof"/>
+		<profile name="Chinese Checkers 2.0" file="templates/Chinese Checkers 2.0.prof"/>
+		<profile name="Chinese Checkers 2.1" file="templates/Chinese Checkers 2.1.prof"/>
+		<profile name="Chinese Checkers 2.3" file="templates/Chinese Checkers 2.3.prof"/>
+		<profile name="Chopper Commando 2.00" file="templates/Chopper Commando 2.00.prof"/>
+		<profile name="Chopper Commando 2.56" file="templates/Chopper Commando 2.56.prof"/>
+		<profile name="Cipher 1.0" file="templates/Cipher 1.0.prof"/>
+		<profile name="Cipher 1.2" file="templates/Cipher 1.2.prof"/>
+		<profile name="Cipher 2.0" file="templates/Cipher 2.0.prof"/>
+		<profile name="Cipher 2.1" file="templates/Cipher 2.1.prof"/>
+		<profile name="Cipher 2.11" file="templates/Cipher 2.11.prof"/>
+		<profile name="Cipher 2.2" file="templates/Cipher 2.2.prof"/>
 		<profile name="Civilization" file="templates/Civilization.prof"/>
 		<profile name="Clock (Pink Panter)" file="templates/Clock (Pink Panter).prof"/>
 		<profile name="Clock (Rolex)" file="templates/Clock (Rolex).prof"/>
 		<profile name="Clock (Seiko)" file="templates/Clock (Seiko).prof"/>
-		<profile name="Clydes Adventure 2" file="templates/Clydes Adventure 2.0.prof"/>
-		<profile name="Clydes Adventure 3" file="templates/Clydes Adventure 3.0.prof"/>
+		<profile name="Clydes Adventure 2.0" file="templates/Clydes Adventure 2.0.prof"/>
+		<profile name="Clydes Adventure 3.0" file="templates/Clydes Adventure 3.0.prof"/>
 		<profile name="Clydes Adventure" file="templates/Clydes Adventure.prof"/>
-		<profile name="Clydes Revenge 1" file="templates/Clydes Revenge 1.1.prof"/>
-		<profile name="Clydes Revenge 1" file="templates/Clydes Revenge 1.2.prof"/>
-		<profile name="Clydes Revenge 1" file="templates/Clydes Revenge 1.3.prof"/>
+		<profile name="Clydes Revenge 1.1" file="templates/Clydes Revenge 1.1.prof"/>
+		<profile name="Clydes Revenge 1.2" file="templates/Clydes Revenge 1.2.prof"/>
+		<profile name="Clydes Revenge 1.3" file="templates/Clydes Revenge 1.3.prof"/>
 		<profile name="Clydes Revenge" file="templates/Clydes Revenge.prof"/>
 		<profile name="Codename Iceman" file="templates/Codename Iceman.prof"/>
 		<profile name="Colonization" file="templates/Colonization.prof"/>
 		<profile name="Coma Demo" file="templates/Coma Demo.prof"/>
-		<profile name="Comanche 2" file="templates/Comanche 2.0.prof"/>
+		<profile name="Comanche 2.0" file="templates/Comanche 2.0.prof"/>
 		<profile name="Comanche 3" file="templates/Comanche 3.prof"/>
 		<profile name="Commanche" file="templates/Commanche.prof"/>
 		<profile name="Command  Conquer (2)" file="templates/Command  Conquer (2).prof"/>
 		<profile name="Command  Conquer" file="templates/Command  Conquer.prof"/>
-		<profile name="Commander Keen 1 (Marooned on Mars) (1" file="templates/Commander Keen 1 (Marooned on Mars) (1.0).prof"/>
-		<profile name="Commander Keen 1 (Marooned on Mars) 1" file="templates/Commander Keen 1 (Marooned on Mars) 1.31.prof"/>
+		<profile name="Commander Keen 1 (Marooned on Mars) (1.0)" file="templates/Commander Keen 1 (Marooned on Mars) (1.0).prof"/>
+		<profile name="Commander Keen 1 (Marooned on Mars) 1.31" file="templates/Commander Keen 1 (Marooned on Mars) 1.31.prof"/>
 		<profile name="Commander Keen 1 (Marooned on Mars)" file="templates/Commander Keen 1 (Marooned on Mars).prof"/>
 		<profile name="Commander Keen 2 (The Earth Explodes)" file="templates/Commander Keen 2 (The Earth Explodes).prof"/>
 		<profile name="Commander Keen 3 (Keen Must Die)" file="templates/Commander Keen 3 (Keen Must Die).prof"/>
-		<profile name="Commander Keen 4 (Goodbye Galaxy) 1" file="templates/Commander Keen 4 (Goodbye Galaxy) 1.0 special.prof"/>
-		<profile name="Commander Keen 4 (Goodbye Galaxy) 1" file="templates/Commander Keen 4 (Goodbye Galaxy) 1.0.prof"/>
-		<profile name="Commander Keen 4 (Goodbye Galaxy) 1" file="templates/Commander Keen 4 (Goodbye Galaxy) 1.1.prof"/>
+		<profile name="Commander Keen 4 (Goodbye Galaxy) 1.0 special" file="templates/Commander Keen 4 (Goodbye Galaxy) 1.0 special.prof"/>
+		<profile name="Commander Keen 4 (Goodbye Galaxy) 1.0" file="templates/Commander Keen 4 (Goodbye Galaxy) 1.0.prof"/>
+		<profile name="Commander Keen 4 (Goodbye Galaxy) 1.1" file="templates/Commander Keen 4 (Goodbye Galaxy) 1.1.prof"/>
 		<profile name="Commander Keen 4 (Goodbye Galaxy)" file="templates/Commander Keen 4 (Goodbye Galaxy).prof"/>
 		<profile name="Commander Keen 4 (Secret of the Oracle)" file="templates/Commander Keen 4 (Secret of the Oracle).prof"/>
 		<profile name="Commander Keen 4 CGA (Goodbye Galaxy)" file="templates/Commander Keen 4 CGA (Goodbye Galaxy).prof"/>
@@ -186,28 +209,29 @@
 		<profile name="Commander Keen 6 (Aliens Ate my Babysitter) (2)" file="templates/Commander Keen 6 (Aliens Ate my Babysitter) (2).prof"/>
 		<profile name="Commander Keen 6 (Aliens Ate my Babysitter) (Shareware)" file="templates/Commander Keen 6 (Aliens Ate my Babysitter) (Shareware).prof"/>
 		<profile name="Commander Keen 6 (Aliens Ate my Babysitter)" file="templates/Commander Keen 6 (Aliens Ate my Babysitter).prof"/>
-		<profile name="Commander Keen 7 (Keen Dreams) (1" file="templates/Commander Keen 7 (Keen Dreams) (1.15a, Shareware).prof"/>
+		<profile name="Commander Keen 7 (Keen Dreams) (1.15a, Shareware)" file="templates/Commander Keen 7 (Keen Dreams) (1.15a, Shareware).prof"/>
 		<profile name="Commander Keen 7 (Keen Dreams)" file="templates/Commander Keen 7 (Keen Dreams).prof"/>
 		<profile name="Constructor" file="templates/Constructor.prof"/>
 		<profile name="Cool Spot" file="templates/Cool Spot.prof"/>
-		<profile name="Corncob 3D 3" file="templates/Corncob 3D 3.4.prof"/>
-		<profile name="Corncob 3D 3" file="templates/Corncob 3D 3.42.prof"/>
-		<profile name="Cosmos Cosmic Adventure 1" file="templates/Cosmos Cosmic Adventure 1.0.prof"/>
+		<profile name="Corncob 3D 3.4" file="templates/Corncob 3D 3.4.prof"/>
+		<profile name="Corncob 3D 3.42" file="templates/Corncob 3D 3.42.prof"/>
+		<profile name="Cosmos Cosmic Adventure 1.0" file="templates/Cosmos Cosmic Adventure 1.0.prof"/>
 		<profile name="Cosmos Cosmic Adventure" file="templates/Cosmos Cosmic Adventure.prof"/>
 		<profile name="Crash Course" file="templates/Crash Course.prof"/>
-		<profile name="Crates 1" file="templates/Crates 1.4.prof"/>
-		<profile name="Crates 1" file="templates/Crates 1.5.prof"/>
+		<profile name="Crates 1.4" file="templates/Crates 1.4.prof"/>
+		<profile name="Crates 1.5" file="templates/Crates 1.5.prof"/>
+		<profile name="Crazy Eights" file="templates/Crazy Eights.prof"/>
 		<profile name="Cronologia" file="templates/Cronologia.prof"/>
 		<profile name="Crusader - No Regret" file="templates/Crusader - No Regret.prof"/>
 		<profile name="Crusader - No Remorse" file="templates/Crusader - No Remorse.prof"/>
-		<profile name="Crusher 2" file="templates/Crusher 2.0.prof"/>
-		<profile name="Crusher 3" file="templates/Crusher 3.0.prof"/>
-		<profile name="Crusher 3" file="templates/Crusher 3.1.prof"/>
-		<profile name="Crusher Castle II 1" file="templates/Crusher Castle II 1.0.prof"/>
-		<profile name="Crusher Castle II 1" file="templates/Crusher Castle II 1.1.prof"/>
-		<profile name="Crusher Castle II 1" file="templates/Crusher Castle II 1.2.prof"/>
-		<profile name="Crusher Castle II 2" file="templates/Crusher Castle II 2.0.prof"/>
-		<profile name="Crusher Castle II 2" file="templates/Crusher Castle II 2.1.prof"/>
+		<profile name="Crusher 2.0" file="templates/Crusher 2.0.prof"/>
+		<profile name="Crusher 3.0" file="templates/Crusher 3.0.prof"/>
+		<profile name="Crusher 3.1" file="templates/Crusher 3.1.prof"/>
+		<profile name="Crusher Castle II 1.0" file="templates/Crusher Castle II 1.0.prof"/>
+		<profile name="Crusher Castle II 1.1" file="templates/Crusher Castle II 1.1.prof"/>
+		<profile name="Crusher Castle II 1.2" file="templates/Crusher Castle II 1.2.prof"/>
+		<profile name="Crusher Castle II 2.0" file="templates/Crusher Castle II 2.0.prof"/>
+		<profile name="Crusher Castle II 2.1" file="templates/Crusher Castle II 2.1.prof"/>
 		<profile name="Crusher Castle II" file="templates/Crusher Castle II.prof"/>
 		<profile name="Crusher" file="templates/Crusher.prof"/>
 		<profile name="Crystal Caves 2" file="templates/Crystal Caves 2.prof"/>
@@ -220,19 +244,21 @@
 		<profile name="Cybersphere" file="templates/Cybersphere.prof"/>
 		<profile name="Cyboman 2" file="templates/Cyboman 2.prof"/>
 		<profile name="Cyrus Chess" file="templates/Cyrus Chess.prof"/>
-		<profile name="DND 1" file="templates/DND 1.0.prof"/>
-		<profile name="DND 1" file="templates/DND 1.1.prof"/>
-		<profile name="DND 1" file="templates/DND 1.12.prof"/>
-		<profile name="DND 1" file="templates/DND 1.2.1.prof"/>
-		<profile name="DND 1" file="templates/DND 1.2.prof"/>
-		<profile name="DOSBox Info (DB-Info 1" file="templates/DOSBox Info (DB-Info 1.0.2).prof"/>
-		<profile name="DOSShell (MS-DOS 4" file="templates/DOSShell (MS-DOS 4.01).prof"/>
-		<profile name="DOSShell (MS-DOS 5" file="templates/DOSShell (MS-DOS 5.0).prof"/>
+		<profile name="DND 1.0" file="templates/DND 1.0.prof"/>
+		<profile name="DND 1.1" file="templates/DND 1.1.prof"/>
+		<profile name="DND 1.12" file="templates/DND 1.12.prof"/>
+		<profile name="DND 1.2.1" file="templates/DND 1.2.1.prof"/>
+		<profile name="DND 1.2" file="templates/DND 1.2.prof"/>
+		<profile name="DOSBox Info (DB-Info 1.0.2)" file="templates/DOSBox Info (DB-Info 1.0.2).prof"/>
+		<profile name="DOSShell (MS-DOS 4.01)" file="templates/DOSShell (MS-DOS 4.01).prof"/>
+		<profile name="DOSShell (MS-DOS 5.0)" file="templates/DOSShell (MS-DOS 5.0).prof"/>
 		<profile name="DOrzo" file="templates/DOrzo.prof"/>
 		<profile name="Dame 12" file="templates/Dame 12.prof"/>
+		<profile name="Dangerous Dave in the Deserted Pirates Hideout" file="templates/Dangerous Dave in the Deserted Pirates Hideout.prof"/>
 		<profile name="DangerousDave" file="templates/DangerousDave.prof"/>
 		<profile name="Daretro" file="templates/Daretro.prof"/>
 		<profile name="Dark Ages" file="templates/Dark Ages.prof"/>
+		<profile name="Dark Forces Shareware" file="templates/Dark Forces Shareware.prof"/>
 		<profile name="Dark Forces" file="templates/Dark Forces.prof"/>
 		<profile name="Das Erbe" file="templates/Das Erbe.prof"/>
 		<profile name="Das schwarze Auge 2" file="templates/Das schwarze Auge 2.prof"/>
@@ -242,6 +268,10 @@
 		<profile name="Death Rally" file="templates/Death Rally.prof"/>
 		<profile name="Defender Of The Crown" file="templates/Defender Of The Crown.prof"/>
 		<profile name="Der Patrizier" file="templates/Der Patrizier.prof"/>
+		<profile name="Descent 1.1" file="templates/Descent 1.1.prof"/>
+		<profile name="Descent 1.2" file="templates/Descent 1.2.prof"/>
+		<profile name="Descent 1.3" file="templates/Descent 1.3.prof"/>
+		<profile name="Descent 1.4" file="templates/Descent 1.4.prof"/>
 		<profile name="Descent 2" file="templates/Descent 2.prof"/>
 		<profile name="Destruction Derby" file="templates/Destruction Derby.prof"/>
 		<profile name="Detroit" file="templates/Detroit.prof"/>
@@ -249,67 +279,93 @@
 		<profile name="Digital Matrix" file="templates/Digital Matrix.prof"/>
 		<profile name="Dimension" file="templates/Dimension.prof"/>
 		<profile name="Dinopark Tycoon" file="templates/Dinopark Tycoon.prof"/>
+		<profile name="Dinosaur Predators 1.0" file="templates/Dinosaur Predators 1.0.prof"/>
+		<profile name="Dinosaur Predators 4.0" file="templates/Dinosaur Predators 4.0.prof"/>
 		<profile name="Discworld 2" file="templates/Discworld 2.prof"/>
 		<profile name="Discworld" file="templates/Discworld.prof"/>
 		<profile name="DiskWorld" file="templates/DiskWorld.prof"/>
-		<profile name="DiskoexpÑriment" file="templates/DiskoexpÑriment.prof"/>
+		<profile name="Diskoexpriment" file="templates/Diskoexpriment.prof"/>
 		<profile name="Disneys Aladdin" file="templates/Disneys Aladdin.prof"/>
+		<profile name="Disneys Beauty and the Beast" file="templates/Disneys Beauty and the Beast.prof"/>
+		<profile name="Doom 1.0" file="templates/Doom 1.0.prof"/>
+		<profile name="Doom 1.1" file="templates/Doom 1.1.prof"/>
+		<profile name="Doom 1.2" file="templates/Doom 1.2.prof"/>
+		<profile name="Doom 1.666" file="templates/Doom 1.666.prof"/>
+		<profile name="Doom 1.8" file="templates/Doom 1.8.prof"/>
 		<profile name="Doom 2" file="templates/Doom 2.prof"/>
 		<profile name="Doom 3" file="templates/Doom 3.prof"/>
 		<profile name="Doom" file="templates/Doom.prof"/>
 		<profile name="Dope" file="templates/Dope.prof"/>
-		<profile name="Doszip Commander 1" file="templates/Doszip Commander 1.28.prof"/>
-		<profile name="Doszip Commander 1" file="templates/Doszip Commander 1.29.prof"/>
-		<profile name="Doszip Commander 1" file="templates/Doszip Commander 1.31.prof"/>
-		<profile name="Doszip Commander 1" file="templates/Doszip Commander 1.37.prof"/>
-		<profile name="Doszip Commander 1" file="templates/Doszip Commander 1.41.prof"/>
+		<profile name="Doszip Commander 1.28" file="templates/Doszip Commander 1.28.prof"/>
+		<profile name="Doszip Commander 1.29" file="templates/Doszip Commander 1.29.prof"/>
+		<profile name="Doszip Commander 1.31" file="templates/Doszip Commander 1.31.prof"/>
+		<profile name="Doszip Commander 1.37" file="templates/Doszip Commander 1.37.prof"/>
+		<profile name="Doszip Commander 1.41" file="templates/Doszip Commander 1.41.prof"/>
+		<profile name="Doszip Commander 1.49" file="templates/Doszip Commander 1.49.prof"/>
+		<profile name="Doszip Commander 1.50" file="templates/Doszip Commander 1.50.prof"/>
+		<profile name="Doszip Commander 1.52" file="templates/Doszip Commander 1.52.prof"/>
+		<profile name="Doszip Commander 1.53" file="templates/Doszip Commander 1.53.prof"/>
+		<profile name="Doszip Commander 1.54" file="templates/Doszip Commander 1.54.prof"/>
+		<profile name="Doszip Commander 1.59" file="templates/Doszip Commander 1.59.prof"/>
+		<profile name="Doszip Commander 2.01" file="templates/Doszip Commander 2.01.prof"/>
+		<profile name="Doszip Commander 2.03" file="templates/Doszip Commander 2.03.prof"/>
+		<profile name="Doszip Commander 2.04" file="templates/Doszip Commander 2.04.prof"/>
+		<profile name="Doszip Commander 2.05" file="templates/Doszip Commander 2.05.prof"/>
+		<profile name="Dotso 1.0" file="templates/Dotso 1.0.prof"/>
+		<profile name="Dotso 1.1" file="templates/Dotso 1.1.prof"/>
 		<profile name="Double Dragon 1" file="templates/Double Dragon 1.prof"/>
 		<profile name="Double Dragon 2 - (The Revenge)" file="templates/Double Dragon 2 - (The Revenge).prof"/>
 		<profile name="Double Dragon 3 - (The Rosetta Stone)" file="templates/Double Dragon 3 - (The Rosetta Stone).prof"/>
-		<profile name="Dr" file="templates/Dr. Genius 3.0.prof"/>
+		<profile name="Doubolo" file="templates/Doubolo.prof"/>
+		<profile name="Dr. Genius 3.0" file="templates/Dr. Genius 3.0.prof"/>
 		<profile name="Dragnet" file="templates/Dragnet.prof"/>
+		<profile name="Dragons Bane Mah Jongg II 1.0" file="templates/Dragons Bane Mah Jongg II 1.0.prof"/>
+		<profile name="Dragons Bane Mah Jongg II 1.1" file="templates/Dragons Bane Mah Jongg II 1.1.prof"/>
+		<profile name="Dragons Bane Mah Jongg II 1.2" file="templates/Dragons Bane Mah Jongg II 1.2.prof"/>
 		<profile name="Dragons Lair 1 - (Escape From Singes Castle)" file="templates/Dragons Lair 1 - (Escape From Singes Castle).prof"/>
 		<profile name="Dragons Lair 2 - (Time Warp)" file="templates/Dragons Lair 2 - (Time Warp).prof"/>
 		<profile name="Dragons Lair 3 - (The Curse Of Mordread)" file="templates/Dragons Lair 3 - (The Curse Of Mordread).prof"/>
 		<profile name="Dragons Strike" file="templates/Dragons Strike.prof"/>
 		<profile name="Dream" file="templates/Dream.prof"/>
 		<profile name="Drift" file="templates/Drift.prof"/>
-		<profile name="Drum Blaster 1" file="templates/Drum Blaster 1.0.prof"/>
-		<profile name="Drum Blaster 1" file="templates/Drum Blaster 1.1.prof"/>
-		<profile name="Drum Blaster 1" file="templates/Drum Blaster 1.2.prof"/>
-		<profile name="Drum Blaster 2" file="templates/Drum Blaster 2.0.prof"/>
-		<profile name="Drum Blaster 3" file="templates/Drum Blaster 3.0 (Freeware).prof"/>
-		<profile name="Drum Blaster 3" file="templates/Drum Blaster 3.0.prof"/>
+		<profile name="Drum Blaster 1.0" file="templates/Drum Blaster 1.0.prof"/>
+		<profile name="Drum Blaster 1.1" file="templates/Drum Blaster 1.1.prof"/>
+		<profile name="Drum Blaster 1.2" file="templates/Drum Blaster 1.2.prof"/>
+		<profile name="Drum Blaster 2.0" file="templates/Drum Blaster 2.0.prof"/>
+		<profile name="Drum Blaster 3.0 (Freeware)" file="templates/Drum Blaster 3.0 (Freeware).prof"/>
+		<profile name="Drum Blaster 3.0" file="templates/Drum Blaster 3.0.prof"/>
 		<profile name="Duel 2000" file="templates/Duel 2000.prof"/>
 		<profile name="Duke Nukem 1 (2)" file="templates/Duke Nukem 1 (2).prof"/>
 		<profile name="Duke Nukem 1" file="templates/Duke Nukem 1.prof"/>
 		<profile name="Duke Nukem 2" file="templates/Duke Nukem 2.prof"/>
+		<profile name="Duke Nukem 3D 1.0" file="templates/Duke Nukem 3D 1.0.prof"/>
+		<profile name="Duke Nukem 3D 1.1" file="templates/Duke Nukem 3D 1.1.prof"/>
 		<profile name="Duke Nukem 3D" file="templates/Duke Nukem 3D.prof"/>
 		<profile name="Dune 2 - The Building of a Dynasty" file="templates/Dune 2 - The Building of a Dynasty.prof"/>
 		<profile name="Dune" file="templates/Dune.prof"/>
 		<profile name="Dungeon Master" file="templates/Dungeon Master.prof"/>
 		<profile name="Dungeons of Grimlor " file="templates/Dungeons of Grimlor .prof"/>
-		<profile name="Dungeons of Grimlor 1" file="templates/Dungeons of Grimlor 1.0.prof"/>
+		<profile name="Dungeons of Grimlor 1.0" file="templates/Dungeons of Grimlor 1.0.prof"/>
 		<profile name="Dungeons of Grimlor 2 The Lich" file="templates/Dungeons of Grimlor 2 The Lich.prof"/>
-		<profile name="Dungeons of the Necromancers Domain 2" file="templates/Dungeons of the Necromancers Domain 2.0.1.prof"/>
-		<profile name="Dungeons of the Necromancers Domain 2" file="templates/Dungeons of the Necromancers Domain 2.0.prof"/>
+		<profile name="Dungeons of the Necromancers Domain 2.0.1" file="templates/Dungeons of the Necromancers Domain 2.0.1.prof"/>
+		<profile name="Dungeons of the Necromancers Domain 2.0" file="templates/Dungeons of the Necromancers Domain 2.0.prof"/>
 		<profile name="Dyna Blaster" file="templates/Dyna Blaster.prof"/>
-		<profile name="EGA Trek 1" file="templates/EGA Trek 1.0.prof"/>
-		<profile name="EGA Trek 2" file="templates/EGA Trek 2.0.prof"/>
-		<profile name="EGA Trek 2" file="templates/EGA Trek 2.1.prof"/>
-		<profile name="EGA Trek 2" file="templates/EGA Trek 2.2.prof"/>
-		<profile name="EGA Trek 2" file="templates/EGA Trek 2.3.prof"/>
-		<profile name="EGA Trek 2" file="templates/EGA Trek 2.31.prof"/>
-		<profile name="EGA Trek 3" file="templates/EGA Trek 3.0.prof"/>
-		<profile name="EGA Trek 3" file="templates/EGA Trek 3.1.prof"/>
+		<profile name="EGA Trek 1.0" file="templates/EGA Trek 1.0.prof"/>
+		<profile name="EGA Trek 2.0" file="templates/EGA Trek 2.0.prof"/>
+		<profile name="EGA Trek 2.1" file="templates/EGA Trek 2.1.prof"/>
+		<profile name="EGA Trek 2.2" file="templates/EGA Trek 2.2.prof"/>
+		<profile name="EGA Trek 2.3" file="templates/EGA Trek 2.3.prof"/>
+		<profile name="EGA Trek 2.31" file="templates/EGA Trek 2.31.prof"/>
+		<profile name="EGA Trek 3.0" file="templates/EGA Trek 3.0.prof"/>
+		<profile name="EGA Trek 3.1" file="templates/EGA Trek 3.1.prof"/>
 		<profile name="Ecstatica" file="templates/Ecstatica.prof"/>
 		<profile name="Eden - Explora 2" file="templates/Eden - Explora 2.prof"/>
 		<profile name="Eishockey Manager" file="templates/Eishockey Manager.prof"/>
-		<profile name="Electranoid 1" file="templates/Electranoid 1.0.prof"/>
-		<profile name="Electranoid 1" file="templates/Electranoid 1.01s.prof"/>
-		<profile name="Electranoid 1" file="templates/Electranoid 1.02s.prof"/>
-		<profile name="Electranoid 1" file="templates/Electranoid 1.03s.prof"/>
-		<profile name="Electranoid 1" file="templates/Electranoid 1.10s.prof"/>
+		<profile name="Electranoid 1.0" file="templates/Electranoid 1.0.prof"/>
+		<profile name="Electranoid 1.01s" file="templates/Electranoid 1.01s.prof"/>
+		<profile name="Electranoid 1.02s" file="templates/Electranoid 1.02s.prof"/>
+		<profile name="Electranoid 1.03s" file="templates/Electranoid 1.03s.prof"/>
+		<profile name="Electranoid 1.10s" file="templates/Electranoid 1.10s.prof"/>
 		<profile name="Electranoid" file="templates/Electranoid.prof"/>
 		<profile name="Electric Gruyre" file="templates/Electric Gruyre.prof"/>
 		<profile name="Electro Man (Shareware)" file="templates/Electro Man (Shareware).prof"/>
@@ -317,8 +373,8 @@
 		<profile name="Elite Plus" file="templates/Elite Plus.prof"/>
 		<profile name="Elite" file="templates/Elite.prof"/>
 		<profile name="Epic Baseball" file="templates/Epic Baseball.prof"/>
-		<profile name="Epic Pinball 1" file="templates/Epic Pinball 1.1.prof"/>
-		<profile name="Epic Pinball 2" file="templates/Epic Pinball 2.0.prof"/>
+		<profile name="Epic Pinball 1.1" file="templates/Epic Pinball 1.1.prof"/>
+		<profile name="Epic Pinball 2.0" file="templates/Epic Pinball 2.0.prof"/>
 		<profile name="Epic Pinball" file="templates/Epic Pinball.prof"/>
 		<profile name="Epic Pinball2" file="templates/Epic Pinball2.prof"/>
 		<profile name="Epsilon" file="templates/Epsilon.prof"/>
@@ -350,10 +406,15 @@
 		<profile name="Fyvush" file="templates/Fyvush.prof"/>
 		<profile name="GOD of THUNDER" file="templates/GOD of THUNDER.prof"/>
 		<profile name="GUNremix" file="templates/GUNremix.prof"/>
-		<profile name="GW-Basic 3" file="templates/GW-Basic 3.22.prof"/>
-		<profile name="Galacta 1" file="templates/Galacta 1.0.prof"/>
-		<profile name="Galacta 1" file="templates/Galacta 1.1.prof"/>
+		<profile name="GW-Basic 3.22" file="templates/GW-Basic 3.22.prof"/>
+		<profile name="Galacta 1.0" file="templates/Galacta 1.0.prof"/>
+		<profile name="Galacta 1.1" file="templates/Galacta 1.1.prof"/>
 		<profile name="Galactix" file="templates/Galactix.prof"/>
+		<profile name="Game of Robot (Junior)" file="templates/Game of Robot (Junior).prof"/>
+		<profile name="Game of Robot 1" file="templates/Game of Robot 1.prof"/>
+		<profile name="Game of Robot 2" file="templates/Game of Robot 2.prof"/>
+		<profile name="Game of Robot 3" file="templates/Game of Robot 3.prof"/>
+		<profile name="Game of Robot 4" file="templates/Game of Robot 4.prof"/>
 		<profile name="Gargoyle Medieval Pack Shareware" file="templates/Gargoyle Medieval Pack Shareware.prof"/>
 		<profile name="Gargoyle Medieval Pack" file="templates/Gargoyle Medieval Pack.prof"/>
 		<profile name="Gauntlet 1" file="templates/Gauntlet 1.prof"/>
@@ -361,19 +422,30 @@
 		<profile name="Gene Wars" file="templates/Gene Wars.prof"/>
 		<profile name="General Buddas Labyrinth" file="templates/General Buddas Labyrinth.prof"/>
 		<profile name="Gertrude in Red Hungary" file="templates/Gertrude in Red Hungary.prof"/>
+		<profile name="Giana Sisters" file="templates/Giana Sisters.prof"/>
+		<profile name="GobMan 1.0" file="templates/GobMan 1.0.prof"/>
+		<profile name="GobMan 1.1" file="templates/GobMan 1.1.prof"/>
 		<profile name="Gobliiins (Shareware)" file="templates/Gobliiins (Shareware).prof"/>
 		<profile name="Gobliiins 2 (Shareware)" file="templates/Gobliiins 2 (Shareware).prof"/>
 		<profile name="Gobliiins 2" file="templates/Gobliiins 2.prof"/>
 		<profile name="Gobliiins 3 (Demo, French)" file="templates/Gobliiins 3 (Demo, French).prof"/>
 		<profile name="Gobliiins 3" file="templates/Gobliiins 3.prof"/>
 		<profile name="Gobliiins" file="templates/Gobliiins.prof"/>
-		<profile name="God of Thunder 1" file="templates/God of Thunder 1.0 (Shareware).prof"/>
-		<profile name="God of Thunder 1" file="templates/God of Thunder 1.1 (Shareware).prof"/>
+		<profile name="God of Thunder 1.0 (Shareware)" file="templates/God of Thunder 1.0 (Shareware).prof"/>
+		<profile name="God of Thunder 1.1 (Shareware)" file="templates/God of Thunder 1.1 (Shareware).prof"/>
 		<profile name="God of Thunder1" file="templates/God of Thunder1.prof"/>
 		<profile name="Gods" file="templates/Gods.prof"/>
-		<profile name="Gold Hunt 1" file="templates/Gold Hunt 1.0.prof"/>
+		<profile name="Gold Hunt 1.0" file="templates/Gold Hunt 1.0.prof"/>
 		<profile name="Gold Hunt" file="templates/Gold Hunt.prof"/>
 		<profile name="Golden Axe" file="templates/Golden Axe.prof"/>
+		<profile name="Googol Math Games 2.0" file="templates/Googol Math Games 2.0.prof"/>
+		<profile name="Googol Math Games 2.1" file="templates/Googol Math Games 2.1.prof"/>
+		<profile name="Googol Math Games 3.3" file="templates/Googol Math Games 3.3.prof"/>
+		<profile name="Googol Math Games 3.4" file="templates/Googol Math Games 3.4.prof"/>
+		<profile name="Googol Math Games 3.6" file="templates/Googol Math Games 3.6.prof"/>
+		<profile name="Googol Review 3.1" file="templates/Googol Review 3.1.prof"/>
+		<profile name="Googol Review 3.2" file="templates/Googol Review 3.2.prof"/>
+		<profile name="Googol Review 3.6" file="templates/Googol Review 3.6.prof"/>
 		<profile name="Grand Prix Circuit" file="templates/Grand Prix Circuit.prof"/>
 		<profile name="Gravis Ultrasound Advertisement" file="templates/Gravis Ultrasound Advertisement.prof"/>
 		<profile name="Gunship 2000" file="templates/Gunship 2000.prof"/>
@@ -387,15 +459,21 @@
 		<profile name="HeartQuake" file="templates/HeartQuake.prof"/>
 		<profile name="Heartlight PC (Shareware)" file="templates/Heartlight PC (Shareware).prof"/>
 		<profile name="Heartlight PC" file="templates/Heartlight PC.prof"/>
+		<profile name="Heretic 1.0" file="templates/Heretic 1.0.prof"/>
+		<profile name="Heretic 1.2" file="templates/Heretic 1.2.prof"/>
 		<profile name="Heretic" file="templates/Heretic.prof"/>
 		<profile name="Heroes The Tantalizing Trio" file="templates/Heroes The Tantalizing Trio.prof"/>
 		<profile name="Heroes" file="templates/Heroes.prof"/>
-		<profile name="Heros Heart 1" file="templates/Heros Heart 1.1.prof"/>
-		<profile name="Heros Heart 1" file="templates/Heros Heart 1.2.prof"/>
-		<profile name="Heros Heart 1" file="templates/Heros Heart 1.3.prof"/>
-		<profile name="Heros Heart 1" file="templates/Heros Heart 1.31.prof"/>
+		<profile name="Heros Heart 1.1" file="templates/Heros Heart 1.1.prof"/>
+		<profile name="Heros Heart 1.2" file="templates/Heros Heart 1.2.prof"/>
+		<profile name="Heros Heart 1.3" file="templates/Heros Heart 1.3.prof"/>
+		<profile name="Heros Heart 1.31" file="templates/Heros Heart 1.31.prof"/>
 		<profile name="Heros I The Sanguine Seven" file="templates/Heros I The Sanguine Seven.prof"/>
+		<profile name="Hexen Beyond Heretic" file="templates/Hexen Beyond Heretic.prof"/>
 		<profile name="Hexen" file="templates/Hexen.prof"/>
+		<profile name="Hexxagon 1 1.1" file="templates/Hexxagon 1 1.1.prof"/>
+		<profile name="Hexxagon 1 1.2" file="templates/Hexxagon 1 1.2.prof"/>
+		<profile name="Hexxagon 1 1.3" file="templates/Hexxagon 1 1.3.prof"/>
 		<profile name="Hexxagon 1" file="templates/Hexxagon 1.prof"/>
 		<profile name="Hexxagon 2" file="templates/Hexxagon 2.prof"/>
 		<profile name="Highway Hunter" file="templates/Highway Hunter.prof"/>
@@ -408,24 +486,24 @@
 		<profile name="Holiday Lemmings 1994 (Shareware)" file="templates/Holiday Lemmings 1994 (Shareware).prof"/>
 		<profile name="Holiday Lemmings 1994" file="templates/Holiday Lemmings 1994.prof"/>
 		<profile name="Holistic" file="templates/Holistic.prof"/>
-		<profile name="Hubie 1" file="templates/Hubie 1.1.prof"/>
-		<profile name="Hubie 1" file="templates/Hubie 1.2.prof"/>
-		<profile name="Hugo II, Whodunit 1" file="templates/Hugo II, Whodunit 1.0.prof"/>
-		<profile name="Hugo II, Whodunit 1" file="templates/Hugo II, Whodunit 1.2.prof"/>
-		<profile name="Hugo II, Whodunit 2" file="templates/Hugo II, Whodunit 2.1.prof"/>
-		<profile name="Hugo III, Jungle of Doom! 1" file="templates/Hugo III, Jungle of Doom! 1.0.prof"/>
+		<profile name="Hubie 1.1" file="templates/Hubie 1.1.prof"/>
+		<profile name="Hubie 1.2" file="templates/Hubie 1.2.prof"/>
+		<profile name="Hugo II, Whodunit 1.0" file="templates/Hugo II, Whodunit 1.0.prof"/>
+		<profile name="Hugo II, Whodunit 1.2" file="templates/Hugo II, Whodunit 1.2.prof"/>
+		<profile name="Hugo II, Whodunit 2.1" file="templates/Hugo II, Whodunit 2.1.prof"/>
+		<profile name="Hugo III, Jungle of Doom! 1.0" file="templates/Hugo III, Jungle of Doom! 1.0.prof"/>
 		<profile name="Hugo III, Jungle of Doom!" file="templates/Hugo III, Jungle of Doom!.prof"/>
-		<profile name="Hugos House of Horrors 1" file="templates/Hugos House of Horrors 1.2.prof"/>
-		<profile name="Hugos House of Horrors 1" file="templates/Hugos House of Horrors 1.3.prof"/>
-		<profile name="Hugos House of Horrors 1" file="templates/Hugos House of Horrors 1.5.prof"/>
-		<profile name="Hugos House of Horrors 1" file="templates/Hugos House of Horrors 1.6.prof"/>
-		<profile name="Hugos House of Horrors 1" file="templates/Hugos House of Horrors 1.8.prof"/>
-		<profile name="Hugos House of Horrors 1" file="templates/Hugos House of Horrors 1.9.prof"/>
+		<profile name="Hugos House of Horrors 1.2" file="templates/Hugos House of Horrors 1.2.prof"/>
+		<profile name="Hugos House of Horrors 1.3" file="templates/Hugos House of Horrors 1.3.prof"/>
+		<profile name="Hugos House of Horrors 1.5" file="templates/Hugos House of Horrors 1.5.prof"/>
+		<profile name="Hugos House of Horrors 1.6" file="templates/Hugos House of Horrors 1.6.prof"/>
+		<profile name="Hugos House of Horrors 1.8" file="templates/Hugos House of Horrors 1.8.prof"/>
+		<profile name="Hugos House of Horrors 1.9" file="templates/Hugos House of Horrors 1.9.prof"/>
 		<profile name="Hugos House of Horrors" file="templates/Hugos House of Horrors.prof"/>
 		<profile name="Humans" file="templates/Humans.prof"/>
 		<profile name="IFLIC" file="templates/IFLIC.prof"/>
-		<profile name="In Search of Dr" file="templates/In Search of Dr. Riptide 1.0.prof"/>
-		<profile name="In Search of Dr" file="templates/In Search of Dr. Riptide 1.1.prof"/>
+		<profile name="In Search of Dr. Riptide 1.0" file="templates/In Search of Dr. Riptide 1.0.prof"/>
+		<profile name="In Search of Dr. Riptide 1.1" file="templates/In Search of Dr. Riptide 1.1.prof"/>
 		<profile name="Inconexia" file="templates/Inconexia.prof"/>
 		<profile name="Indiana Jones 3 (EGA)" file="templates/Indiana Jones 3 (EGA).prof"/>
 		<profile name="Indiana Jones 3 (VGA)" file="templates/Indiana Jones 3 (VGA).prof"/>
@@ -434,41 +512,47 @@
 		<profile name="Indiana Jones and the Revenge of the Ancients" file="templates/Indiana Jones and the Revenge of the Ancients.prof"/>
 		<profile name="Indiana Jones and the temple of doom" file="templates/Indiana Jones and the temple of doom.prof"/>
 		<profile name="Inside" file="templates/Inside.prof"/>
-		<profile name="Invasion of the Mutant Space Bats of Doom 1" file="templates/Invasion of the Mutant Space Bats of Doom 1.21.prof"/>
-		<profile name="Invasion of the Mutant Space Bats of Doom 2" file="templates/Invasion of the Mutant Space Bats of Doom 2.0.prof"/>
-		<profile name="Invasion of the Mutant Space Bats of Doom 2" file="templates/Invasion of the Mutant Space Bats of Doom 2.3.prof"/>
-		<profile name="Invasion of the Mutant Space Bats of Doom 2" file="templates/Invasion of the Mutant Space Bats of Doom 2.5.prof"/>
-		<profile name="Invasion of the Mutant Space Bats of Doom 2" file="templates/Invasion of the Mutant Space Bats of Doom 2.7.prof"/>
-		<profile name="Invasion of the Mutant Space Bats of Doom 2" file="templates/Invasion of the Mutant Space Bats of Doom 2.72.prof"/>
-		<profile name="Invasion of the Mutant Space Bats of Doom 3" file="templates/Invasion of the Mutant Space Bats of Doom 3.0.prof"/>
+		<profile name="Invasion of the Mutant Space Bats of Doom 1.21" file="templates/Invasion of the Mutant Space Bats of Doom 1.21.prof"/>
+		<profile name="Invasion of the Mutant Space Bats of Doom 2.0" file="templates/Invasion of the Mutant Space Bats of Doom 2.0.prof"/>
+		<profile name="Invasion of the Mutant Space Bats of Doom 2.3" file="templates/Invasion of the Mutant Space Bats of Doom 2.3.prof"/>
+		<profile name="Invasion of the Mutant Space Bats of Doom 2.5" file="templates/Invasion of the Mutant Space Bats of Doom 2.5.prof"/>
+		<profile name="Invasion of the Mutant Space Bats of Doom 2.7" file="templates/Invasion of the Mutant Space Bats of Doom 2.7.prof"/>
+		<profile name="Invasion of the Mutant Space Bats of Doom 2.72" file="templates/Invasion of the Mutant Space Bats of Doom 2.72.prof"/>
+		<profile name="Invasion of the Mutant Space Bats of Doom 3.0" file="templates/Invasion of the Mutant Space Bats of Doom 3.0.prof"/>
 		<profile name="Ironman Super Offroad" file="templates/Ironman Super Offroad.prof"/>
+		<profile name="Ishar II" file="templates/Ishar II.prof"/>
+		<profile name="Ishar III" file="templates/Ishar III.prof"/>
+		<profile name="Ishar" file="templates/Ishar.prof"/>
 		<profile name="Ishido" file="templates/Ishido.prof"/>
-		<profile name="Island of Danger 2" file="templates/Island of Danger 2.0.prof"/>
-		<profile name="Island of Danger 2" file="templates/Island of Danger 2.1.prof"/>
-		<profile name="Island of Danger 3" file="templates/Island of Danger 3.0.prof"/>
-		<profile name="Island of Danger 3" file="templates/Island of Danger 3.2.prof"/>
-		<profile name="Isle Wars 2" file="templates/Isle Wars 2.0.prof"/>
-		<profile name="Isle Wars 2" file="templates/Isle Wars 2.2.prof"/>
-		<profile name="Isle Wars 3" file="templates/Isle Wars 3.0.prof"/>
-		<profile name="Isle Wars 3" file="templates/Isle Wars 3.1.prof"/>
+		<profile name="Island of Danger 2.0" file="templates/Island of Danger 2.0.prof"/>
+		<profile name="Island of Danger 2.1" file="templates/Island of Danger 2.1.prof"/>
+		<profile name="Island of Danger 3.0" file="templates/Island of Danger 3.0.prof"/>
+		<profile name="Island of Danger 3.2" file="templates/Island of Danger 3.2.prof"/>
+		<profile name="Isle Wars 2.0" file="templates/Isle Wars 2.0.prof"/>
+		<profile name="Isle Wars 2.2" file="templates/Isle Wars 2.2.prof"/>
+		<profile name="Isle Wars 3.0" file="templates/Isle Wars 3.0.prof"/>
+		<profile name="Isle Wars 3.1" file="templates/Isle Wars 3.1.prof"/>
 		<profile name="Jagged Alliance" file="templates/Jagged Alliance.prof"/>
+		<profile name="Jazz Jackrabbit - Holiday Hare 1994" file="templates/Jazz Jackrabbit - Holiday Hare 1994.prof"/>
 		<profile name="Jazz Jackrabbit 2" file="templates/Jazz Jackrabbit 2.prof"/>
 		<profile name="Jazz Jackrabbit Holiday Hare 1995" file="templates/Jazz Jackrabbit Holiday Hare 1995.prof"/>
 		<profile name="Jazz Jackrabbit Holiday Hare" file="templates/Jazz Jackrabbit Holiday Hare.prof"/>
 		<profile name="Jazz Jackrabbit" file="templates/Jazz Jackrabbit.prof"/>
 		<profile name="Jelly Bean Factory" file="templates/Jelly Bean Factory.prof"/>
 		<profile name="Jet Willy" file="templates/Jet Willy.prof"/>
-		<profile name="Jetpack 1" file="templates/Jetpack 1.0.prof"/>
-		<profile name="Jetpack 1" file="templates/Jetpack 1.1.prof"/>
-		<profile name="Jetpack 1" file="templates/Jetpack 1.2.prof"/>
-		<profile name="Jetpack 1" file="templates/Jetpack 1.3.prof"/>
-		<profile name="Jetpack 1" file="templates/Jetpack 1.4.prof"/>
+		<profile name="Jetpack 1.0" file="templates/Jetpack 1.0.prof"/>
+		<profile name="Jetpack 1.1" file="templates/Jetpack 1.1.prof"/>
+		<profile name="Jetpack 1.2" file="templates/Jetpack 1.2.prof"/>
+		<profile name="Jetpack 1.3" file="templates/Jetpack 1.3.prof"/>
+		<profile name="Jetpack 1.4" file="templates/Jetpack 1.4.prof"/>
 		<profile name="Jetpack Christmas Special!" file="templates/Jetpack Christmas Special!.prof"/>
 		<profile name="Jetpack" file="templates/Jetpack.prof"/>
 		<profile name="Jill goes underground (2)" file="templates/Jill goes underground (2).prof"/>
+		<profile name="Jill of the Jungle 2 - Jill goes underground" file="templates/Jill of the Jungle 2 - Jill goes underground.prof"/>
+		<profile name="Jill of the Jungle 3 - Jill saves the prince" file="templates/Jill of the Jungle 3 - Jill saves the prince.prof"/>
 		<profile name="Jill of the Jungle" file="templates/Jill of the Jungle.prof"/>
 		<profile name="Jill of the jungle (1)" file="templates/Jill of the jungle (1).prof"/>
-		<profile name="Jill of the jungle (1" file="templates/Jill of the jungle (1.1).prof"/>
+		<profile name="Jill of the jungle (1.1)" file="templates/Jill of the jungle (1.1).prof"/>
 		<profile name="Jill saves the prince (3)" file="templates/Jill saves the prince (3).prof"/>
 		<profile name="Jones In The Fast Lane" file="templates/Jones In The Fast Lane.prof"/>
 		<profile name="Juice" file="templates/Juice.prof"/>
@@ -476,15 +560,21 @@
 		<profile name="Jumpman Lives!" file="templates/Jumpman Lives!.prof"/>
 		<profile name="Just" file="templates/Just.prof"/>
 		<profile name="KGB" file="templates/KGB.prof"/>
+		<profile name="Kalakh" file="templates/Kalakh.prof"/>
+		<profile name="Kens Labyrinth 1.0" file="templates/Kens Labyrinth 1.0.prof"/>
+		<profile name="Kens Labyrinth 1.1" file="templates/Kens Labyrinth 1.1.prof"/>
+		<profile name="Kens Labyrinth 2.0" file="templates/Kens Labyrinth 2.0.prof"/>
 		<profile name="Kens Labyrinth" file="templates/Kens Labyrinth.prof"/>
-		<profile name="Kentris 4" file="templates/Kentris 4.1.prof"/>
-		<profile name="Kentris 4" file="templates/Kentris 4.2.prof"/>
-		<profile name="Kentris 4" file="templates/Kentris 4.3.prof"/>
+		<profile name="Kentris 4.1" file="templates/Kentris 4.1.prof"/>
+		<profile name="Kentris 4.2" file="templates/Kentris 4.2.prof"/>
+		<profile name="Kentris 4.3" file="templates/Kentris 4.3.prof"/>
 		<profile name="Kiloblaster" file="templates/Kiloblaster.prof"/>
 		<profile name="Kings Quest 4" file="templates/Kings Quest 4.prof"/>
 		<profile name="Kings Quest 5" file="templates/Kings Quest 5.prof"/>
 		<profile name="Kings Quest 6" file="templates/Kings Quest 6.prof"/>
 		<profile name="Kosmonaut" file="templates/Kosmonaut.prof"/>
+		<profile name="Kosynka 1.1" file="templates/Kosynka 1.1.prof"/>
+		<profile name="Kosynka" file="templates/Kosynka.prof"/>
 		<profile name="LHX - Attack Chopper" file="templates/LHX - Attack Chopper.prof"/>
 		<profile name="Lamborghini" file="templates/Lamborghini.prof"/>
 		<profile name="Lands of Lore - The Throne of Chaos" file="templates/Lands of Lore - The Throne of Chaos.prof"/>
@@ -494,14 +584,22 @@
 		<profile name="Larry 3" file="templates/Larry 3.prof"/>
 		<profile name="Laura Bow 2" file="templates/Laura Bow 2.prof"/>
 		<profile name="Laura Bow" file="templates/Laura Bow.prof"/>
+		<profile name="Lemmings 2 The Tribes Demo" file="templates/Lemmings 2 The Tribes Demo.prof"/>
 		<profile name="Lemmings 2" file="templates/Lemmings 2.prof"/>
+		<profile name="Lemmings 3 Chronicles Demo" file="templates/Lemmings 3 Chronicles Demo.prof"/>
 		<profile name="Lemmings 3" file="templates/Lemmings 3.prof"/>
 		<profile name="Lemmings 3D Demo" file="templates/Lemmings 3D Demo.prof"/>
 		<profile name="Lemmings 3D Winterland Demo" file="templates/Lemmings 3D Winterland Demo.prof"/>
 		<profile name="Lemmings Demo" file="templates/Lemmings Demo.prof"/>
+		<profile name="Lemmings Oh no more Lemmings" file="templates/Lemmings Oh no more Lemmings.prof"/>
+		<profile name="Lemmings VGA" file="templates/Lemmings VGA.prof"/>
+		<profile name="Lemmings Xmas 1991" file="templates/Lemmings Xmas 1991.prof"/>
+		<profile name="Lemmings Xmas 1992" file="templates/Lemmings Xmas 1992.prof"/>
+		<profile name="Lemmings Xmas 1993" file="templates/Lemmings Xmas 1993.prof"/>
 		<profile name="Lemmings" file="templates/Lemmings.prof"/>
 		<profile name="Lifeforms" file="templates/Lifeforms.prof"/>
 		<profile name="Links - The Challenge of Golf" file="templates/Links - The Challenge of Golf.prof"/>
+		<profile name="Links Golf 386 Pro" file="templates/Links Golf 386 Pro.prof"/>
 		<profile name="Lion King" file="templates/Lion King.prof"/>
 		<profile name="Little Green Men" file="templates/Little Green Men.prof"/>
 		<profile name="Locomotion" file="templates/Locomotion.prof"/>
@@ -513,6 +611,8 @@
 		<profile name="Lotus Symphony 3" file="templates/Lotus Symphony 3.prof"/>
 		<profile name="Lotus" file="templates/Lotus.prof"/>
 		<profile name="Low Blow" file="templates/Low Blow.prof"/>
+		<profile name="Lugnut City" file="templates/Lugnut City.prof"/>
+		<profile name="Lugnut Math City" file="templates/Lugnut Math City.prof"/>
 		<profile name="Lunatic" file="templates/Lunatic.prof"/>
 		<profile name="Lure of the Temptress" file="templates/Lure of the Temptress.prof"/>
 		<profile name="Lure of the Temptress_fr" file="templates/Lure of the Temptress_fr.prof"/>
@@ -520,6 +620,11 @@
 		<profile name="Lure of the Temptress_it" file="templates/Lure of the Temptress_it.prof"/>
 		<profile name="M1 Tank Platoon" file="templates/M1 Tank Platoon.prof"/>
 		<profile name="MS-PacMan PC" file="templates/MS-PacMan PC.prof"/>
+		<profile name="MVP Bridge 1.0" file="templates/MVP Bridge 1.0.prof"/>
+		<profile name="MVP Bridge 2.0" file="templates/MVP Bridge 2.0.prof"/>
+		<profile name="MVP Bridge 2.3" file="templates/MVP Bridge 2.3.prof"/>
+		<profile name="MVP Bridge 3.02" file="templates/MVP Bridge 3.02.prof"/>
+		<profile name="MVP Bridge 3.03" file="templates/MVP Bridge 3.03.prof"/>
 		<profile name="Macadam Bumper" file="templates/Macadam Bumper.prof"/>
 		<profile name="Machines of madness" file="templates/Machines of madness.prof"/>
 		<profile name="Mad TV" file="templates/Mad TV.prof"/>
@@ -527,10 +632,33 @@
 		<profile name="Magic Pockets" file="templates/Magic Pockets.prof"/>
 		<profile name="Magic View" file="templates/Magic View.prof"/>
 		<profile name="Magjongg VGA" file="templates/Magjongg VGA.prof"/>
-		<profile name="Major Stryker 1" file="templates/Major Stryker 1.0 (Shareware).prof"/>
-		<profile name="Major Stryker 1" file="templates/Major Stryker 1.3 (Shareware).prof"/>
-		<profile name="Major Stryker 1" file="templates/Major Stryker 1.4 (Shareware).prof"/>
-		<profile name="Major Stryker 1" file="templates/Major Stryker 1.4.prof"/>
+		<profile name="Mah Jongg -V-G-A- 1.1" file="templates/Mah Jongg -V-G-A- 1.1.prof"/>
+		<profile name="Mah Jongg -V-G-A- 2.0" file="templates/Mah Jongg -V-G-A- 2.0.prof"/>
+		<profile name="Mah Jongg -V-G-A- 2.1" file="templates/Mah Jongg -V-G-A- 2.1.prof"/>
+		<profile name="Mah Jongg -V-G-A- 2.1a" file="templates/Mah Jongg -V-G-A- 2.1a.prof"/>
+		<profile name="Mah Jongg -V-G-A- 2.2" file="templates/Mah Jongg -V-G-A- 2.2.prof"/>
+		<profile name="Mah Jongg -V-G-A- 2.2a" file="templates/Mah Jongg -V-G-A- 2.2a.prof"/>
+		<profile name="Mah Jongg -V-G-A- 3.0" file="templates/Mah Jongg -V-G-A- 3.0.prof"/>
+		<profile name="Mah Jongg -V-G-A- 3.0a" file="templates/Mah Jongg -V-G-A- 3.0a.prof"/>
+		<profile name="Mah Jongg -V-G-A- 3.1" file="templates/Mah Jongg -V-G-A- 3.1.prof"/>
+		<profile name="Mah Jongg -V-G-A- 3.1a" file="templates/Mah Jongg -V-G-A- 3.1a.prof"/>
+		<profile name="Mah Jongg -V-G-A- 3.1b" file="templates/Mah Jongg -V-G-A- 3.1b.prof"/>
+		<profile name="Mah Jongg 2.0" file="templates/Mah Jongg 2.0.prof"/>
+		<profile name="Mah Jongg 2.3" file="templates/Mah Jongg 2.3.prof"/>
+		<profile name="Mah Jongg 3.0" file="templates/Mah Jongg 3.0.prof"/>
+		<profile name="Mah Jongg 3.1" file="templates/Mah Jongg 3.1.prof"/>
+		<profile name="Mah Jongg 3.3" file="templates/Mah Jongg 3.3.prof"/>
+		<profile name="Mah Jongg 3.4" file="templates/Mah Jongg 3.4.prof"/>
+		<profile name="Mah Jongg 3.5" file="templates/Mah Jongg 3.5.prof"/>
+		<profile name="Mah Jongg 3.51" file="templates/Mah Jongg 3.51.prof"/>
+		<profile name="Mah Jongg 4.0" file="templates/Mah Jongg 4.0.prof"/>
+		<profile name="Mah Jongg 4.1" file="templates/Mah Jongg 4.1.prof"/>
+		<profile name="Mah Jongg 4.2" file="templates/Mah Jongg 4.2.prof"/>
+		<profile name="Mah Jongg LapTop" file="templates/Mah Jongg LapTop.prof"/>
+		<profile name="Major Stryker 1.0 (Shareware)" file="templates/Major Stryker 1.0 (Shareware).prof"/>
+		<profile name="Major Stryker 1.3 (Shareware)" file="templates/Major Stryker 1.3 (Shareware).prof"/>
+		<profile name="Major Stryker 1.4 (Shareware)" file="templates/Major Stryker 1.4 (Shareware).prof"/>
+		<profile name="Major Stryker 1.4" file="templates/Major Stryker 1.4.prof"/>
 		<profile name="Major Stryker" file="templates/Major Stryker.prof"/>
 		<profile name="Maniac Mansion" file="templates/Maniac Mansion.prof"/>
 		<profile name="Mario - Teaches Typing" file="templates/Mario - Teaches Typing.prof"/>
@@ -538,13 +666,16 @@
 		<profile name="Mario and Luigi" file="templates/Mario and Luigi.prof"/>
 		<profile name="Mario" file="templates/Mario.prof"/>
 		<profile name="Master of Magic" file="templates/Master of Magic.prof"/>
+		<profile name="MasterMind" file="templates/MasterMind.prof"/>
+		<profile name="Math Rescue 1.0" file="templates/Math Rescue 1.0.prof"/>
 		<profile name="Math Rescue" file="templates/Math Rescue.prof"/>
+		<profile name="Mather" file="templates/Mather.prof"/>
 		<profile name="Mega Man X" file="templates/Mega Man X.prof"/>
 		<profile name="Megablast" file="templates/Megablast.prof"/>
 		<profile name="Micro Machines 2" file="templates/Micro Machines 2.prof"/>
 		<profile name="Micro Machines" file="templates/Micro Machines.prof"/>
 		<profile name="Microsoft Flightsimulator 4" file="templates/Microsoft Flightsimulator 4.prof"/>
-		<profile name="Microsoft Flightsimulator 5" file="templates/Microsoft Flightsimulator 5.1.prof"/>
+		<profile name="Microsoft Flightsimulator 5.1" file="templates/Microsoft Flightsimulator 5.1.prof"/>
 		<profile name="Microsoft Space Simulator" file="templates/Microsoft Space Simulator.prof"/>
 		<profile name="Midwinter 2" file="templates/Midwinter 2.prof"/>
 		<profile name="Midwinter" file="templates/Midwinter.prof"/>
@@ -555,44 +686,53 @@
 		<profile name="Monkey Island 1 (Demo)" file="templates/Monkey Island 1 (Demo).prof"/>
 		<profile name="Monkey Island 1" file="templates/Monkey Island 1.prof"/>
 		<profile name="Monkey Island 2" file="templates/Monkey Island 2.prof"/>
-		<profile name="Monster Bash 1" file="templates/Monster Bash 1.0.prof"/>
-		<profile name="Monster Bash 1" file="templates/Monster Bash 1.02.prof"/>
-		<profile name="Monster Bash 1" file="templates/Monster Bash 1.1.prof"/>
-		<profile name="Monster Bash 2" file="templates/Monster Bash 2.0.prof"/>
+		<profile name="Monster Bash 1.0" file="templates/Monster Bash 1.0.prof"/>
+		<profile name="Monster Bash 1.02" file="templates/Monster Bash 1.02.prof"/>
+		<profile name="Monster Bash 1.1" file="templates/Monster Bash 1.1.prof"/>
+		<profile name="Monster Bash 2.0" file="templates/Monster Bash 2.0.prof"/>
 		<profile name="Monster Bash Lite" file="templates/Monster Bash Lite.prof"/>
 		<profile name="Monster Bash" file="templates/Monster Bash.prof"/>
 		<profile name="Monuments of Mars (Freeware)" file="templates/Monuments of Mars (Freeware).prof"/>
 		<profile name="Monuments of Mars (Shareware)" file="templates/Monuments of Mars (Shareware).prof"/>
 		<profile name="Moonstone" file="templates/Moonstone.prof"/>
-		<profile name="Moraffs Blast I 1" file="templates/Moraffs Blast I 1.1.prof"/>
+		<profile name="Moraffs Blast I 1.1" file="templates/Moraffs Blast I 1.1.prof"/>
 		<profile name="Moraffs Blast I" file="templates/Moraffs Blast I.prof"/>
-		<profile name="Moraffs Dungeons of the Unforgiven 2" file="templates/Moraffs Dungeons of the Unforgiven 2.0.prof"/>
+		<profile name="Moraffs Dungeons of the Unforgiven 2.0" file="templates/Moraffs Dungeons of the Unforgiven 2.0.prof"/>
 		<profile name="Moraffs Entrap" file="templates/Moraffs Entrap.prof"/>
 		<profile name="Moraffs Escapade" file="templates/Moraffs Escapade.prof"/>
 		<profile name="Moraffs Flygame" file="templates/Moraffs Flygame.prof"/>
-		<profile name="Moraffs Pinball 2" file="templates/Moraffs Pinball 2.0.prof"/>
-		<profile name="Moraffs Pinball 3" file="templates/Moraffs Pinball 3.0.prof"/>
-		<profile name="Moraffs Pinball 5" file="templates/Moraffs Pinball 5.0.prof"/>
-		<profile name="Moraffs Revenge 3" file="templates/Moraffs Revenge 3.0.prof"/>
-		<profile name="Moraffs Revenge 3" file="templates/Moraffs Revenge 3.1.prof"/>
-		<profile name="Moraffs Revenge 3" file="templates/Moraffs Revenge 3.2.prof"/>
-		<profile name="Moraffs Super Blast 1" file="templates/Moraffs Super Blast 1.0.prof"/>
-		<profile name="Moraffs Super Blast 1" file="templates/Moraffs Super Blast 1.1.prof"/>
-		<profile name="Moraffs Super Blast 1" file="templates/Moraffs Super Blast 1.6.prof"/>
-		<profile name="Moraffs Super Blast 1" file="templates/Moraffs Super Blast 1.7.prof"/>
+		<profile name="Moraffs Mather  Super Entrap" file="templates/Moraffs Mather  Super Entrap.prof"/>
+		<profile name="Moraffs Monster Bridge 1.0" file="templates/Moraffs Monster Bridge 1.0.prof"/>
+		<profile name="Moraffs Monster Bridge 2.0" file="templates/Moraffs Monster Bridge 2.0.prof"/>
+		<profile name="Moraffs Monster Memory" file="templates/Moraffs Monster Memory.prof"/>
+		<profile name="Moraffs Morejongg 1.0" file="templates/Moraffs Morejongg 1.0.prof"/>
+		<profile name="Moraffs Morejongg 3.0" file="templates/Moraffs Morejongg 3.0.prof"/>
+		<profile name="Moraffs Pinball 2.0" file="templates/Moraffs Pinball 2.0.prof"/>
+		<profile name="Moraffs Pinball 3.0" file="templates/Moraffs Pinball 3.0.prof"/>
+		<profile name="Moraffs Pinball 5.0" file="templates/Moraffs Pinball 5.0.prof"/>
+		<profile name="Moraffs Revenge 3.0" file="templates/Moraffs Revenge 3.0.prof"/>
+		<profile name="Moraffs Revenge 3.1" file="templates/Moraffs Revenge 3.1.prof"/>
+		<profile name="Moraffs Revenge 3.2" file="templates/Moraffs Revenge 3.2.prof"/>
+		<profile name="Moraffs Stones 1.0" file="templates/Moraffs Stones 1.0.prof"/>
+		<profile name="Moraffs Stones 2.1" file="templates/Moraffs Stones 2.1.prof"/>
+		<profile name="Moraffs Stones 3.1" file="templates/Moraffs Stones 3.1.prof"/>
+		<profile name="Moraffs Super Blast 1.0" file="templates/Moraffs Super Blast 1.0.prof"/>
+		<profile name="Moraffs Super Blast 1.1" file="templates/Moraffs Super Blast 1.1.prof"/>
+		<profile name="Moraffs Super Blast 1.6" file="templates/Moraffs Super Blast 1.6.prof"/>
+		<profile name="Moraffs Super Blast 1.7" file="templates/Moraffs Super Blast 1.7.prof"/>
 		<profile name="Moraffs Super Blast I (2)" file="templates/Moraffs Super Blast I (2).prof"/>
 		<profile name="Moraffs Super Blast I" file="templates/Moraffs Super Blast I.prof"/>
-		<profile name="Moraffs Super Entrap 2" file="templates/Moraffs Super Entrap 2.0.prof"/>
-		<profile name="Moraffs Super Entrap 4" file="templates/Moraffs Super Entrap 4.1.prof"/>
-		<profile name="Moraffs World 1" file="templates/Moraffs World 1.0.prof"/>
-		<profile name="Moraffs World 4" file="templates/Moraffs World 4.0.prof"/>
-		<profile name="Moraffs World 5" file="templates/Moraffs World 5.1.prof"/>
-		<profile name="Moraffs World 6" file="templates/Moraffs World 6.0.prof"/>
-		<profile name="Moraffs World 7" file="templates/Moraffs World 7.0.prof"/>
+		<profile name="Moraffs Super Entrap 2.0" file="templates/Moraffs Super Entrap 2.0.prof"/>
+		<profile name="Moraffs Super Entrap 4.1" file="templates/Moraffs Super Entrap 4.1.prof"/>
+		<profile name="Moraffs World 1.0" file="templates/Moraffs World 1.0.prof"/>
+		<profile name="Moraffs World 4.0" file="templates/Moraffs World 4.0.prof"/>
+		<profile name="Moraffs World 5.1" file="templates/Moraffs World 5.1.prof"/>
+		<profile name="Moraffs World 6.0" file="templates/Moraffs World 6.0.prof"/>
+		<profile name="Moraffs World 7.0" file="templates/Moraffs World 7.0.prof"/>
 		<profile name="Mortal Combat 2" file="templates/Mortal Combat 2.prof"/>
 		<profile name="Mortal Combat" file="templates/Mortal Combat.prof"/>
-		<profile name="Muehle 12" file="templates/Muehle 12.prof"/>
 		<profile name="Mystic Towers" file="templates/Mystic Towers.prof"/>
+		<profile name="Mhle 12" file="templates/Mhle 12.prof"/>
 		<profile name="NHL 96" file="templates/NHL 96.prof"/>
 		<profile name="NHL Hockey" file="templates/NHL Hockey.prof"/>
 		<profile name="Nascar Racing 2" file="templates/Nascar Racing 2.prof"/>
@@ -600,45 +740,58 @@
 		<profile name="Nation0" file="templates/Nation0.prof"/>
 		<profile name="Near death experience" file="templates/Near death experience.prof"/>
 		<profile name="Necromancers Dos Navigator (NC Clone)" file="templates/Necromancers Dos Navigator (NC Clone).prof"/>
-		<profile name="NeoPaint 3" file="templates/NeoPaint 3.2d.prof"/>
+		<profile name="NeoPaint 3.2d" file="templates/NeoPaint 3.2d.prof"/>
 		<profile name="Neuromancer" file="templates/Neuromancer.prof"/>
 		<profile name="Next Generation Trivia" file="templates/Next Generation Trivia.prof"/>
+		<profile name="Nitemare-3D 1.0" file="templates/Nitemare-3D 1.0.prof"/>
+		<profile name="Nitemare-3D 1.9" file="templates/Nitemare-3D 1.9.prof"/>
+		<profile name="Nitemare-3D 2.0" file="templates/Nitemare-3D 2.0.prof"/>
 		<profile name="North  South" file="templates/North  South.prof"/>
-		<profile name="Norton Commander 1" file="templates/Norton Commander 1.0.prof"/>
-		<profile name="Norton Commander 5" file="templates/Norton Commander 5.5 (deutsch).prof"/>
-		<profile name="Norton Commander 5" file="templates/Norton Commander 5.51 (english).prof"/>
+		<profile name="Norton Commander 1.0" file="templates/Norton Commander 1.0.prof"/>
+		<profile name="Norton Commander 5.5 (deutsch)" file="templates/Norton Commander 5.5 (deutsch).prof"/>
+		<profile name="Norton Commander 5.51 (english)" file="templates/Norton Commander 5.51 (english).prof"/>
 		<profile name="Nova 9 - Return of Gir Draxon" file="templates/Nova 9 - Return of Gir Draxon.prof"/>
 		<profile name="Nova" file="templates/Nova.prof"/>
+		<profile name="Numlo" file="templates/Numlo.prof"/>
 		<profile name="Ocean Trader" file="templates/Ocean Trader.prof"/>
 		<profile name="Oh no more Lemmings" file="templates/Oh no more Lemmings.prof"/>
 		<profile name="Oil Imperium" file="templates/Oil Imperium.prof"/>
 		<profile name="One Drink Too Far" file="templates/One Drink Too Far.prof"/>
+		<profile name="One Must Fall 2097 1.1" file="templates/One Must Fall 2097 1.1.prof"/>
 		<profile name="One Must Fall 2097" file="templates/One Must Fall 2097.prof"/>
+		<profile name="One must fall" file="templates/One must fall.prof"/>
 		<profile name="OpenGEM" file="templates/OpenGEM.prof"/>
 		<profile name="Overkill (Shareware)" file="templates/Overkill (Shareware).prof"/>
-		<profile name="Overkill 1" file="templates/Overkill 1.0 (Shareware) (2).prof"/>
-		<profile name="Overkill 1" file="templates/Overkill 1.0 (Shareware).prof"/>
+		<profile name="Overkill 1.0 (Shareware) (2)" file="templates/Overkill 1.0 (Shareware) (2).prof"/>
+		<profile name="Overkill 1.0 (Shareware)" file="templates/Overkill 1.0 (Shareware).prof"/>
 		<profile name="Overkill" file="templates/Overkill.prof"/>
-		<profile name="Oxyd 3" file="templates/Oxyd 3.7.prof"/>
-		<profile name="PC Auto 1" file="templates/PC Auto 1.5.prof"/>
-		<profile name="PC Globe 3" file="templates/PC Globe 3.0.prof"/>
-		<profile name="PC Globe 5" file="templates/PC Globe 5.0.prof"/>
+		<profile name="Oxyd 3.7" file="templates/Oxyd 3.7.prof"/>
+		<profile name="PC Auto 1.5" file="templates/PC Auto 1.5.prof"/>
+		<profile name="PC Globe 3.0" file="templates/PC Globe 3.0.prof"/>
+		<profile name="PC Globe 5.0" file="templates/PC Globe 5.0.prof"/>
 		<profile name="PC Rally" file="templates/PC Rally.prof"/>
-		<profile name="PC Raumfahrt 1" file="templates/PC Raumfahrt 1.5.prof"/>
+		<profile name="PC Raumfahrt 1.5" file="templates/PC Raumfahrt 1.5.prof"/>
 		<profile name="PacMan PC" file="templates/PacMan PC.prof"/>
-		<profile name="Paganitzu 1" file="templates/Paganitzu 1.01.prof"/>
-		<profile name="Paganitzu 1" file="templates/Paganitzu 1.02.prof"/>
+		<profile name="Paganitzu 1.01" file="templates/Paganitzu 1.01.prof"/>
+		<profile name="Paganitzu 1.02" file="templates/Paganitzu 1.02.prof"/>
 		<profile name="Paganitzu" file="templates/Paganitzu.prof"/>
 		<profile name="Paimen" file="templates/Paimen.prof"/>
 		<profile name="Panic" file="templates/Panic.prof"/>
 		<profile name="Paper" file="templates/Paper.prof"/>
+		<profile name="Pauls Classroom Math" file="templates/Pauls Classroom Math.prof"/>
 		<profile name="Perestroika" file="templates/Perestroika.prof"/>
 		<profile name="Pharaohs Tomb (Freeware)" file="templates/Pharaohs Tomb (Freeware).prof"/>
-		<profile name="Pharaohs Tomb 2" file="templates/Pharaohs Tomb 2.0.prof"/>
-		<profile name="Pharaohs Tomb 2" file="templates/Pharaohs Tomb 2.2.prof"/>
-		<profile name="Pharaohs Tomb 2" file="templates/Pharaohs Tomb 2.3.prof"/>
-		<profile name="Pharaohs Tomb 2" file="templates/Pharaohs Tomb 2.7.prof"/>
-		<profile name="Pharaohs Tomb 2" file="templates/Pharaohs Tomb 2.9.prof"/>
+		<profile name="Pharaohs Tomb 2.0" file="templates/Pharaohs Tomb 2.0.prof"/>
+		<profile name="Pharaohs Tomb 2.2" file="templates/Pharaohs Tomb 2.2.prof"/>
+		<profile name="Pharaohs Tomb 2.3" file="templates/Pharaohs Tomb 2.3.prof"/>
+		<profile name="Pharaohs Tomb 2.7" file="templates/Pharaohs Tomb 2.7.prof"/>
+		<profile name="Pharaohs Tomb 2.9" file="templates/Pharaohs Tomb 2.9.prof"/>
+		<profile name="PinBall Absolute PinBall" file="templates/PinBall Absolute PinBall.prof"/>
+		<profile name="PinBall Dreams 1" file="templates/PinBall Dreams 1.prof"/>
+		<profile name="PinBall SilverBall 1" file="templates/PinBall SilverBall 1.prof"/>
+		<profile name="PinBall SilverBall 1995" file="templates/PinBall SilverBall 1995.prof"/>
+		<profile name="PinBall SilverBall 2" file="templates/PinBall SilverBall 2.prof"/>
+		<profile name="PinBall World" file="templates/PinBall World.prof"/>
 		<profile name="Pinball Dreams 2" file="templates/Pinball Dreams 2.prof"/>
 		<profile name="Pinball Dreams" file="templates/Pinball Dreams.prof"/>
 		<profile name="Pinball Fantasies" file="templates/Pinball Fantasies.prof"/>
@@ -653,27 +806,35 @@
 		<profile name="Precision Approach" file="templates/Precision Approach.prof"/>
 		<profile name="Prehistorik 1" file="templates/Prehistorik 1.prof"/>
 		<profile name="Prehistorik 2" file="templates/Prehistorik 2.prof"/>
+		<profile name="Prince of Persia 1" file="templates/Prince of Persia 1.prof"/>
 		<profile name="Prince of Persia 2" file="templates/Prince of Persia 2.prof"/>
 		<profile name="Prince of Persia 4D" file="templates/Prince of Persia 4D.prof"/>
 		<profile name="Prince of Persia" file="templates/Prince of Persia.prof"/>
 		<profile name="Project XYZ" file="templates/Project XYZ.prof"/>
+		<profile name="Psion Chess" file="templates/Psion Chess.prof"/>
 		<profile name="Pushover" file="templates/Pushover.prof"/>
 		<profile name="Pyrotechnica" file="templates/Pyrotechnica.prof"/>
 		<profile name="QBasic" file="templates/QBasic.prof"/>
+		<profile name="Qbasic1" file="templates/Qbasic1.prof"/>
+		<profile name="Quake 0.91" file="templates/Quake 0.91.prof"/>
+		<profile name="Quake 1.0" file="templates/Quake 1.0.prof"/>
+		<profile name="Quake 1.01" file="templates/Quake 1.01.prof"/>
+		<profile name="Quake 1.06" file="templates/Quake 1.06.prof"/>
 		<profile name="Quake Mission Pack I - Scourge of Armagon" file="templates/Quake Mission Pack I - Scourge of Armagon.prof"/>
 		<profile name="Quake Mission Pack II - Dissolution of Eternity" file="templates/Quake Mission Pack II - Dissolution of Eternity.prof"/>
 		<profile name="Quake" file="templates/Quake.prof"/>
-		<profile name="QuickBasic 4" file="templates/QuickBasic 4.5.prof"/>
-		<profile name="QuickBasic Extended 7" file="templates/QuickBasic Extended 7.1.prof"/>
+		<profile name="QuickBasic 4.5" file="templates/QuickBasic 4.5.prof"/>
+		<profile name="QuickBasic Extended 7.1" file="templates/QuickBasic Extended 7.1.prof"/>
+		<profile name="Radix Beyond the Void 1.0" file="templates/Radix Beyond the Void 1.0.prof"/>
 		<profile name="Radix Beyond the Void" file="templates/Radix Beyond the Void.prof"/>
 		<profile name="Railroad Tycoon Deluxe" file="templates/Railroad Tycoon Deluxe.prof"/>
 		<profile name="Railroad Tycoon" file="templates/Railroad Tycoon.prof"/>
 		<profile name="Rally Championship" file="templates/Rally Championship.prof"/>
-		<profile name="Ramona das ApfelwÅrmchen" file="templates/Ramona das ApfelwÅrmchen.prof"/>
+		<profile name="Ramona das Apfelwrmchen" file="templates/Ramona das Apfelwrmchen.prof"/>
 		<profile name="Rampage" file="templates/Rampage.prof"/>
-		<profile name="Raptor Call of the Shadows 1" file="templates/Raptor Call of the Shadows 1.0.prof"/>
-		<profile name="Raptor Call of the Shadows 1" file="templates/Raptor Call of the Shadows 1.1.prof"/>
-		<profile name="Raptor Call of the Shadows 1" file="templates/Raptor Call of the Shadows 1.2.prof"/>
+		<profile name="Raptor Call of the Shadows 1.0" file="templates/Raptor Call of the Shadows 1.0.prof"/>
+		<profile name="Raptor Call of the Shadows 1.1" file="templates/Raptor Call of the Shadows 1.1.prof"/>
+		<profile name="Raptor Call of the Shadows 1.2" file="templates/Raptor Call of the Shadows 1.2.prof"/>
 		<profile name="Raptor" file="templates/Raptor.prof"/>
 		<profile name="Rayman (Shareware)" file="templates/Rayman (Shareware).prof"/>
 		<profile name="Rayman" file="templates/Rayman.prof"/>
@@ -681,14 +842,16 @@
 		<profile name="Reanimator" file="templates/Reanimator.prof"/>
 		<profile name="Red Baron" file="templates/Red Baron.prof"/>
 		<profile name="Rescue Rover" file="templates/Rescue Rover.prof"/>
-		<profile name="Rescue! 1" file="templates/Rescue! 1.1.prof"/>
-		<profile name="Rescue! 1" file="templates/Rescue! 1.2.prof"/>
+		<profile name="Rescue! 1.1" file="templates/Rescue! 1.1.prof"/>
+		<profile name="Rescue! 1.2" file="templates/Rescue! 1.2.prof"/>
 		<profile name="Resurrection Now" file="templates/Resurrection Now.prof"/>
 		<profile name="Rick Dangerous 1" file="templates/Rick Dangerous 1.prof"/>
 		<profile name="Rick Dangerous 2" file="templates/Rick Dangerous 2.prof"/>
 		<profile name="Rings of the Magi" file="templates/Rings of the Magi.prof"/>
 		<profile name="Rings of the Medusa 2" file="templates/Rings of the Medusa 2.prof"/>
 		<profile name="Rings of the Medusa" file="templates/Rings of the Medusa.prof"/>
+		<profile name="Rise of the Triad 1.0" file="templates/Rise of the Triad 1.0.prof"/>
+		<profile name="Rise of the Triad 1.2" file="templates/Rise of the Triad 1.2.prof"/>
 		<profile name="Rise of the Triad" file="templates/Rise of the Triad.prof"/>
 		<profile name="Ro Bott" file="templates/Ro Bott.prof"/>
 		<profile name="Robomaze II" file="templates/Robomaze II.prof"/>
@@ -698,22 +861,26 @@
 		<profile name="Saga" file="templates/Saga.prof"/>
 		<profile name="Sam  Max (deutsch)" file="templates/Sam  Max (deutsch).prof"/>
 		<profile name="Sam  Max" file="templates/Sam  Max.prof"/>
+		<profile name="Sango Fighter 1.0" file="templates/Sango Fighter 1.0.prof"/>
+		<profile name="Sango Fighter 1.1" file="templates/Sango Fighter 1.1.prof"/>
 		<profile name="Sango Fighter 2" file="templates/Sango Fighter 2.prof"/>
 		<profile name="Sango Fighter" file="templates/Sango Fighter.prof"/>
 		<profile name="Scenario" file="templates/Scenario.prof"/>
-		<profile name="Scorched Earth 1" file="templates/Scorched Earth 1.0.prof"/>
-		<profile name="Scorched Earth 1" file="templates/Scorched Earth 1.0b.prof"/>
-		<profile name="Scorched Earth 1" file="templates/Scorched Earth 1.1.prof"/>
-		<profile name="Scorched Earth 1" file="templates/Scorched Earth 1.2.prof"/>
-		<profile name="Scorched Earth 1" file="templates/Scorched Earth 1.21.prof"/>
-		<profile name="Scorched Earth 1" file="templates/Scorched Earth 1.23.prof"/>
-		<profile name="Scorched Earth 1" file="templates/Scorched Earth 1.5.prof"/>
-		<profile name="ScreamTracker 3" file="templates/ScreamTracker 3.21.prof"/>
+		<profile name="Scorched Earth 1.0" file="templates/Scorched Earth 1.0.prof"/>
+		<profile name="Scorched Earth 1.0b" file="templates/Scorched Earth 1.0b.prof"/>
+		<profile name="Scorched Earth 1.1" file="templates/Scorched Earth 1.1.prof"/>
+		<profile name="Scorched Earth 1.2" file="templates/Scorched Earth 1.2.prof"/>
+		<profile name="Scorched Earth 1.21" file="templates/Scorched Earth 1.21.prof"/>
+		<profile name="Scorched Earth 1.23" file="templates/Scorched Earth 1.23.prof"/>
+		<profile name="Scorched Earth 1.5" file="templates/Scorched Earth 1.5.prof"/>
+		<profile name="ScreamTracker 3.21" file="templates/ScreamTracker 3.21.prof"/>
 		<profile name="Screamball" file="templates/Screamball.prof"/>
 		<profile name="Screamer" file="templates/Screamer.prof"/>
 		<profile name="Sea Robot Of Love" file="templates/Sea Robot Of Love.prof"/>
 		<profile name="Sea Run" file="templates/Sea Run.prof"/>
 		<profile name="Seal 2" file="templates/Seal 2.prof"/>
+		<profile name="Second Guess 1.0" file="templates/Second Guess 1.0.prof"/>
+		<profile name="Second Guess 1.1" file="templates/Second Guess 1.1.prof"/>
 		<profile name="Second Reality(2)" file="templates/Second Reality(2).prof"/>
 		<profile name="Second Reality" file="templates/Second Reality.prof"/>
 		<profile name="Secret Agent (2)" file="templates/Secret Agent (2).prof"/>
@@ -721,23 +888,25 @@
 		<profile name="Seek and Destroy" file="templates/Seek and Destroy.prof"/>
 		<profile name="Semtex City" file="templates/Semtex City.prof"/>
 		<profile name="Sensible Soccer" file="templates/Sensible Soccer.prof"/>
+		<profile name="Shadow Warrior 1.0" file="templates/Shadow Warrior 1.0.prof"/>
+		<profile name="Shadow Warrior 1.1" file="templates/Shadow Warrior 1.1.prof"/>
 		<profile name="Shadow Warrior" file="templates/Shadow Warrior.prof"/>
-		<profile name="Sherlock 1" file="templates/Sherlock 1.1.prof"/>
-		<profile name="Sherlock 1" file="templates/Sherlock 1.2.prof"/>
-		<profile name="Sherlock 1" file="templates/Sherlock 1.42.prof"/>
-		<profile name="Sherlock 1" file="templates/Sherlock 1.5.prof"/>
-		<profile name="Sherlock 2" file="templates/Sherlock 2.0.prof"/>
-		<profile name="Sherlock 2" file="templates/Sherlock 2.07.prof"/>
-		<profile name="Shooting Gallery 1" file="templates/Shooting Gallery 1.0.prof"/>
-		<profile name="Shooting Gallery 1" file="templates/Shooting Gallery 1.2.prof"/>
-		<profile name="Shooting Gallery 2" file="templates/Shooting Gallery 2.0.prof"/>
-		<profile name="Shooting Gallery 2" file="templates/Shooting Gallery 2.1.prof"/>
-		<profile name="Shooting Gallery 2" file="templates/Shooting Gallery 2.2.prof"/>
-		<profile name="Shooting Gallery 2" file="templates/Shooting Gallery 2.3.prof"/>
-		<profile name="Shooting Gallery 3" file="templates/Shooting Gallery 3.0.prof"/>
-		<profile name="Shooting Gallery 3" file="templates/Shooting Gallery 3.1.prof"/>
-		<profile name="Shooting Gallery 3" file="templates/Shooting Gallery 3.2.prof"/>
-		<profile name="Shooting Gallery 3" file="templates/Shooting Gallery 3.3.prof"/>
+		<profile name="Sherlock 1.1" file="templates/Sherlock 1.1.prof"/>
+		<profile name="Sherlock 1.2" file="templates/Sherlock 1.2.prof"/>
+		<profile name="Sherlock 1.42" file="templates/Sherlock 1.42.prof"/>
+		<profile name="Sherlock 1.5" file="templates/Sherlock 1.5.prof"/>
+		<profile name="Sherlock 2.0" file="templates/Sherlock 2.0.prof"/>
+		<profile name="Sherlock 2.07" file="templates/Sherlock 2.07.prof"/>
+		<profile name="Shooting Gallery 1.0" file="templates/Shooting Gallery 1.0.prof"/>
+		<profile name="Shooting Gallery 1.2" file="templates/Shooting Gallery 1.2.prof"/>
+		<profile name="Shooting Gallery 2.0" file="templates/Shooting Gallery 2.0.prof"/>
+		<profile name="Shooting Gallery 2.1" file="templates/Shooting Gallery 2.1.prof"/>
+		<profile name="Shooting Gallery 2.2" file="templates/Shooting Gallery 2.2.prof"/>
+		<profile name="Shooting Gallery 2.3" file="templates/Shooting Gallery 2.3.prof"/>
+		<profile name="Shooting Gallery 3.0" file="templates/Shooting Gallery 3.0.prof"/>
+		<profile name="Shooting Gallery 3.1" file="templates/Shooting Gallery 3.1.prof"/>
+		<profile name="Shooting Gallery 3.2" file="templates/Shooting Gallery 3.2.prof"/>
+		<profile name="Shooting Gallery 3.3" file="templates/Shooting Gallery 3.3.prof"/>
 		<profile name="Shotgun!" file="templates/Shotgun!.prof"/>
 		<profile name="Show" file="templates/Show.prof"/>
 		<profile name="Siedler 2" file="templates/Siedler 2.prof"/>
@@ -755,27 +924,40 @@
 		<profile name="SimFarm" file="templates/SimFarm.prof"/>
 		<profile name="Simon the Sorcerer 2" file="templates/Simon the Sorcerer 2.prof"/>
 		<profile name="Simon the Sorcerer" file="templates/Simon the Sorcerer.prof"/>
+		<profile name="Sinkem" file="templates/Sinkem.prof"/>
 		<profile name="Skate or Die" file="templates/Skate or Die.prof"/>
 		<profile name="Ski or Die" file="templates/Ski or Die.prof"/>
 		<profile name="Skunny Back to the Forest" file="templates/Skunny Back to the Forest.prof"/>
 		<profile name="Skunny Desert Raid" file="templates/Skunny Desert Raid.prof"/>
 		<profile name="Skunny Lost in Space" file="templates/Skunny Lost in Space.prof"/>
 		<profile name="Skunny Save Our Pizzas" file="templates/Skunny Save Our Pizzas.prof"/>
-		<profile name="Skunny Wild West 2" file="templates/Skunny Wild West 2.0.prof"/>
+		<profile name="Skunny Wild West 2.0" file="templates/Skunny Wild West 2.0.prof"/>
 		<profile name="Skunny Wild West" file="templates/Skunny Wild West.prof"/>
 		<profile name="Sky Roads" file="templates/Sky Roads.prof"/>
 		<profile name="Sky Roads1" file="templates/Sky Roads1.prof"/>
 		<profile name="SlicksnSlide" file="templates/SlicksnSlide.prof"/>
 		<profile name="Smackdown" file="templates/Smackdown.prof"/>
-		<profile name="Snarf 1" file="templates/Snarf 1.0.prof"/>
-		<profile name="Snarf 2" file="templates/Snarf 2.02.prof"/>
-		<profile name="Snarf 2" file="templates/Snarf 2.03.prof"/>
-		<profile name="Snarf 2" file="templates/Snarf 2.50.prof"/>
-		<profile name="Snarf 2" file="templates/Snarf 2.60.prof"/>
-		<profile name="Snarf 2" file="templates/Snarf 2.61.prof"/>
-		<profile name="Solar Winds 1" file="templates/Solar Winds 1.0.prof"/>
+		<profile name="Snarf 1.0" file="templates/Snarf 1.0.prof"/>
+		<profile name="Snarf 2.02" file="templates/Snarf 2.02.prof"/>
+		<profile name="Snarf 2.03" file="templates/Snarf 2.03.prof"/>
+		<profile name="Snarf 2.50" file="templates/Snarf 2.50.prof"/>
+		<profile name="Snarf 2.60" file="templates/Snarf 2.60.prof"/>
+		<profile name="Snarf 2.61" file="templates/Snarf 2.61.prof"/>
+		<profile name="Solar Winds 1.0" file="templates/Solar Winds 1.0.prof"/>
 		<profile name="Solar Winds" file="templates/Solar Winds.prof"/>
+		<profile name="Solitile 1.3" file="templates/Solitile 1.3.prof"/>
+		<profile name="Solitile 1.4" file="templates/Solitile 1.4.prof"/>
+		<profile name="Solitile 2.5" file="templates/Solitile 2.5.prof"/>
+		<profile name="Solitile 2.6" file="templates/Solitile 2.6.prof"/>
+		<profile name="Solitile 3.0" file="templates/Solitile 3.0.prof"/>
+		<profile name="Solitile 3.1" file="templates/Solitile 3.1.prof"/>
+		<profile name="Solitile 3.3" file="templates/Solitile 3.3.prof"/>
+		<profile name="Solitile 3.5" file="templates/Solitile 3.5.prof"/>
+		<profile name="Solitile 3.55" file="templates/Solitile 3.55.prof"/>
+		<profile name="Solitile 3.58" file="templates/Solitile 3.58.prof"/>
+		<profile name="Solitile 3.61" file="templates/Solitile 3.61.prof"/>
 		<profile name="Solstice" file="templates/Solstice.prof"/>
+		<profile name="SopWith" file="templates/SopWith.prof"/>
 		<profile name="Space Chase (2)" file="templates/Space Chase (2).prof"/>
 		<profile name="Space Chase (3)" file="templates/Space Chase (3).prof"/>
 		<profile name="Space Chase" file="templates/Space Chase.prof"/>
@@ -786,18 +968,21 @@
 		<profile name="Space Quest 3 - The Pirates of Pestulon" file="templates/Space Quest 3 - The Pirates of Pestulon.prof"/>
 		<profile name="Space Quest 4 - Roger Wilco and the Time Rippers" file="templates/Space Quest 4 - Roger Wilco and the Time Rippers.prof"/>
 		<profile name="Space Quest 5 - The Next Mutation" file="templates/Space Quest 5 - The Next Mutation.prof"/>
-		<profile name="Spider Run 1" file="templates/Spider Run 1.0.prof"/>
-		<profile name="Spider Run 1" file="templates/Spider Run 1.1.prof"/>
-		<profile name="Spider Run 2" file="templates/Spider Run 2.1.prof"/>
+		<profile name="Space Quest 6 - Roger Wilco in the Spinal Frontier" file="templates/Space Quest 6 - Roger Wilco in the Spinal Frontier.prof"/>
+		<profile name="SpaceAce" file="templates/SpaceAce.prof"/>
+		<profile name="Spear of Destiny" file="templates/Spear of Destiny.prof"/>
+		<profile name="Spider Run 1.0" file="templates/Spider Run 1.0.prof"/>
+		<profile name="Spider Run 1.1" file="templates/Spider Run 1.1.prof"/>
+		<profile name="Spider Run 2.1" file="templates/Spider Run 2.1.prof"/>
 		<profile name="Spirit Of Excalibur" file="templates/Spirit Of Excalibur.prof"/>
 		<profile name="Spot" file="templates/Spot.prof"/>
 		<profile name="Square" file="templates/Square.prof"/>
-		<profile name="Squarez 1" file="templates/Squarez 1.0.prof"/>
-		<profile name="Squarez 1" file="templates/Squarez 1.2.prof"/>
-		<profile name="Squarez Deluxe! 1" file="templates/Squarez Deluxe! 1.0.prof"/>
-		<profile name="Squarez Deluxe! 1" file="templates/Squarez Deluxe! 1.1.prof"/>
-		<profile name="Squarez Deluxe! 1" file="templates/Squarez Deluxe! 1.1a.prof"/>
-		<profile name="Squarez Deluxe! 1" file="templates/Squarez Deluxe! 1.2.prof"/>
+		<profile name="Squarez 1.0" file="templates/Squarez 1.0.prof"/>
+		<profile name="Squarez 1.2" file="templates/Squarez 1.2.prof"/>
+		<profile name="Squarez Deluxe! 1.0" file="templates/Squarez Deluxe! 1.0.prof"/>
+		<profile name="Squarez Deluxe! 1.1" file="templates/Squarez Deluxe! 1.1.prof"/>
+		<profile name="Squarez Deluxe! 1.1a" file="templates/Squarez Deluxe! 1.1a.prof"/>
+		<profile name="Squarez Deluxe! 1.2" file="templates/Squarez Deluxe! 1.2.prof"/>
 		<profile name="Star Base" file="templates/Star Base.prof"/>
 		<profile name="Star Goose" file="templates/Star Goose.prof"/>
 		<profile name="Star Trek - 25th Anniversary" file="templates/Star Trek - 25th Anniversary.prof"/>
@@ -805,30 +990,38 @@
 		<profile name="Star Trek - The Next Generation - The Transinium Challenge" file="templates/Star Trek - The Next Generation - The Transinium Challenge.prof"/>
 		<profile name="Star Trek - The Rebel Universe" file="templates/Star Trek - The Rebel Universe.prof"/>
 		<profile name="Star Writer Compact" file="templates/Star Writer Compact.prof"/>
-		<profile name="Stargunner 1" file="templates/Stargunner 1.0.prof"/>
-		<profile name="Stargunner 1" file="templates/Stargunner 1.1.prof"/>
-		<profile name="Stargunner 1" file="templates/Stargunner 1.1b.prof"/>
+		<profile name="Starfire 1.2" file="templates/Starfire 1.2.prof"/>
+		<profile name="Starfire 1.3" file="templates/Starfire 1.3.prof"/>
+		<profile name="Starfire 1.4" file="templates/Starfire 1.4.prof"/>
+		<profile name="Stargunner 1.0" file="templates/Stargunner 1.0.prof"/>
+		<profile name="Stargunner 1.1" file="templates/Stargunner 1.1.prof"/>
+		<profile name="Stargunner 1.1b" file="templates/Stargunner 1.1b.prof"/>
 		<profile name="Stars" file="templates/Stars.prof"/>
 		<profile name="Stash" file="templates/Stash.prof"/>
 		<profile name="State Of Mind" file="templates/State Of Mind.prof"/>
 		<profile name="Stratego" file="templates/Stratego.prof"/>
 		<profile name="Strato" file="templates/Strato.prof"/>
+		<profile name="Strife" file="templates/Strife.prof"/>
 		<profile name="Strike Commander" file="templates/Strike Commander.prof"/>
 		<profile name="Striker" file="templates/Striker.prof"/>
 		<profile name="Stund Island" file="templates/Stund Island.prof"/>
 		<profile name="Stunts" file="templates/Stunts.prof"/>
+		<profile name="Summer Games - Summer Challenge 1992" file="templates/Summer Games - Summer Challenge 1992.prof"/>
+		<profile name="Summer Games 1988" file="templates/Summer Games 1988.prof"/>
+		<profile name="Summer Games 3" file="templates/Summer Games 3.prof"/>
 		<profile name="Summer Games" file="templates/Summer Games.prof"/>
 		<profile name="Sunflower" file="templates/Sunflower.prof"/>
-		<profile name="Super Angelo 2" file="templates/Super Angelo 2.1.prof"/>
-		<profile name="Super Angelo 2" file="templates/Super Angelo 2.2.prof"/>
+		<profile name="Super Angelo 2.1" file="templates/Super Angelo 2.1.prof"/>
+		<profile name="Super Angelo 2.2" file="templates/Super Angelo 2.2.prof"/>
+		<profile name="Super Street Fighter 2 Turbo SW" file="templates/Super Street Fighter 2 Turbo SW.prof"/>
 		<profile name="Super Street Fighter 2 Turbo" file="templates/Super Street Fighter 2 Turbo.prof"/>
 		<profile name="Super Television" file="templates/Super Television.prof"/>
 		<profile name="Super Tetris" file="templates/Super Tetris.prof"/>
 		<profile name="Super ZZT" file="templates/Super ZZT.prof"/>
-		<profile name="SuperFly 1" file="templates/SuperFly 1.0.prof"/>
-		<profile name="SuperFly 1" file="templates/SuperFly 1.1.prof"/>
-		<profile name="SuperFly 2" file="templates/SuperFly 2.0.prof"/>
-		<profile name="SuperFly 2" file="templates/SuperFly 2.1.prof"/>
+		<profile name="SuperFly 1.0" file="templates/SuperFly 1.0.prof"/>
+		<profile name="SuperFly 1.1" file="templates/SuperFly 1.1.prof"/>
+		<profile name="SuperFly 2.0" file="templates/SuperFly 2.0.prof"/>
+		<profile name="SuperFly 2.1" file="templates/SuperFly 2.1.prof"/>
 		<profile name="Superfrog World 1" file="templates/Superfrog World 1.prof"/>
 		<profile name="Superfrog World 2" file="templates/Superfrog World 2.prof"/>
 		<profile name="Supernova (Shareware)" file="templates/Supernova (Shareware).prof"/>
@@ -839,7 +1032,13 @@
 		<profile name="Tahma" file="templates/Tahma.prof"/>
 		<profile name="Taking Care of Business (Freeware)" file="templates/Taking Care of Business (Freeware).prof"/>
 		<profile name="Taking Care of Business (Shareware)" file="templates/Taking Care of Business (Shareware).prof"/>
+		<profile name="Talking ABCs A Day At The Beach 1.0" file="templates/Talking ABCs A Day At The Beach 1.0.prof"/>
+		<profile name="Talking ABCs A Day At The Beach 4.0(2)" file="templates/Talking ABCs A Day At The Beach 4.0(2).prof"/>
+		<profile name="Talking ABCs A Day At The Beach 4.0" file="templates/Talking ABCs A Day At The Beach 4.0.prof"/>
+		<profile name="Talking ABCs A Day At The Beach 4.1" file="templates/Talking ABCs A Day At The Beach 4.1.prof"/>
 		<profile name="Teenagent" file="templates/Teenagent.prof"/>
+		<profile name="Terminal Velocity 1.0" file="templates/Terminal Velocity 1.0.prof"/>
+		<profile name="Terminal Velocity 1.1" file="templates/Terminal Velocity 1.1.prof"/>
 		<profile name="Terminal Velocity" file="templates/Terminal Velocity.prof"/>
 		<profile name="Test Drive 1" file="templates/Test Drive 1.prof"/>
 		<profile name="Test Drive 2" file="templates/Test Drive 2.prof"/>
@@ -851,11 +1050,13 @@
 		<profile name="The Adventures of Maddog Williams(2)" file="templates/The Adventures of Maddog Williams(2).prof"/>
 		<profile name="The Adventures of Maddog Williams(3)" file="templates/The Adventures of Maddog Williams(3).prof"/>
 		<profile name="The Adventures of Maddog Williams" file="templates/The Adventures of Maddog Williams.prof"/>
+		<profile name="The Adventures of Maddog Williams1" file="templates/The Adventures of Maddog Williams1.prof"/>
 		<profile name="The Astonishing Tribe" file="templates/The Astonishing Tribe.prof"/>
 		<profile name="The Catacomb Abyss 3D" file="templates/The Catacomb Abyss 3D.prof"/>
 		<profile name="The Clue" file="templates/The Clue.prof"/>
+		<profile name="The Color Wizard 1.2" file="templates/The Color Wizard 1.2.prof"/>
 		<profile name="The Control" file="templates/The Control.prof"/>
-		<profile name="The Draw 4" file="templates/The Draw 4.63.prof"/>
+		<profile name="The Draw 4.63" file="templates/The Draw 4.63.prof"/>
 		<profile name="The Even More Incredible Machine" file="templates/The Even More Incredible Machine.prof"/>
 		<profile name="The Good, the Bad  the Ugly" file="templates/The Good, the Bad  the Ugly.prof"/>
 		<profile name="The Horde" file="templates/The Horde.prof"/>
@@ -865,7 +1066,7 @@
 		<profile name="The Jungly Kitchen" file="templates/The Jungly Kitchen.prof"/>
 		<profile name="The Lion King" file="templates/The Lion King.prof"/>
 		<profile name="The Magic Circle" file="templates/The Magic Circle.prof"/>
-		<profile name="The Secret Life of Mr" file="templates/The Secret Life of Mr. Black.prof"/>
+		<profile name="The Secret Life of Mr. Black" file="templates/The Secret Life of Mr. Black.prof"/>
 		<profile name="The Simpsons" file="templates/The Simpsons.prof"/>
 		<profile name="The Terminator - Future Shock" file="templates/The Terminator - Future Shock.prof"/>
 		<profile name="The Terminator - SkyNET" file="templates/The Terminator - SkyNET.prof"/>
@@ -881,13 +1082,22 @@
 		<profile name="The legend of Kyrandia" file="templates/The legend of Kyrandia.prof"/>
 		<profile name="The real thing" file="templates/The real thing.prof"/>
 		<profile name="Theme Park" file="templates/Theme Park.prof"/>
+		<profile name="Thors Hammer 1.0 SW" file="templates/Thors Hammer 1.0 SW.prof"/>
+		<profile name="Thors Hammer 1.0" file="templates/Thors Hammer 1.0.prof"/>
+		<profile name="Thors Hammer 1.1" file="templates/Thors Hammer 1.1.prof"/>
 		<profile name="Three Point Basketball Deluxe" file="templates/Three Point Basketball Deluxe.prof"/>
 		<profile name="Three Point Basketball" file="templates/Three Point Basketball.prof"/>
 		<profile name="Three" file="templates/Three.prof"/>
+		<profile name="Thunderscape" file="templates/Thunderscape.prof"/>
 		<profile name="Tie-Fighter" file="templates/Tie-Fighter.prof"/>
+		<profile name="Tile Match 1.0" file="templates/Tile Match 1.0.prof"/>
+		<profile name="Tile Match 1.1" file="templates/Tile Match 1.1.prof"/>
+		<profile name="Tile Match 1.2" file="templates/Tile Match 1.2.prof"/>
 		<profile name="Timeless" file="templates/Timeless.prof"/>
 		<profile name="Times of Lore" file="templates/Times of Lore.prof"/>
 		<profile name="Toasted" file="templates/Toasted.prof"/>
+		<profile name="Tomb Raider - City of Vilcabamba Part 1 Demo" file="templates/Tomb Raider - City of Vilcabamba Part 1 Demo.prof"/>
+		<profile name="Tomb Raider - City of Vilcabamba Part 2 Demo" file="templates/Tomb Raider - City of Vilcabamba Part 2 Demo.prof"/>
 		<profile name="Tomb Raider" file="templates/Tomb Raider.prof"/>
 		<profile name="Toontown" file="templates/Toontown.prof"/>
 		<profile name="Tornado" file="templates/Tornado.prof"/>
@@ -896,14 +1106,19 @@
 		<profile name="Traffic Department 2192" file="templates/Traffic Department 2192.prof"/>
 		<profile name="Transport Tycoon Deluxe" file="templates/Transport Tycoon Deluxe.prof"/>
 		<profile name="Transport Tycoon" file="templates/Transport Tycoon.prof"/>
-		<profile name="Trek Trivia 1" file="templates/Trek Trivia 1.0.prof"/>
-		<profile name="Trek Trivia 2" file="templates/Trek Trivia 2.0.prof"/>
-		<profile name="Trek Trivia 3" file="templates/Trek Trivia 3.0 (Public Domain).prof"/>
+		<profile name="Trek Trivia 1.0" file="templates/Trek Trivia 1.0.prof"/>
+		<profile name="Trek Trivia 2.0" file="templates/Trek Trivia 2.0.prof"/>
+		<profile name="Trek Trivia 3.0 (Public Domain)" file="templates/Trek Trivia 3.0 (Public Domain).prof"/>
 		<profile name="Tremor" file="templates/Tremor.prof"/>
+		<profile name="Tribolo 1.0" file="templates/Tribolo 1.0.prof"/>
+		<profile name="Tribolo 1.1" file="templates/Tribolo 1.1.prof"/>
 		<profile name="Trippin" file="templates/Trippin.prof"/>
-		<profile name="Tubes 1" file="templates/Tubes 1.0.prof"/>
-		<profile name="Tubes 1" file="templates/Tubes 1.1.prof"/>
-		<profile name="Turbo Pascal 6" file="templates/Turbo Pascal 6.0.prof"/>
+		<profile name="Trivia Whiz" file="templates/Trivia Whiz.prof"/>
+		<profile name="Tube (PC Games Edition)" file="templates/Tube (PC Games Edition).prof"/>
+		<profile name="Tube (PC Player)" file="templates/Tube (PC Player).prof"/>
+		<profile name="Tubes 1.0" file="templates/Tubes 1.0.prof"/>
+		<profile name="Tubes 1.1" file="templates/Tubes 1.1.prof"/>
+		<profile name="Turbo Pascal 6.0" file="templates/Turbo Pascal 6.0.prof"/>
 		<profile name="Turbo" file="templates/Turbo.prof"/>
 		<profile name="Tutor" file="templates/Tutor.prof"/>
 		<profile name="Tyrian 2000" file="templates/Tyrian 2000.prof"/>
@@ -920,47 +1135,78 @@
 		<profile name="Ultima 6 - The False Prophet" file="templates/Ultima 6 - The False Prophet.prof"/>
 		<profile name="Ultima 7 - The Black Gate" file="templates/Ultima 7 - The Black Gate.prof"/>
 		<profile name="Ultima 7 Part Two - Serpent Isle" file="templates/Ultima 7 Part Two - Serpent Isle.prof"/>
+		<profile name="Ultima 8 - Pagan (English)" file="templates/Ultima 8 - Pagan (English).prof"/>
+		<profile name="Ultima 8 - Pagan (Francais)" file="templates/Ultima 8 - Pagan (Francais).prof"/>
 		<profile name="Ultima 8 - Pagan" file="templates/Ultima 8 - Pagan.prof"/>
 		<profile name="Ultima Underworld - The Stygian Abyss" file="templates/Ultima Underworld - The Stygian Abyss.prof"/>
 		<profile name="Ultima Underworld 2  - Labyrinth of worlds" file="templates/Ultima Underworld 2  - Labyrinth of worlds.prof"/>
 		<profile name="Ultima Underworld 2" file="templates/Ultima Underworld 2.prof"/>
 		<profile name="Uneatable" file="templates/Uneatable.prof"/>
-		<profile name="Unreal 1" file="templates/Unreal 1.1.prof"/>
+		<profile name="Unreal 1.1" file="templates/Unreal 1.1.prof"/>
 		<profile name="Untitled" file="templates/Untitled.prof"/>
-		<profile name="VGA Copy 6" file="templates/VGA Copy 6.25.prof"/>
+		<profile name="VGA Concentrate 2.1" file="templates/VGA Concentrate 2.1.prof"/>
+		<profile name="VGA Concentration 1.1" file="templates/VGA Concentration 1.1.prof"/>
+		<profile name="VGA Concentration 1.2" file="templates/VGA Concentration 1.2.prof"/>
+		<profile name="VGA Copy 6.25" file="templates/VGA Copy 6.25.prof"/>
 		<profile name="VGATetris" file="templates/VGATetris.prof"/>
 		<profile name="VectorDemo" file="templates/VectorDemo.prof"/>
 		<profile name="Velcro Mind" file="templates/Velcro Mind.prof"/>
 		<profile name="Verses" file="templates/Verses.prof"/>
-		<profile name="Vinyl Goddess From Mars 1" file="templates/Vinyl Goddess From Mars 1.0.prof"/>
-		<profile name="Vinyl Goddess From Mars 1" file="templates/Vinyl Goddess From Mars 1.1.prof"/>
+		<profile name="Vinyl Goddess From Mars 1.0" file="templates/Vinyl Goddess From Mars 1.0.prof"/>
+		<profile name="Vinyl Goddess From Mars 1.1" file="templates/Vinyl Goddess From Mars 1.1.prof"/>
 		<profile name="VisiCalc" file="templates/VisiCalc.prof"/>
+		<profile name="Visual Basic for DOS 1.0" file="templates/Visual Basic for DOS 1.0.prof"/>
 		<profile name="Vivid Experiment" file="templates/Vivid Experiment.prof"/>
 		<profile name="Voka 10" file="templates/Voka 10.prof"/>
 		<profile name="Wacky Wheels" file="templates/Wacky Wheels.prof"/>
 		<profile name="War-8!" file="templates/War-8!.prof"/>
 		<profile name="Warcraft 2" file="templates/Warcraft 2.prof"/>
 		<profile name="Warcraft" file="templates/Warcraft.prof"/>
+		<profile name="Wari The Ancient Game of Africa 1.2" file="templates/Wari The Ancient Game of Africa 1.2.prof"/>
+		<profile name="Wari The Ancient Game of Africa 1.4" file="templates/Wari The Ancient Game of Africa 1.4.prof"/>
 		<profile name="Welltris" file="templates/Welltris.prof"/>
 		<profile name="Who else can upgrade a robot" file="templates/Who else can upgrade a robot.prof"/>
 		<profile name="Willy Beamish - The Adventure" file="templates/Willy Beamish - The Adventure.prof"/>
+		<profile name="Windows 2.03" file="templates/Windows 2.03.prof"/>
+		<profile name="Windows 3.0" file="templates/Windows 3.0.prof"/>
+		<profile name="Windows 3.1" file="templates/Windows 3.1.prof"/>
+		<profile name="Windows for Workgroups 3.11" file="templates/Windows for Workgroups 3.11.prof"/>
+		<profile name="Wing Commander 1" file="templates/Wing Commander 1.prof"/>
 		<profile name="Wing Commander 2 - Vengeance of the Kilrathi" file="templates/Wing Commander 2 - Vengeance of the Kilrathi.prof"/>
 		<profile name="Wing Commander Privateer" file="templates/Wing Commander Privateer.prof"/>
 		<profile name="Wing Commander" file="templates/Wing Commander.prof"/>
+		<profile name="Winter Games - Winter Challenge 1991" file="templates/Winter Games - Winter Challenge 1991.prof"/>
+		<profile name="Winter Games 1985-1986" file="templates/Winter Games 1985-1986.prof"/>
+		<profile name="Winter Games 1988" file="templates/Winter Games 1988.prof"/>
+		<profile name="Winter Games 1994" file="templates/Winter Games 1994.prof"/>
 		<profile name="Winter Games" file="templates/Winter Games.prof"/>
 		<profile name="Wipeout" file="templates/Wipeout.prof"/>
 		<profile name="Wish" file="templates/Wish.prof"/>
 		<profile name="Wolfenstein 3D - Spear of Destiny Add-on I" file="templates/Wolfenstein 3D - Spear of Destiny Add-on I.prof"/>
 		<profile name="Wolfenstein 3D - Spear of Destiny Add-on II" file="templates/Wolfenstein 3D - Spear of Destiny Add-on II.prof"/>
+		<profile name="Wolfenstein 3D 1.0" file="templates/Wolfenstein 3D 1.0.prof"/>
+		<profile name="Wolfenstein 3D 1.1" file="templates/Wolfenstein 3D 1.1.prof"/>
+		<profile name="Wolfenstein 3D 1.2" file="templates/Wolfenstein 3D 1.2.prof"/>
+		<profile name="Wolfenstein 3D 1.4" file="templates/Wolfenstein 3D 1.4.prof"/>
 		<profile name="Wolfenstein 3D" file="templates/Wolfenstein 3D.prof"/>
+		<profile name="Wolfies Music Games 1.1" file="templates/Wolfies Music Games 1.1.prof"/>
+		<profile name="Wolfies Music Games 2.2" file="templates/Wolfies Music Games 2.2.prof"/>
 		<profile name="Wolfpack" file="templates/Wolfpack.prof"/>
+		<profile name="Word 5.0" file="templates/Word 5.0.prof"/>
+		<profile name="Word 5.5" file="templates/Word 5.5.prof"/>
+		<profile name="Word Perfect 5.1" file="templates/Word Perfect 5.1.prof"/>
+		<profile name="Word Rescue 1.0" file="templates/Word Rescue 1.0.prof"/>
 		<profile name="Word Rescue" file="templates/Word Rescue.prof"/>
-		<profile name="WordMax 1" file="templates/WordMax 1.0.prof"/>
-		<profile name="WordMax 1" file="templates/WordMax 1.1.prof"/>
-		<profile name="World Empire 1" file="templates/World Empire 1.0.prof"/>
-		<profile name="World Empire 1" file="templates/World Empire 1.5.prof"/>
-		<profile name="World Empire 2" file="templates/World Empire 2.0.prof"/>
-		<profile name="World Empire 2" file="templates/World Empire 2.0a.prof"/>
+		<profile name="Word Whiz 1.0" file="templates/Word Whiz 1.0.prof"/>
+		<profile name="Word Whiz 2.0" file="templates/Word Whiz 2.0.prof"/>
+		<profile name="Word Whiz 3.0" file="templates/Word Whiz 3.0.prof"/>
+		<profile name="WordMax 1.0" file="templates/WordMax 1.0.prof"/>
+		<profile name="WordMax 1.1" file="templates/WordMax 1.1.prof"/>
+		<profile name="Works 3.0" file="templates/Works 3.0.prof"/>
+		<profile name="World Empire 1.0" file="templates/World Empire 1.0.prof"/>
+		<profile name="World Empire 1.5" file="templates/World Empire 1.5.prof"/>
+		<profile name="World Empire 2.0" file="templates/World Empire 2.0.prof"/>
+		<profile name="World Empire 2.0a" file="templates/World Empire 2.0a.prof"/>
 		<profile name="Worms (Shareware)" file="templates/Worms (Shareware).prof"/>
 		<profile name="Worms Plus" file="templates/Worms Plus.prof"/>
 		<profile name="Worms" file="templates/Worms.prof"/>
@@ -972,31 +1218,33 @@
 		<profile name="XMas Lemmings 92 Demo" file="templates/XMas Lemmings 92 Demo.prof"/>
 		<profile name="XMas-Lemmings 1991" file="templates/XMas-Lemmings 1991.prof"/>
 		<profile name="XMas-Lemmings 1993" file="templates/XMas-Lemmings 1993.prof"/>
-		<profile name="XTree Gold 3" file="templates/XTree Gold 3.0.prof"/>
+		<profile name="XTree Gold 3.0" file="templates/XTree Gold 3.0.prof"/>
 		<profile name="Xargon" file="templates/Xargon.prof"/>
 		<profile name="Xatax" file="templates/Xatax.prof"/>
 		<profile name="Xenon 2" file="templates/Xenon 2.prof"/>
 		<profile name="Xenon" file="templates/Xenon.prof"/>
+		<profile name="Xenophage Alien Bloodsport 1.1" file="templates/Xenophage Alien Bloodsport 1.1.prof"/>
 		<profile name="Xenophage Alien Bloodsport" file="templates/Xenophage Alien Bloodsport.prof"/>
-		<profile name="Xerix 1" file="templates/Xerix 1.1.prof"/>
-		<profile name="Xerix 1" file="templates/Xerix 1.3.prof"/>
+		<profile name="Xerix 1.1" file="templates/Xerix 1.1.prof"/>
+		<profile name="Xerix 1.3" file="templates/Xerix 1.3.prof"/>
 		<profile name="Xtal" file="templates/Xtal.prof"/>
 		<profile name="Z (English)" file="templates/Z (English).prof"/>
 		<profile name="Z (French)" file="templates/Z (French).prof"/>
 		<profile name="Z (German)" file="templates/Z (German).prof"/>
 		<profile name="Z (Italian)" file="templates/Z (Italian).prof"/>
 		<profile name="Z (Spanisch)" file="templates/Z (Spanisch).prof"/>
-		<profile name="ZZT 2" file="templates/ZZT 2.0.prof"/>
-		<profile name="ZZT 3" file="templates/ZZT 3.0.prof"/>
+		<profile name="ZZT 2.0" file="templates/ZZT 2.0.prof"/>
+		<profile name="ZZT 3.0" file="templates/ZZT 3.0.prof"/>
 		<profile name="ZZT" file="templates/ZZT.prof"/>
+		<profile name="Zak McKracken - And The Alien Mindbenders" file="templates/Zak McKracken - And The Alien Mindbenders.prof"/>
 		<profile name="Zak McKracken" file="templates/Zak McKracken.prof"/>
 		<profile name="Zilog" file="templates/Zilog.prof"/>
-		<profile name="Zone 66 1" file="templates/Zone 66 1.0.prof"/>
+		<profile name="Zone 66 1.0" file="templates/Zone 66 1.0.prof"/>
 		<profile name="Zone 66" file="templates/Zone 66.prof"/>
 		<profile name="Zool" file="templates/Zool.prof"/>
 		<profile name="Zweilight Zone" file="templates/Zweilight Zone.prof"/>
 		<profile name="dBase III Plus" file="templates/dBase III Plus.prof"/>
 		<profile name="electro BODY" file="templates/electro BODY.prof"/>
-		<profile name="oekopoly" file="templates/oekopoly.prof"/>
-	</profiles>
+		<profile name="kopoly" file="templates/kopoly.prof"/>
+	</profile>
 </dfendreloaded>

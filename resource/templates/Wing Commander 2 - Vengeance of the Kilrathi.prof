@@ -1,3 +1,16 @@
+[ExtraInfo]
+Name=Wing Commander 2 - Vengeance of the Kilrathi
+Favorite=0
+Icon=
+Genre=Flightsimulation
+Developer=ORIGIN Systems
+Publisher=ORIGIN Systems
+Year=1990
+Notes=
+WWW=
+Language=English
+UserInfo=
+
 [Extra]
 Loadhigh=0
 CloseOnExit=1
@@ -7,15 +20,15 @@ Overridegamestart=0
 OverrideMount=0
 LoadFixVal=64
 NrOfMounts=1
-Tab=0
-Tab2=1
+Tab=4
+Tab2=16
 Exe=WC2.EXE
 ExeMD5=5B784D6663EED812314F05D81ADF7448
 Setup=INSTALL.EXE
 SetupMD5=82929BBEB12F0E277219F185C3449574
 GameParameters=
 SetupParameters=
-LastModification=40101-63588
+LastModification=40453-16125
 ScreenshotListScreenshot=
 ExtraExe0=
 ExtraExe1=
@@ -27,7 +40,7 @@ ExtraExe6=
 ExtraExe7=
 ExtraExe8=
 ExtraExe9=
-0=.\VirtualHD\Wing Commander 2\;Drive;C;False;1024
+0=.\VirtualHD\;Drive;C;False;;
 1=
 2=
 3=
@@ -47,29 +60,22 @@ ExtraDirs=
 ExtraFiles=
 DataDir=
 
-[ExtraInfo]
-Favorite=0
-Name=Wing Commander 2 - Vengeance of the Kilrathi
-Icon=
-Genre=Flightsimulation
-Developer=ORIGIN Systems
-Publisher=ORIGIN Systems
-Year=1990
-Notes=
-WWW=
-Language=English
-UserInfo=
+[Extras]
+IgnoreWindowsFileWarnings=0
+NoDOSBoxFailedDialog=0
 
 [sdl]
-fullscreen=1
-autolock=0
-fulldouble=0
+fullscreen=0
+autolock=1
+fulldouble=1
 usecancodes=1
+usescancodes=1
+ConsoleWindow=1
 sensitivity=100
-output=ddraw
-windowresolution=original
+output=overlay
+windowresolution=800x600
 fullresolution=original
-priority=highest,lower
+priority=highest,normal
 mapperfile=mapper.txt
 DOSBoxlanguage=default
 
@@ -83,7 +89,7 @@ umb=1
 DOS32A=0
 keyboardlayout=default
 codepage=default
-ReportedDOSVersion=6.2
+ReportedDOSVersion=6.22
 NumLockStatus=
 CapsLockStatus=
 ScrollLockStatus=
@@ -92,7 +98,7 @@ ScrollLockStatus=
 aspect=1
 TextModeLines=25
 frameskip=0
-scaler=auto
+scaler=none
 
 [ipx]
 ipx=0
@@ -101,7 +107,7 @@ address=
 port=213
 
 [glide]
-glide=0
+glide=1
 
 [printer]
 printer=0
@@ -113,7 +119,7 @@ printoutput=ps
 
 [mixer]
 nosound=0
-rate=44100
+rate=22050
 blocksize=8192
 prebuffer=10
 VolumeMasterLeft=100
@@ -133,29 +139,29 @@ VolumeCDRight=100
 
 [sblaster]
 mixer=1
-sbbase=220
 irq=7
-dma=1
+dma=0
 hdma=5
+oplrate=22050
 sbtype=sb16
+sbbase=220
 oplmode=auto
 oplemu=default
-oplrate=44100
 
 [gus]
 gus=1
 gusrate=22050
-gusbase=240
 irq1=5
 dma1=1
+gusbase=240
 ultradir=C:\ULTRASND
 
 [speaker]
 pcspeaker=1
-disney=0
-pcrate=44100
-tandyrate=44100
-tandy=off
+disney=1
+pcrate=22050
+tandyrate=22050
+tandy=auto
 
 [joystick]
 timed=0
@@ -202,11 +208,13 @@ Platform=
 BeforeExecution.Wait=1
 BeforeExecution.Minimized=0
 AfterExecution.Minimized=0
+BeforeExecution.Parallel=0
+AfterExecution.Parallel=0
 BeforeExecution=
 AfterExecution=
 
 [dosbox]
-memsize=16
+memsize=63
 captures=
 DOSBoxDirectory=
 machine=svga_s3
@@ -215,12 +223,12 @@ machine=svga_s3
 cyclesup=500
 cyclesdown=20
 core=auto
-cycles=auto
+cycles=10000
 type=auto
 
 [vga]
 videoram=2048
-svgachipset=et4000
+svgachipset=s3
 PixelShader=
 
 [serial]
@@ -237,10 +245,10 @@ config=
 [ExtraGameIdentify]
 File1.Filename=INSTALL.DAT
 File1.Checksum=EE0AE66851D75321CF9458EA12BD06C3
-File2.Filename=
-File2.Checksum=
-File3.Filename=
-File3.Checksum=
+File2.Filename=INSTALL.DAT
+File2.Checksum=EE0AE66851D75321CF9458EA12BD06C3
+File3.Filename=README.EXE
+File3.Checksum=BA1E53CA6EC5AEA74D7627CCA958939E
 File4.Filename=
 File4.Checksum=
 File5.Filename=

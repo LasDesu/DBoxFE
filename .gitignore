@@ -9,3 +9,5 @@ build/
 *.perspectivev3
 *.xcodeproj
 *.pro.user
+*.pro.user.*
+Makefile
