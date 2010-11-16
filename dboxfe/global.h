@@ -40,9 +40,11 @@
 #define DOSBoxGameDatabaseFile "dosbox.sdb3"
 
 /* DBoxFE defines */
+#define DBoxFEApplicationName "DBoxFE - DOSBox Front End"
 #define DBoxFEProduct "DBoxFE"
 #define DBoxFEProductVersion 2
 #define DBoxFEProductCompany "Alexander Saal"
+#define DBoxFEProductDomain "http://chm-projects.org/"
 #define DBoxFEVersion "0.9.9"
 #define DBoxFEConfigFile "dboxfe.xml"
 #define DBoxFEProfileFile "profiles.xml"

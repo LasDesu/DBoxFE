@@ -25,16 +25,17 @@
 #include <QApplication>
 
 #include "dboxfe.h"
+#include "global.h"
 
 using namespace asaal;
 
 int main( int argc, char *argv[] ) {
 
   QApplication app(argc, argv);
-  app.setApplicationName("DBoxFE - DOSBox Front End");
-  app.setApplicationVersion("0.9.74");
-  app.setOrganizationName("Alexander Saal");
-  app.setOrganizationDomain("http://dboxfe.berlios.de/index/");
+  app.setApplicationName(DBoxFEApplicationName);
+  app.setApplicationVersion(DBoxFEVersion);
+  app.setOrganizationName(DBoxFEProductCompany);
+  app.setOrganizationDomain(DBoxFEProductDomain);
   
   DBoxFE *dboxfe = new DBoxFE();
   dboxfe -> setVisible(true);
