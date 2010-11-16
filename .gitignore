@@ -8,6 +8,14 @@ build/
 *.perspective
 *.perspectivev3
 *.xcodeproj
+
 *.pro.user
 *.pro.user.*
+
+*.ncb
+*.sln
+*.suo
+*.vcproj
+*.vcproj.*
+
 Makefile
