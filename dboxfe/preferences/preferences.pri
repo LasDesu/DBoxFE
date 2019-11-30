@@ -25,7 +25,7 @@
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
-HEADERS += preferences.h
-SOURCES += preferences.cpp
+HEADERS += $$PWD/preferences.h
+SOURCES += $$PWD/preferences.cpp
 
-FORMS += preferences.ui
+FORMS += $$PWD/preferences.ui

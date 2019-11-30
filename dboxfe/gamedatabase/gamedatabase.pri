@@ -25,6 +25,6 @@
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
-SOURCES += gamedatabase.cpp
-HEADERS += gamedatabase.h
-FORMS += gamedatabase.ui
+SOURCES += $$PWD/gamedatabase.cpp
+HEADERS += $$PWD/gamedatabase.h
+FORMS += $$PWD/gamedatabase.ui

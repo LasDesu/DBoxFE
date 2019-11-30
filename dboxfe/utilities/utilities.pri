@@ -24,20 +24,20 @@
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
-HEADERS += dfendtemplate.h
-SOURCES += dfendtemplate.cpp
+HEADERS += $$PWD/dfendtemplate.h
+SOURCES += $$PWD/dfendtemplate.cpp
 
-HEADERS += dosboxdatabase.h
-SOURCES += dosboxdatabase.cpp
+HEADERS += $$PWD/dosboxdatabase.h
+SOURCES += $$PWD/dosboxdatabase.cpp
 
-HEADERS += dosboxinifile.h
-SOURCES += dosboxinifile.cpp
+HEADERS += $$PWD/dosboxinifile.h
+SOURCES += $$PWD/dosboxinifile.cpp
 
-HEADERS += dosboxupdater.h
-SOURCES += dosboxupdater.cpp
+HEADERS += $$PWD/dosboxupdater.h
+SOURCES += $$PWD/dosboxupdater.cpp
 
-HEADERS += dboxfesettings.h
-SOURCES += dboxfesettings.cpp
+HEADERS += $$PWD/dboxfesettings.h
+SOURCES += $$PWD/dboxfesettings.cpp
 
 #/*
 # *   Copyright (C) 2009 Morgan Leborgne. All rights reserved.
@@ -59,8 +59,8 @@ SOURCES += dboxfesettings.cpp
 
 INCLUDEPATH += $$PWD/QProgressIndicator
 DEPENDPATH += $$PWD/QProgressIndicator
-HEADERS += QProgressIndicator.h
-SOURCES += QProgressIndicator.cpp
+HEADERS += $$PWD/QProgressIndicator/QProgressIndicator.h
+SOURCES += $$PWD/QProgressIndicator/QProgressIndicator.cpp
 
 # /****************************************************************************
 # ** xmlwriter / xmlpreferences
@@ -87,27 +87,25 @@ SOURCES += QProgressIndicator.cpp
 
 INCLUDEPATH += $$PWD/XmlWriter
 DEPENDPATH += $$PWD/XmlWriter
-SOURCES += xmlwriter.cpp
-HEADERS += xmlwriter_p.h
-HEADERS += xmlwriter.h
+SOURCES += $$PWD/XmlWriter/xmlwriter.cpp
+HEADERS += $$PWD/XmlWriter/xmlwriter_p.h
+HEADERS += $$PWD/XmlWriter/xmlwriter.h
 
 INCLUDEPATH += $$PWD/XmlPreferences
 DEPENDPATH += $$PWD/XmlPreferences
-SOURCES += xmlpreferences.cpp
-HEADERS += xmlpreferences_p.h
-HEADERS += xmlpreferences.h
+SOURCES += $$PWD/XmlPreferences/xmlpreferences.cpp
+HEADERS += $$PWD/XmlPreferences/xmlpreferences_p.h
+HEADERS += $$PWD/XmlPreferences/xmlpreferences.h
 
 INCLUDEPATH += $$PWD/Base64
 DEPENDPATH += $$PWD/Base64
-SOURCES += base64.cpp
-HEADERS += base64.h
+SOURCES += $$PWD/Base64/base64.cpp
+HEADERS += $$PWD/Base64/base64.h
 
 # Needs from files above this line
 unix {
-  DEPENDPATH += /usr/include/libxml2
-  INCLUDEPATH += /usr/include/libxml2
-
-  LIBS += -lxml2
+	CONFIG += link_pkgconfig
+	PKGCONFIG += libxml-2.0
 }
 
 win32 {

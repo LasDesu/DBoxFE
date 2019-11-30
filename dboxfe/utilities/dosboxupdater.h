@@ -19,7 +19,16 @@
 #ifndef DOSBOXUPDATER_H
 #define DOSBOXUPDATER_H
 
+#include <QtGlobal>
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+#define DBOXFE_HTTP
+#else
+#warning TODO: QHttp -> QNetwork*
+#endif
+
+#ifdef DBOXFE_HTTP
 #include <QHttp>
+#endif
 #include <QThread>
 
 class QDateTime;
@@ -28,6 +37,7 @@ class QTimer;
 
 namespace asaal {
 
+#ifdef DBOXFE_HTTP
   class DOSBoxUpdater : public QThread {
 
       Q_OBJECT
@@ -65,6 +75,7 @@ namespace asaal {
       void done( bool error );
 
   };
+#endif
 }
 
 #endif // DOSBOXUPDATER_H

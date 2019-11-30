@@ -28,6 +28,8 @@
 
 using namespace asaal;
 
+#ifdef DBOXFE_HTTP
+
 DOSBoxUpdater::DOSBoxUpdater( QObject *parentObject )
   : QThread(parentObject) {
 
@@ -206,3 +208,5 @@ void DOSBoxUpdater::done( bool error ) {
     mHttpFile = 0;
   }
 }
+
+#endif

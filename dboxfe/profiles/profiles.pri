@@ -25,16 +25,16 @@
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
-HEADERS += profiles.h
-SOURCES += profiles.cpp
-FORMS += profiles.ui
+HEADERS += $$PWD/profiles.h
+SOURCES += $$PWD/profiles.cpp
+FORMS += $$PWD/profiles.ui
 
-HEADERS += profileview.h
-SOURCES += profileview.cpp
+HEADERS += $$PWD/profileview.h
+SOURCES += $$PWD/profileview.cpp
 
-#HEADERS += profiledelegate.h
-#SOURCES += profiledelegate.cpp
+#HEADERS += $$PWD/profiledelegate.h
+#SOURCES += $$PWD/profiledelegate.cpp
 
-HEADERS += profilesettings.h
-SOURCES += profilesettings.cpp
-FORMS += profilesettings.ui
+HEADERS += $$PWD/profilesettings.h
+SOURCES += $$PWD/profilesettings.cpp
+FORMS += $$PWD/profilesettings.ui

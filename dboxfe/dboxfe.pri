@@ -32,15 +32,10 @@ include(profiles/profiles.pri)
 include(utilities/utilities.pri)
 include(welcome/welcome.pri)
 
-SOURCES += main.cpp
-SOURCES += dboxfe.cpp
+SOURCES += $$PWD/main.cpp
+SOURCES += $$PWD/dboxfe.cpp
 
-HEADERS += dboxfe.h
-HEADERS += global.h
+HEADERS += $$PWD/dboxfe.h
+HEADERS += $$PWD/global.h
 
-FORMS += dboxfe.ui
-
-
-
-
-
+FORMS += $$PWD/dboxfe.ui

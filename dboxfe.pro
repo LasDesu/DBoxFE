@@ -31,6 +31,7 @@ DESTDIR	= build/bin
 RESOURCES += resource/dboxfe.qrc
 CONFIG += qt thread warn_on
 QT += network sql xml
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = DBoxFE
 RCC_DIR = build/$${TARGET}/rcc

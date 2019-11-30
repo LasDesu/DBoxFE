@@ -25,6 +25,6 @@
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
-HEADERS += welcome.h
-SOURCES += welcome.cpp
-FORMS += welcome.ui
+HEADERS += $$PWD/welcome.h
+SOURCES += $$PWD/welcome.cpp
+FORMS += $$PWD/welcome.ui

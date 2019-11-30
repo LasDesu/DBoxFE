@@ -25,5 +25,5 @@
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
-SOURCES += assistant.cpp
-HEADERS += assistant.h
+SOURCES += $$PWD/assistant.cpp
+HEADERS += $$PWD/assistant.h
