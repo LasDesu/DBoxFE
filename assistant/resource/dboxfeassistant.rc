@@ -34,7 +34,7 @@ BEGIN
             VALUE "FileDescription", "DBoxFE - Game Assistant\0"
             VALUE "FileVersion", "0.2.5.0\0"
             VALUE "InternalName", "dboxfeassistant\0"
-            VALUE "LegalCopyright", "Copyright © 2008 by Alexander Saal\0"
+            VALUE "LegalCopyright", "Copyright ï¿½ 2008 by Alexander Saal\0"
             VALUE "OriginalFilename", "dboxfeassistant.exe\0"
             VALUE "ProductName", "DBoxFE - Game Assistant\0"
             VALUE "ProductVersion", "0.2.5.0\0"

@@ -1,5 +1,5 @@
 #/*
-#*   Copyright (C) 2004 - 2008 by Alexander Saal <alex.saal@gmx.de>
+#*   Copyright (C) 2004 - 2009 by Alexander Saal <alex.saal@gmx.de>
 #*
 #*   This program is free software; you can redistribute it and/or modify
 #*   it under the terms of the GNU General Public License as published by
@@ -17,7 +17,15 @@
 #*/
 
 TEMPLATE = subdirs
-CONFIG += ordered
-SUBDIRS += dboxfe
-SUBDIRS += tray
-SUBDIRS += assistant
+
+sub_dboxfe.subdir = dboxfe
+sub_dboxfe.depends = 
+SUBDIRS += sub_dboxfe
+
+sub_tray.subdir = tray
+sub_tray.depends = 
+SUBDIRS += sub_tray
+
+sub_assistant.subdir = assistant
+sub_assistant.depends = 
+SUBDIRS += sub_assistant

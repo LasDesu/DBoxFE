@@ -1,5 +1,5 @@
 #/*
-#*   Copyright (C) 2007 - 2008 by Alexander Saal <alex.saal@gmx.de>
+#*   Copyright (C) 2007 - 2009 by Alexander Saal <alex.saal@gmx.de>
 #*
 #*   This program is free software; you can redistribute it and/or modify
 #*   it under the terms of the GNU General Public License as published by
@@ -16,63 +16,46 @@
 #*   Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #*/
 
+include(tray/tray.pri)
+include(../3rdparty/3rdparty.pri)
+
 # Qt 4 Settings
 TEMPLATE = app
 DESTDIR = ../bin
-DEPENDPATH += include src resource ui ../3rdparty
-INCLUDEPATH += include ui ../3rdparty
 RESOURCES += resource/tray.qrc
-CONFIG += debug thread warn_on qt
+CONFIG += build_all thread warn_on qt
 QT += xml
 
-# Project Ui files
-FORMS += ui/about.ui
+# Config settings
+CONFIG(debug, debug|release) {
+  
+  TARGET = dboxfetrayd
+  RCC_DIR = ../build/dboxfetrayd/rcc
+  MOC_DIR += ../build/dboxfetrayd/moc
+  OBJECTS_DIR += ../build/dboxfetrayd/obj
 
-# Project Header
-HEADERS += include/about.h
-HEADERS += include/tray.h
-
-# Project Source
-SOURCES += src/main.cpp
-SOURCES += src/about.cpp
-SOURCES += src/tray.cpp
-
-# 3rdparty Header
-HEADERS	+= ../3rdparty/base64.h
-HEADERS	+= ../3rdparty/xmlpreferences.h
-HEADERS	+= ../3rdparty/xmlpreferences_p.h
-HEADERS	+= ../3rdparty/xmlwriter.h
-HEADERS	+= ../3rdparty/xmlwriter_p.h
-
-# 3rdparty Source
-SOURCES	+= ../3rdparty/base64.cpp
-SOURCES	+= ../3rdparty/xmlpreferences.cpp
-SOURCES	+= ../3rdparty/xmlwriter.cpp
-
-# Unix/Linux settings
-unix{
-  DEPENDPATH += /usr/include/libxml2
-  INCLUDEPATH += /usr/include/libxml2
+} else {
 
   TARGET = dboxfetray
-  #QMAKE_POST_LINK = strip -s bin/dboxfetray
-  RCC_DIR = ../build/dboxfetray/unix/rcc
-  MOC_DIR += ../build/dboxfetray/unix/moc
-  OBJECTS_DIR += ../build/dboxfetray/unix/obj
-  UI_DIR += ../build/dboxfetray/unix/ui
+  RCC_DIR = ../build/dboxfetray/rcc
+  MOC_DIR += ../build/dboxfetray/moc
+  OBJECTS_DIR += ../build/dboxfetray/obj
+  UI_DIR += ../build/dboxfetray/ui
 
-	LIBS += -lxml2
+  unix {
+    QMAKE_POST_LINK = strip -s ../bin/dboxfetray
+  }
 }
 
 # Windows settings
-win32{
+win32 {
   CONFIG += embed_manifest_exe
-  TARGET = dboxfetray
   RC_FILE = resource/tray.rc
-  RCC_DIR = ../build/dboxfetray/win/rcc
-  MOC_DIR += ../build/dboxfetray/win/moc
-  OBJECTS_DIR += ../build/dboxfetray/win/obj
-  UI_DIR += ../build/dboxfetray/win/ui
-	
-	LIBS += -llibxml2
+  CONFIG -= console
+}
+
+# Mac settings
+mac {
+  QMAKE_MAC_SDK = /Developer/SDKs/MacOSX10.4u.sdk
+  CONFIG += x86 ppc
 }
